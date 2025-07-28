@@ -1,3 +1,4 @@
+
 export type CourseSection = {
   topicTitle: string;
   explanation: string;
@@ -37,13 +38,13 @@ const allCourses: Course[] = [
       }
     ],
     pdfMarkdown: `
-# 📘 AP Biology Crash Course
+# AP Biology Crash Course
 
 ### "Precision over pressure. Learn less, retain more."
 
 ---
 
-## 🧬 Unit 1: Chemistry of Life
+## Unit 1: Chemistry of Life
 
 **Topic Overview:**  
 Biological macromolecules are molecules that support life and include carbohydrates, proteins, lipids, and nucleic acids.
@@ -53,11 +54,11 @@ Biological macromolecules are molecules that support life and include carbohydra
 - Carbon can form up to four covalent bonds → foundation of organic molecules.
 - Proteins are made of amino acids joined by peptide bonds.
 
-> 🔍 **Study Hack:** When memorizing molecules, imagine building LEGO structures—start from the smallest piece and connect.
+> **Study Hack:** When memorizing molecules, imagine building LEGO structures—start from the smallest piece and connect.
 
 ---
 
-## 🧠 Unit 2: Cell Structure and Function
+## Unit 2: Cell Structure and Function
 
 **Topic Overview:**  
 Cells are the fundamental units of life, divided into prokaryotic and eukaryotic.
@@ -67,11 +68,11 @@ Cells are the fundamental units of life, divided into prokaryotic and eukaryotic
 - Ribosomes synthesize proteins; mitochondria make ATP via cellular respiration.
 - Cell membranes are selectively permeable due to the phospholipid bilayer.
 
-> 🧩 **Mnemonic:** *"Rough ER has Ribosomes. Smooth ER is Slippery."*
+> **Mnemonic:** *"Rough ER has Ribosomes. Smooth ER is Slippery."*
 
 ---
 
-## 🔬 Unit 3: Cellular Energetics
+## Unit 3: Cellular Energetics
 
 - Enzymes lower activation energy
 - Photosynthesis occurs in chloroplasts (light-dependent and Calvin Cycle)
@@ -79,7 +80,7 @@ Cells are the fundamental units of life, divided into prokaryotic and eukaryotic
 
 ---
 
-## 🧷 Final Tips
+## Final Tips
 
 - Understand → don’t memorize. Ask "why does this happen?" after every concept.
 - Link terms to visuals or analogies.
@@ -113,13 +114,13 @@ _"You're not just learning to pass. You're learning to think precisely.”_
       }
     ],
     pdfMarkdown: `
-# 🇺🇸 AP U.S. History Crash Course
+# AP U.S. History Crash Course
 
 ### "History is not a set of facts, but a story of change."
 
 ---
 
-## 🌎 Period 1: 1491-1607
+## Period 1: 1491-1607
 
 **Topic Overview:**  
 Native American societies had complex structures before European arrival, which was followed by the transformative Columbian Exchange.
@@ -129,11 +130,11 @@ Native American societies had complex structures before European arrival, which 
 - The Great Basin and Great Plains tribes were largely mobile due to a lack of resources.
 - The Columbian Exchange brought new crops to Europe and new diseases to the Americas.
 
-> 🔍 **Study Hack:** Compare and contrast the goals of the Spanish, French, and Dutch in the New World. It reveals their different settlement patterns.
+> **Study Hack:** Compare and contrast the goals of the Spanish, French, and Dutch in the New World. It reveals their different settlement patterns.
 
 ---
 
-## 🗽 Period 3: 1754-1800
+## Period 3: 1754-1800
 
 **Topic Overview:**  
 The American colonies moved from being part of the British Empire to an independent nation, facing internal and external challenges.
@@ -143,11 +144,11 @@ The American colonies moved from being part of the British Empire to an independ
 - Enlightenment ideas from Locke (natural rights) and Montesquieu (separation of powers) fueled revolutionary sentiment.
 - The Articles of Confederation were weak; Shay's Rebellion highlighted the need for a stronger central government, leading to the Constitution.
 
-> 🧩 **Mnemonic:** *"Proclamation of 1763, Stamp Act, Townshend Acts, Tea Act... See The Trouble?"*
+> **Mnemonic:** *"Proclamation of 1763, Stamp Act, Townshend Acts, Tea Act... See The Trouble?"*
 
 ---
 
-## 🏛️ Period 7: 1890-1945
+## Period 7: 1890-1945
 
 - **Progressive Era:** Muckrakers exposed corruption, leading to reforms like the Pure Food and Drug Act and the 17th Amendment.
 - **Imperialism:** Debates over expansion in places like the Philippines (Anti-Imperialist League).
@@ -156,7 +157,7 @@ The American colonies moved from being part of the British Empire to an independ
 
 ---
 
-## 🧷 Final Tips
+## Final Tips
 
 - Think thematically (e.g., how did the definition of 'American identity' change over time?).
 - Always connect historical events to their broader context (Causation).
@@ -190,13 +191,13 @@ _"The past is never dead. It's not even past.”_
       }
     ],
     pdfMarkdown: `
-# 📈 AP Calculus AB Crash Course
+# AP Calculus AB Crash Course
 
 ### "Calculus is the art of measuring change."
 
 ---
 
-## 📉 Unit 1: Limits and Continuity
+## Unit 1: Limits and Continuity
 
 **Topic Overview:**  
 Limits describe the behavior of a function as it gets infinitely close to a point. Continuity means a function's graph has no breaks or holes.
@@ -206,11 +207,11 @@ Limits describe the behavior of a function as it gets infinitely close to a poin
 - A function f(x) is continuous at x=c if lim(x→c) f(x) = f(c).
 - Types of discontinuities: Removable (hole), Infinite (asymptote), Jump.
 
-> 🔍 **Study Hack:** To find the limit of a rational function, first try direct substitution. If you get 0/0, it's an indeterminate form—time to use algebra (factor) or L'Hopital's Rule!
+> **Study Hack:** To find the limit of a rational function, first try direct substitution. If you get 0/0, it's an indeterminate form—time to use algebra (factor) or L'Hopital's Rule!
 
 ---
 
-## 📐 Unit 2: Differentiation
+## Unit 2: Differentiation
 
 **Topic Overview:**  
 The derivative is the instantaneous rate of change, or the slope of the tangent line at a point.
@@ -221,11 +222,11 @@ The derivative is the instantaneous rate of change, or the slope of the tangent 
 - **Quotient Rule:** (f/g)' = (f'g - fg') / g^2
 - **Chain Rule:** d/dx f(g(x)) = f'(g(x)) * g'(x)
 
-> 🧩 **Mnemonic:** For the Quotient Rule: *"Low D-High minus High D-Low, over the square of what's below."*
+> **Mnemonic:** For the Quotient Rule: *"Low D-High minus High D-Low, over the square of what's below."*
 
 ---
 
-## 📊 Unit 3: Integration
+## Unit 3: Integration
 
 - The **definite integral** of a function from a to b represents the accumulated area under the curve.
 - The **Fundamental Theorem of Calculus (Part 1)** connects differentiation and integration: d/dx ∫[a,x] f(t) dt = f(x).
@@ -233,7 +234,7 @@ The derivative is the instantaneous rate of change, or the slope of the tangent 
 
 ---
 
-## 🧷 Final Tips
+## Final Tips
 
 - Understand the geometric meaning of the derivative (slope) and the integral (area).
 - Know your derivative rules cold. They are non-negotiable.
@@ -267,13 +268,13 @@ _"Calculus is not just a subject; it's a new way of seeing the world.”_
         }
     ],
     pdfMarkdown: `
-# 🧪 Organic Chemistry I Crash Course
+# Organic Chemistry I Crash Course
 
 ### "It's like building with LEGOs, but on a molecular level."
 
 ---
 
-## ⚛️ Unit 1: Structure and Bonding
+## Unit 1: Structure and Bonding
 
 **Topic Overview:**  
 The shape and stability of organic molecules are determined by how carbon atoms bond using hybridized orbitals.
@@ -283,11 +284,11 @@ The shape and stability of organic molecules are determined by how carbon atoms 
 - **sp2 hybridization** (e.g., ethene): trigonal planar geometry, 120° bond angles, contains one double bond (1 sigma, 1 pi).
 - **sp hybridization** (e.g., ethyne): linear geometry, 180° bond angles, contains one triple bond (1 sigma, 2 pi).
 
-> 🔍 **Study Hack:** Use a molecular model kit. Seeing the 3D shapes is far more effective than just looking at 2D drawings.
+> **Study Hack:** Use a molecular model kit. Seeing the 3D shapes is far more effective than just looking at 2D drawings.
 
 ---
 
-## 🔄 Unit 2: Stereochemistry
+## Unit 2: Stereochemistry
 
 **Topic Overview:**  
 Molecules can have the same connectivity but different 3D arrangements, known as stereoisomers.
@@ -298,11 +299,11 @@ Molecules can have the same connectivity but different 3D arrangements, known as
 - **Diastereomers** are stereoisomers that are not mirror images.
 - Use the **Cahn-Ingold-Prelog** rules to assign R (clockwise) or S (counter-clockwise) configuration to a chiral center.
 
-> 🧩 **Mnemonic:** *"Enantiomers are Evil twins (mirror images). Diastereomers are Distant relatives."*
+> **Mnemonic:** *"Enantiomers are Evil twins (mirror images). Diastereomers are Distant relatives."*
 
 ---
 
-## 💥 Unit 3: Substitution & Elimination
+## Unit 3: Substitution & Elimination
 
 - **SN2:** 1 step (concerted), needs a strong/unhindered nucleophile, prefers primary substrates, inverts stereochemistry.
 - **SN1:** 2 steps (carbocation intermediate), needs a weak nucleophile/polar protic solvent, prefers tertiary substrates, creates a racemic mixture.
@@ -311,7 +312,7 @@ Molecules can have the same connectivity but different 3D arrangements, known as
 
 ---
 
-## 🧷 Final Tips
+## Final Tips
 
 - Don't just memorize reactions, learn the **mechanisms** (the "why"). Pushing arrows is key.
 - Make reaction flashcards with the substrate, reagents, and product.
@@ -345,13 +346,13 @@ _"Organic chemistry is the study of the flow of electrons.”_
         }
     ],
     pdfMarkdown: `
-# 🧠 Introduction to Psychology Crash Course
+# Introduction to Psychology Crash Course
 
 ### "The greatest discovery is that a human can alter his life by altering his attitudes."
 
 ---
 
-## 🔬 Unit 1: Biological Bases of Behavior
+## Unit 1: Biological Bases of Behavior
 
 **Topic Overview:**  
 Our brains, neurons, and hormones are the biological hardware that runs our mental software.
@@ -361,11 +362,11 @@ Our brains, neurons, and hormones are the biological hardware that runs our ment
 - **Action Potential:** An all-or-none electrical signal that travels down the axon.
 - **Key Brain Lobes:** Frontal (planning, personality), Parietal (sensation, touch), Temporal (hearing, language), Occipital (vision).
 
-> 🔍 **Study Hack:** To remember neurotransmitter functions, create a silly story. "Dopey Al the Sergeant was so excited..." (Dopamine, Acetylcholine, Serotonin).
+> **Study Hack:** To remember neurotransmitter functions, create a silly story. "Dopey Al the Sergeant was so excited..." (Dopamine, Acetylcholine, Serotonin).
 
 ---
 
-## 🔔 Unit 2: Learning
+## Unit 2: Learning
 
 **Topic Overview:**  
 Learning is a relatively permanent change in behavior due to experience.
@@ -375,11 +376,11 @@ Learning is a relatively permanent change in behavior due to experience.
 - **Operant Conditioning (Skinner):** Learning through consequences. Reinforcement increases a behavior; punishment decreases it.
 - **Observational Learning (Bandura):** Learning by watching others (modeling). Bobo doll experiment is the classic example.
 
-> 🧩 **Mnemonic:** *"Reinforcement is Rewarding. Punishment is a Pain."*
+> **Mnemonic:** *"Reinforcement is Rewarding. Punishment is a Pain."*
 
 ---
 
-## 👥 Unit 3: Social Psychology
+## Unit 3: Social Psychology
 
 - **Conformity (Asch):** Adjusting our behavior or thinking to coincide with a group standard.
 - **Obedience (Milgram):** Compliance with commands given by an authority figure.
@@ -387,7 +388,7 @@ Learning is a relatively permanent change in behavior due to experience.
 
 ---
 
-## 🧷 Final Tips
+## Final Tips
 
 - Apply concepts to your own life. When do you conform? How have you been operantly conditioned?
 - Focus on the key experiments and what they demonstrated about human behavior.
@@ -421,13 +422,13 @@ _"The purpose of psychology is to give us a completely different idea of the thi
         }
     ],
     pdfMarkdown: `
-# 💰 Intro to Microeconomics Crash Course
+# Intro to Microeconomics Crash Course
 
 ### "Economics is the study of choice under scarcity."
 
 ---
 
-## 📈 Unit 1: Basic Economic Concepts
+## Unit 1: Basic Economic Concepts
 
 **Topic Overview:**  
 Economics is about making decisions when you can't have everything you want (scarcity).
@@ -437,11 +438,11 @@ Economics is about making decisions when you can't have everything you want (sca
 - **Opportunity Cost:** The value of the next best alternative you give up when you make a choice. There's no such thing as a free lunch!
 - **Production Possibilities Curve (PPC):** A graph showing the maximum combinations of two goods that can be produced with available resources. Points on the curve are efficient.
 
-> 🔍 **Study Hack:** For any decision, always ask: "What is the opportunity cost?" This is the core of economic thinking.
+> **Study Hack:** For any decision, always ask: "What is the opportunity cost?" This is the core of economic thinking.
 
 ---
 
-## ⚖️ Unit 2: Supply and Demand
+## Unit 2: Supply and Demand
 
 **Topic Overview:**  
 The interaction of buyers (demand) and sellers (supply) determines the price and quantity of goods in a market.
@@ -452,11 +453,11 @@ The interaction of buyers (demand) and sellers (supply) determines the price and
 - **Equilibrium:** The point where the supply and demand curves intersect. This is the market-clearing price and quantity.
 - **Shifters:** Know what shifts the entire curve (e.g., income for demand, technology for supply) vs. what causes movement along it (a price change).
 
-> 🧩 **Mnemonic:** For demand curve shifters: **TRIBE** (Tastes, Related goods, Income, Buyers, Expectations).
+> **Mnemonic:** For demand curve shifters: **TRIBE** (Tastes, Related goods, Income, Buyers, Expectations).
 
 ---
 
-## 🏪 Unit 3: Market Structures
+## Unit 3: Market Structures
 
 - **Perfect Competition:** Many firms, identical products, no barriers to entry (e.g., agriculture). Price takers.
 - **Monopoly:** One firm, unique product, high barriers to entry (e.g., local utility). Price makers.
@@ -465,7 +466,7 @@ The interaction of buyers (demand) and sellers (supply) determines the price and
 
 ---
 
-## 🧷 Final Tips
+## Final Tips
 
 - **Draw the graph!** Visualizing supply and demand shifts is the most important skill in this course.
 - Clearly distinguish between a "change in demand" (shift of the curve) and a "change in quantity demanded" (movement along the curve).
@@ -499,13 +500,13 @@ _"The art of economics consists in looking not merely at the immediate but at th
         }
     ],
     pdfMarkdown: `
-# 🧮 College Algebra Crash Course
+# College Algebra Crash Course
 
 ### "Algebra is the language of patterns and relationships."
 
 ---
 
-## ⚙️ Unit 1: Functions
+## Unit 1: Functions
 
 **Topic Overview:**  
 A function is a machine that takes an input (x) and gives exactly one output (y or f(x)).
@@ -516,11 +517,11 @@ A function is a machine that takes an input (x) and gives exactly one output (y 
 - **Vertical Line Test:** A graph represents a function if and only if no vertical line intersects the graph more than once.
 - **Transformations:** Learn how f(x-h)+k shifts a graph h units horizontally and k units vertically.
 
-> 🔍 **Study Hack:** Think of the domain as the "allowed ingredients" for your function machine.
+> **Study Hack:** Think of the domain as the "allowed ingredients" for your function machine.
 
 ---
 
-## 📈 Unit 2: Polynomial and Rational Functions
+## Unit 2: Polynomial and Rational Functions
 
 **Topic Overview:**  
 Analyzing the graphs and behavior of functions made from polynomials.
@@ -532,11 +533,11 @@ Analyzing the graphs and behavior of functions made from polynomials.
   - **Vertical:** Occur where the denominator is zero.
   - **Horizontal:** Compare the degrees of the numerator and denominator to find them.
 
-> 🧩 **Mnemonic:** For horizontal asymptotes: **BOBO BOTN EATS DC** (Bigger On Bottom -> y=0; Bigger On Top -> None; Exponents Are The Same -> Divide Coefficients).
+> **Mnemonic:** For horizontal asymptotes: **BOBO BOTN EATS DC** (Bigger On Bottom -> y=0; Bigger On Top -> None; Exponents Are The Same -> Divide Coefficients).
 
 ---
 
-## 🌿 Unit 3: Exponential and Log Functions
+## Unit 3: Exponential and Log Functions
 
 - **Exponential Functions (y = a*b^x)** model rapid growth or decay.
 - **Logarithmic Functions (y = log_b(x))** are the inverse of exponential functions.
@@ -545,7 +546,7 @@ Analyzing the graphs and behavior of functions made from polynomials.
 
 ---
 
-## 🧷 Final Tips
+## Final Tips
 
 - Master factoring. It is used everywhere, especially for finding zeros and simplifying rational functions.
 - Understand the properties of logarithms. They allow you to solve for variables that are in the exponent.
