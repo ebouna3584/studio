@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 60 48% 96%; /* #FCFCFA - Original warm white */
-    --foreground: 0 0% 6%; /* #0F0F0F - Deep grey/black */
+    --background: 40 10% 98%; /* Off-white, slightly beige */
+    --foreground: 240 10% 3.9%; /* #0F0F0F - Deep grey/black */
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -13,8 +13,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
     
-    --primary: 48 96% 59%; /* A darker, more readable yellow */
-    --primary-foreground: 0 0% 6%;
+    --primary: 56 100% 88%; /* #FFF7C2 - Pastel Yellow */
+    --primary-foreground: 240 10% 3.9%;
 
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -22,7 +22,7 @@
     --muted: 60 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 60 4.8% 95.9%;
+    --accent: 56 100% 88%;
     --accent-foreground: 240 5.9% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,19 +36,19 @@
   }
 
   .dark {
-    --background: 0 0% 6%;
+    --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 48 96% 59%;
-    --primary-foreground: 0 0% 6%;
+    --primary: 56 100% 88%;
+    --primary-foreground: 240 10% 3.9%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 240 3.7% 15.9%;
+    --accent: 56 100% 88%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -72,30 +72,28 @@
     background: hsl(var(--background) / 0.6);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    @apply border-border/20 shadow-lg;
   }
   .dark .glassmorphism {
     background: hsl(var(--background) / 0.7);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.05);
+    @apply shadow-2xl;
+  }
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  mark {
+    animation: highlight linear forwards;
+    animation-timeline: view(60% 20%);
+    background: linear-gradient(to right, oklch(0.95 0.15 90 / 1) 50%, oklch(0.95 0.15 90 / 0) 50%);
+    background-position: 100%;
+    background-size: 200% 100%;
+    padding-inline: 0.125rem;
+    color: inherit;
   }
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-@keyframes fade-in-out {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-fade-in-out {
-  animation: fade-in-out 5s ease-in-out infinite;
+@keyframes highlight {
+  to {
+    background-position: 0;
+  }
 }
