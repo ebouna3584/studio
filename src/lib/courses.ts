@@ -382,6 +382,67 @@ _"Calculus is not just a subject; it's a new way of seeing the world.”_
 `
   },
   {
+    id: '4',
+    slug: 'ap-chemistry',
+    fieldOfStudy: 'STEM',
+    courseTitle: 'AP Chemistry',
+    courseDescription: 'Explore the molecular world, from atomic theory to chemical reactions and thermodynamics.',
+    mindsetTagline: 'Think like a chemist: connect the particles to the properties you can see.',
+    totalEstimatedTimeHours: 9,
+    sections: [
+        {
+            topicTitle: 'Unit 1: Atomic Structure and Properties',
+            understandFirst: 'Master electron configurations and periodic trends. They explain almost everything about an atom\'s behavior.',
+            lessonHeaders: [
+                'Moles and Molar Mass',
+                'Mass Spectroscopy of Elements',
+                'Elemental Composition of Pure Substances',
+                'Composition of Mixtures',
+                'Atomic Structure and Electron Configuration',
+                'Photoelectron Spectroscopy',
+                'Periodic Trends',
+                'Valence Electrons and Ionic Compounds',
+            ],
+            estimatedUnitTimeMinutes: 75,
+            studyTips: ['Practice writing electron configurations for various elements without looking at a periodic table.', 'Draw diagrams of atoms to visualize periodic trends like atomic radius and ionization energy.'],
+            recommended: true,
+        },
+        {
+            topicTitle: 'Unit 2: Molecular and Ionic Compound Structure and Properties',
+            understandFirst: 'Focus on drawing correct Lewis structures. From there, you can determine molecular geometry (VSEPR) and polarity.',
+            lessonHeaders: [
+                'Types of Chemical Bonds',
+                'Intramolecular Force and Potential Energy',
+                'Structure of Ionic Solids',
+                'Structure of Metals and Alloys',
+                'Lewis Diagrams',
+                'Resonance and Formal Charge',
+                'VSEPR and Bond Hybridization',
+            ],
+            estimatedUnitTimeMinutes: 75,
+            studyTips: ['Build models of molecules (or draw them in 3D) to understand VSEPR theory.', 'Create a flowchart for determining the type of intermolecular forces (IMFs) in a substance.'],
+        },
+        {
+            topicTitle: 'Unit 3: Intermolecular Forces and Properties',
+            understandFirst: 'Grasp the difference between intramolecular bonds (like covalent) and intermolecular forces (like hydrogen bonding). IMFs determine physical properties.',
+            lessonHeaders: [
+                'Intermolecular Forces',
+                'Properties of Solids',
+                'Solids, Liquids, and Gases',
+                'The Ideal Gas Law',
+                'Kinetic Molecular Theory',
+                'Deviation from Ideal Gas Law',
+                'Solutions and Mixtures',
+                'Photoelectric Effect',
+            ],
+            estimatedUnitTimeMinutes: 90,
+            studyTips: ['Rank the IMFs from weakest to strongest (London Dispersion < Dipole-Dipole < Hydrogen Bonding).', 'Relate the strength of IMFs to physical properties like boiling point and vapor pressure.'],
+            recommended: true,
+        },
+    ],
+    pdfMarkdown: '# AP Chemistry Notes\n\nDetails to come.'
+  },
+  {
     id: '5',
     slug: 'ap-psychology',
     fieldOfStudy: 'Social Sciences',
@@ -613,6 +674,110 @@ The interaction of buyers (demand) and sellers (supply) determines the price and
 
 _"The art of economics consists in looking not merely at the immediate but at the longer effects of any act or policy.”_
 `
+  },
+  {
+    id: '7',
+    slug: 'ap-computer-science-principles',
+    fieldOfStudy: 'STEM',
+    courseTitle: 'AP Computer Science Principles',
+    courseDescription: 'A broad introduction to the creative aspects of programming, abstractions, algorithms, and the global impact of computing.',
+    mindsetTagline: 'Think creatively about how technology shapes our world. No prior coding experience needed.',
+    totalEstimatedTimeHours: 7,
+    sections: [
+        {
+            topicTitle: 'Unit 1: The Creative Development Process',
+            understandFirst: 'Focus on how computing is a collaborative and iterative process. It’s about more than just writing code; it’s about solving problems with a team.',
+            lessonHeaders: [
+                'Collaboration',
+                'Program Function and Purpose',
+                'Program Design and Development',
+                'Identifying and Correcting Errors',
+            ],
+            estimatedUnitTimeMinutes: 45,
+            studyTips: ['Work with a friend on a small project to practice collaboration.', 'Before writing any code, write out the purpose of a program in plain English.'],
+            recommended: true,
+        },
+        {
+            topicTitle: 'Unit 2: Data',
+            understandFirst: 'Understand that all data—numbers, text, images—is ultimately represented by bits (0s and 1s). The concept of abstraction hides this complexity.',
+            lessonHeaders: [
+                'Binary Numbers',
+                'Data Compression',
+                'Extracting Information from Data',
+                'Using Programs with Data',
+            ],
+            estimatedUnitTimeMinutes: 60,
+            studyTips: ['Practice converting numbers between decimal and binary.', 'Find a large dataset online and think about what kinds of questions you could answer with it.'],
+        },
+        {
+            topicTitle: 'Unit 3: Algorithms and Programming',
+            understandFirst: 'Master the core logic structures: sequence, selection (if/else), and iteration (loops). These are the fundamental building blocks of any program.',
+            lessonHeaders: [
+                'Variables and Assignments',
+                'Mathematical Expressions',
+                'Strings',
+                'Boolean Expressions, If Statements',
+                'Lists',
+                'Loops',
+                'Procedures and Parameters',
+                'Algorithms',
+            ],
+            estimatedUnitTimeMinutes: 90,
+            studyTips: ['Use flowcharts to visualize algorithms before you code them.', 'Explain a simple algorithm (like making a sandwich) to a friend to practice logical thinking.'],
+            recommended: true,
+        },
+    ],
+    pdfMarkdown: '# AP CSP Notes\n\nDetails to come.'
+},
+{
+    id: '8',
+    slug: 'ap-english-language',
+    fieldOfStudy: 'Humanities',
+    courseTitle: 'AP English Language & Composition',
+    courseDescription: 'Analyze how writers use language to create meaning and craft persuasive arguments.',
+    mindsetTagline: 'Become a master of rhetoric. Read like a detective, write like a lawyer.',
+    totalEstimatedTimeHours: 8,
+    sections: [
+        {
+            topicTitle: 'Unit 1: Rhetorical Analysis',
+            understandFirst: 'Master the rhetorical situation (speaker, purpose, audience, context, exigence). It’s the key to unlocking any text.',
+            lessonHeaders: [
+                'Rhetorical Situation: Exigence, Purpose, Audience',
+                'Claims and Evidence',
+                'Reasoning and Organization',
+                'Style and Tone',
+            ],
+            estimatedUnitTimeMinutes: 90,
+            studyTips: ['Analyze the commercials you see on TV. Who is the audience? What is the purpose?', 'Read a newspaper editorial and identify the main claim and the evidence used to support it.'],
+            recommended: true,
+        },
+        {
+            topicTitle: 'Unit 2: Argumentation',
+            understandFirst: 'An argument is more than just an opinion. It requires a clear claim, solid evidence, and logical reasoning.',
+            lessonHeaders: [
+                'Developing a Defensible Claim',
+                'Selecting and Using Evidence',
+                'Developing a Line of Reasoning',
+                'Introducing and Concluding an Argument',
+            ],
+            estimatedUnitTimeMinutes: 90,
+            studyTips: ['For any topic, practice writing a claim that is debatable and specific.', 'Use the "They Say / I Say" framework to structure your arguments.'],
+        },
+        {
+            topicTitle: 'Unit 3: Synthesis',
+            understandFirst: 'Synthesis is about making connections between different sources to support your own argument. It’s a conversation between texts.',
+            lessonHeaders: [
+                'Entering the Conversation',
+                'Identifying Nuance and Complexity',
+                'Crafting a Sophisticated Argument',
+                'Citing Sources',
+            ],
+            estimatedUnitTimeMinutes: 75,
+            studyTips: ['When reading multiple sources on a topic, create a chart to track their main arguments and how they relate.', 'Think of synthesis as hosting a dinner party. You invite different authors (sources) and lead the conversation (your argument).'],
+            recommended: true,
+        },
+    ],
+    pdfMarkdown: '# AP Lang Notes\n\nDetails to come.'
   },
 ];
 
