@@ -88,7 +88,7 @@ export default function Home() {
                 <Button size="lg" variant="outline" className="bg-transparent border-primary text-primary hover:bg-primary hover:text-foreground">Start Now</Button>
             </Link>
             <Link href="/courses">
-                <Button size="lg" variant="secondary" className="bg-primary/80 text-foreground hover:bg-primary">Browse All Courses</Button>
+                <Button size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/80">Browse All Courses</Button>
             </Link>
           </div>
         </div>
