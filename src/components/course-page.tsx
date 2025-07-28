@@ -41,11 +41,12 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
     const styles = `
       <style>
         body { font-family: 'Cormorant Garamond', serif; line-height: 1.6; color: #222; padding: 20px; }
-        h1, h2, h3 { color: #1a355b; margin-top: 25px; font-weight: 700; }
+        h1, h2, h3 { color: #1a355b; margin-top: 25px; font-weight: 700; page-break-after: avoid; }
         h1 { font-size: 28pt; }
         h2 { font-size: 20pt; }
         h3 { font-size: 16pt; }
-        p, li { font-size: 12pt; color: #333; }
+        p, li { font-size: 12pt; color: #333; page-break-inside: avoid; }
+        ul, blockquote { page-break-inside: avoid; }
         blockquote { border-left: 4px solid #ccc; padding-left: 15px; font-style: italic; color: #555; }
         hr { border: none; border-top: 1px solid #eee; margin: 40px 0; }
         strong { font-weight: 700; }
@@ -72,11 +73,12 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
     if (window.html2pdf) {
       const htmlContent = createPdfHtml();
       const opt = {
-        margin: [0.5, 0.5, 0.5, 0.5],
+        margin: [0.7, 0.5, 0.7, 0.5],
         filename: `${course.slug}-notes.pdf`,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true, letterRendering: true },
         jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
       };
       
       window.html2pdf().from(htmlContent).set(opt).save();
@@ -109,7 +111,7 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
         
         <div>
           <h2 className="text-3xl font-bold font-headline mb-6">Course Sections</h2>
-          <Accordion type="single" collapsible className="w-full" defaultValue="item-0">
+          <Accordion type="single" collapsible className="w-full">
             {course.sections.map((section, index) => (
               <AccordionItem value={`item-${index}`} key={index}>
                 <AccordionTrigger id={`section-${index}`} className="text-xl hover:no-underline font-headline">

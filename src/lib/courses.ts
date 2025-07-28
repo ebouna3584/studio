@@ -90,55 +90,86 @@ const allCourses: Course[] = [
     pdfMarkdown: `
 # AP Biology Crash Course
 
-### "Precision over pressure. Learn less, retain more."
+### Unit 1: Chemistry of Life
+**Big Idea:** The chemical components of life are essential for structure and function.
+
+**1.1 Structure of Water and Hydrogen Bonding**
+- **Water is Polar:** The oxygen atom has a slight negative charge, and the hydrogen atoms have a slight positive charge. This unequal sharing of electrons creates polarity.
+- **Hydrogen Bonds:** The positive hydrogen of one water molecule is attracted to the negative oxygen of another. These weak bonds are responsible for water's unique properties.
+- **Properties:**
+  - **Cohesion:** Water molecules stick to each other (creates surface tension).
+  - **Adhesion:** Water molecules stick to other substances (capillary action).
+  - **High Specific Heat:** Water can absorb a lot of heat before its temperature changes, which stabilizes environments.
+  - **Universal Solvent:** Water's polarity allows it to dissolve many other polar substances.
+
+**1.2 Elements of Life**
+- **CHONPS:** Life is primarily composed of Carbon, Hydrogen, Oxygen, Nitrogen, Phosphorus, and Sulfur.
+- **Carbon:** The backbone of life. It can form four stable covalent bonds, creating a variety of complex molecules (organic molecules).
+
+**1.3 Macromolecules**
+- **Monomers & Polymers:** Monomers are single subunits that join together to form polymers.
+- **Dehydration Synthesis:** A reaction that joins two monomers, releasing a water molecule.
+- **Hydrolysis:** A reaction that breaks down a polymer by adding a water molecule.
+
+**1.4 Structure and Function of Macromolecules**
+- **Carbohydrates:** Monomer is the monosaccharide (e.g., glucose). Used for short-term energy (glucose) and structure (cellulose, chitin).
+- **Lipids (Fats):** Not true polymers. They are nonpolar and hydrophobic. Used for long-term energy storage, insulation, and make up cell membranes (phospholipids).
+- **Proteins:** Monomer is the amino acid. The sequence of amino acids (primary structure) determines the protein's 3D shape and function. They do everything: enzymes, structure, transport, etc.
+- **Nucleic Acids:** Monomer is the nucleotide. DNA and RNA store and transmit genetic information.
 
 ---
 
-## Unit 1: Chemistry of Life
+### Unit 2: Cell Structure and Function
+**Big Idea:** Cells are the basic units of life, with specialized structures for specific functions.
 
-**Topic Overview:**  
-Biological macromolecules are molecules that support life and include carbohydrates, proteins, lipids, and nucleic acids.
+**2.1 Cell Types**
+- **Prokaryotic:** Simple cells with no nucleus or membrane-bound organelles (e.g., bacteria). DNA is in a nucleoid region.
+- **Eukaryotic:** Complex cells with a true nucleus and many membrane-bound organelles (e.g., plants, animals, fungi).
 
-**Core Concepts:**
-- Water’s polarity gives it adhesive, cohesive, and thermal properties.
-- Carbon can form up to four covalent bonds → foundation of organic molecules.
-- Proteins are made of amino acids joined by peptide bonds.
+**2.2 Key Organelles (Eukaryotic)**
+- **Nucleus:** Contains the cell's genetic material (DNA) and controls cell activities.
+- **Ribosomes:** Synthesize proteins. Can be free in the cytoplasm or attached to the Endoplasmic Reticulum.
+- **Endoplasmic Reticulum (ER):**
+  - **Rough ER:** Studded with ribosomes; processes and transports proteins.
+  - **Smooth ER:** Synthesizes lipids, detoxifies substances.
+- **Golgi Apparatus:** Modifies, sorts, and packages proteins and lipids for secretion or delivery to other organelles.
+- **Mitochondria:** The "powerhouse" of the cell. Site of cellular respiration, where ATP (energy) is generated.
+- **Chloroplasts (Plants/Algae):** Site of photosynthesis.
+- **Vacuoles:** Storage sacs (a large central vacuole in plants helps maintain turgor pressure).
+- **Cell Membrane:** Selectively permeable barrier that regulates what enters and leaves the cell. Made of a phospholipid bilayer.
 
-> **Study Hack:** When memorizing molecules, imagine building LEGO structures—start from the smallest piece and connect.
-
----
-
-## Unit 2: Cell Structure and Function
-
-**Topic Overview:**  
-Cells are the fundamental units of life, divided into prokaryotic and eukaryotic.
-
-**Must-Know Concepts:**
-- Prokaryotes have no membrane-bound organelles.
-- Ribosomes synthesize proteins; mitochondria make ATP via cellular respiration.
-- Cell membranes are selectively permeable due to the phospholipid bilayer.
-
-> **Mnemonic:** *"Rough ER has Ribosomes. Smooth ER is Slippery."*
-
----
-
-## Unit 3: Cellular Energetics
-
-- Enzymes lower activation energy
-- Photosynthesis occurs in chloroplasts (light-dependent and Calvin Cycle)
-- Cellular respiration includes glycolysis, Krebs cycle, and ETC
+**2.3 Membrane Transport**
+- **Passive Transport:** Does not require energy. Moves substances from high to low concentration.
+  - **Diffusion:** Movement of small, nonpolar molecules.
+  - **Facilitated Diffusion:** Movement of larger or polar molecules through protein channels.
+  - **Osmosis:** The diffusion of water across a selectively permeable membrane.
+- **Active Transport:** Requires energy (ATP) to move substances against their concentration gradient (from low to high).
 
 ---
 
-## Final Tips
+### Unit 3: Cellular Energetics
+**Big Idea:** Living systems require a constant input of energy to maintain order.
 
-- Understand → don’t memorize. Ask "why does this happen?" after every concept.
-- Link terms to visuals or analogies.
-- Repeat concepts every 2–3 days (spaced repetition).
+**3.1 Enzymes**
+- **Catalysts:** Enzymes are biological catalysts (usually proteins) that speed up chemical reactions by lowering the activation energy.
+- **Active Site:** The specific region of an enzyme where the substrate binds.
+- **Specificity:** Each enzyme has a specific shape that fits a specific substrate.
+- **Denaturation:** Changes in temperature, pH, or salt concentration can alter an enzyme's shape and cause it to lose its function.
 
----
+**3.2 Photosynthesis**
+- **Overall Equation:** 6CO₂ + 6H₂O + Light Energy → C₆H₁₂O₆ + 6O₂
+- **Location:** Chloroplasts
+- **Two Stages:**
+  - **Light-Dependent Reactions:** Occur in the thylakoid membranes. Light energy is used to split water, produce ATP, and form NADPH. Oxygen is released.
+  - **Calvin Cycle (Light-Independent):** Occurs in the stroma. Uses ATP and NADPH from the light reactions to convert CO₂ into glucose.
 
-_"You're not just learning to pass. You're learning to think precisely.”_
+**3.3 Cellular Respiration**
+- **Overall Equation:** C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP
+- **Location:** Mitochondria (and cytoplasm)
+- **Three Main Stages:**
+  - **Glycolysis:** Occurs in the cytoplasm. Glucose is broken down into pyruvate. A small amount of ATP is produced.
+  - **Krebs Cycle (Citric Acid Cycle):** Occurs in the mitochondrial matrix. Pyruvate is further broken down, releasing CO₂ and producing ATP, NADH, and FADH₂.
+  - **Electron Transport Chain (ETC):** Occurs on the inner mitochondrial membrane. Electrons from NADH and FADH₂ are passed down a chain of proteins, releasing energy to pump protons and create a gradient. Oxygen is the final electron acceptor. This gradient drives the synthesis of a large amount of ATP (oxidative phosphorylation).
 `
   },
   {
@@ -207,58 +238,47 @@ _"You're not just learning to pass. You're learning to think precisely.”_
       }
     ],
     pdfMarkdown: `
-# AP U.S. History Crash Course
+# AP U.S. History (APUSH) Crash Course
 
-### "History is not a set of facts, but a story of change."
+### Period 1: 1491–1607
+**Big Idea:** Different native societies adapted to and transformed their environments through innovations in agriculture, resource use, and social structure.
 
----
-
-## Period 1: 1491-1607
-
-**Topic Overview:**  
-Native American societies had complex structures before European arrival, which was followed by the transformative Columbian Exchange.
-
-**Core Concepts:**
-- Maize cultivation in the Southwest supported large-scale irrigation and settlement.
-- The Great Basin and Great Plains tribes were largely mobile due to a lack of resources.
-- The Columbian Exchange brought new crops to Europe and new diseases to the Americas.
-
-> **Study Hack:** Compare and contrast the goals of the Spanish, French, and Dutch in the New World. It reveals their different settlement patterns.
+- **Maize Cultivation:** Societies like the Pueblo in the Southwest developed complex irrigation systems to grow maize, which supported large, settled populations.
+- **Mobile Lifestyles:** In the Great Basin and the Great Plains, tribes like the Sioux and Apache were largely mobile, following buffalo herds, due to the lack of reliable resources.
+- **Columbian Exchange:** The arrival of Europeans triggered a massive exchange of plants, animals, diseases, and technologies.
+  - **From New World to Old:** Corn, potatoes, tomatoes, tobacco.
+  - **From Old World to New:** Wheat, rice, horses, cattle, pigs, and devastating diseases like smallpox, which wiped out up to 90% of the Native American population.
+- **Spanish Colonization:** Driven by "God, Gold, and Glory," the Spanish established a colonial empire using the **Encomienda System**, a brutal form of forced labor. A rigid **caste system** based on racial hierarchy was established.
 
 ---
 
-## Period 3: 1754-1800
+### Period 3: 1754–1800
+**Big Idea:** British imperial attempts to reassert control over its colonies and the colonial reaction to these attempts produced a new American republic, along with struggles over the new nation’s social, political, and economic identity.
 
-**Topic Overview:**  
-The American colonies moved from being part of the British Empire to an independent nation, facing internal and external challenges.
-
-**Must-Know Concepts:**
-- The French and Indian War (Seven Years' War) led to the end of salutary neglect and increased British taxation.
-- Enlightenment ideas from Locke (natural rights) and Montesquieu (separation of powers) fueled revolutionary sentiment.
-- The Articles of Confederation were weak; Shay's Rebellion highlighted the need for a stronger central government, leading to the Constitution.
-
-> **Mnemonic:** *"Proclamation of 1763, Stamp Act, Townshend Acts, Tea Act... See The Trouble?"*
-
----
-
-## Period 7: 1890-1945
-
-- **Progressive Era:** Muckrakers exposed corruption, leading to reforms like the Pure Food and Drug Act and the 17th Amendment.
-- **Imperialism:** Debates over expansion in places like the Philippines (Anti-Imperialist League).
-- **WWI & WWII:** The U.S. moved from isolationism to global leadership.
-- **Great Depression:** FDR's New Deal drastically expanded the role of the federal government in the economy.
+- **French and Indian War (1754-1763):** A war between Britain and France over the Ohio River Valley. The British victory led to the **end of salutary neglect**, as Britain imposed new taxes to pay off its war debt.
+- **The Road to Revolution (1763-1776):**
+  - **Proclamation of 1763:** Forbade colonial settlement west of the Appalachians to prevent conflict with Native Americans.
+  - **Key Acts:** Sugar Act, Stamp Act, Townshend Acts, Tea Act. Colonists argued for "no taxation without representation."
+  - **Enlightenment Ideas:** Thinkers like John Locke (natural rights: life, liberty, property) and Thomas Paine (*Common Sense*) provided the intellectual fuel for independence.
+- **The American Revolution:** Despite British military superiority, the colonists won due to strong leadership (George Washington), commitment to the cause, and crucial foreign assistance from France.
+- **The Articles of Confederation (1781-1789):** The first government of the U.S. It was intentionally weak, with no power to tax or raise an army. **Shays' Rebellion** (1786) highlighted its ineffectiveness.
+- **The Constitution:** Created a stronger federal government with separation of powers and a system of checks and balances. Key compromises included the Great Compromise (bicameral legislature) and the 3/5 Compromise.
+- **Federalists vs. Anti-Federalists:** Federalists (Hamilton, Madison) supported the Constitution; Anti-Federalists (Jefferson, Patrick Henry) feared it would give the central government too much power and demanded a Bill of Rights.
+- **Washington's Farewell Address:** Warned against the dangers of political parties and permanent foreign alliances.
 
 ---
 
-## Final Tips
+### Period 7: 1890–1945
+**Big Idea:** An increasingly pluralistic United States faced profound domestic and global challenges, debated the proper degree of government activism, and sought to define its international role.
 
-- Think thematically (e.g., how did the definition of 'American identity' change over time?).
-- Always connect historical events to their broader context (Causation).
-- For DBQs, your documents are your evidence. Use them to support your argument, don't just summarize them.
-
----
-
-_"The past is never dead. It's not even past.”_
+- **The Gilded Age & Progressive Era (1890-1920):**
+  - **Problems:** Industrialization led to massive wealth inequality, unsafe working conditions, and corrupt political machines. Muckraking journalists like Upton Sinclair (*The Jungle*) exposed these issues.
+  - **Progressive Reforms:** Progressives sought to use government power to regulate business and improve society. Key reforms included trust-busting (Theodore Roosevelt), the creation of the Federal Reserve, and constitutional amendments (17th for direct election of senators, 19th for women's suffrage).
+- **U.S. Imperialism:** Following the Spanish-American War (1898), the U.S. acquired territories like the Philippines, Puerto Rico, and Guam, sparking debates between imperialists and anti-imperialists.
+- **World War I (1914-1918):** The U.S. initially remained neutral but entered the war in 1917 due to German unrestricted submarine warfare and the Zimmerman Telegram. The war led to increased government control of the economy and suppression of dissent (Espionage and Sedition Acts).
+- **The 1920s:** A decade of cultural conflict and economic boom. "Roaring Twenties" vs. Red Scare, Prohibition, and the rise of the KKK.
+- **The Great Depression and the New Deal (1929-1939):** The stock market crash of 1929 triggered the worst economic crisis in U.S. history. Franklin D. Roosevelt's **New Deal** fundamentally expanded the role of the federal government with programs for relief, recovery, and reform (e.g., Social Security, FDIC).
+- **World War II (1939-1945):** The U.S. was drawn into the war after the attack on Pearl Harbor (Dec. 7, 1941). The war ended the Great Depression, created new opportunities for women and minorities (Rosie the Riveter, Double V Campaign), but also led to civil liberties violations like the internment of Japanese Americans.
 `
   },
   {
@@ -329,56 +349,70 @@ _"The past is never dead. It's not even past.”_
     pdfMarkdown: `
 # AP Calculus AB Crash Course
 
-### "Calculus is the art of measuring change."
+### Unit 1: Limits and Continuity
+**Big Idea:** Calculus was developed to describe motion and change. Limits are the foundation of this description.
+
+**1.1 Defining Limits**
+- **Intuitive Definition:** A limit is the y-value a function *approaches* as the x-value gets closer and closer to some number.
+- **Notation:** lim (x→c) f(x) = L
+- **Key Point:** The function does not have to be defined at x=c for the limit to exist. The limit is about the approach, not the destination.
+- **Existence:** A limit at x=c exists if and only if the left-hand limit equals the right-hand limit: lim (x→c⁻) f(x) = lim (x→c⁺) f(x).
+
+**1.2 Finding Limits**
+1.  **Direct Substitution:** Always try plugging in the value first.
+2.  **Algebraic Manipulation:** If direct substitution gives 0/0 (indeterminate form), try:
+    - Factoring and canceling
+    - Multiplying by the conjugate
+    - Finding a common denominator
+3.  **From a Graph:** Look at the y-value the function is heading towards from both the left and right.
+
+**1.3 Continuity**
+- **Definition:** A function f(x) is continuous at a point x=c if:
+  1. f(c) is defined (the point exists).
+  2. lim (x→c) f(x) exists (the limit exists).
+  3. lim (x→c) f(x) = f(c) (the limit equals the point).
+- **Types of Discontinuities:**
+  - **Removable (Hole):** The limit exists, but the point doesn't, or is in the wrong place. Can be fixed by defining/redefining one point.
+  - **Jump:** The left and right limits are different.
+  - **Infinite (Asymptote):** The limit approaches ±∞.
 
 ---
 
-## Unit 1: Limits and Continuity
+### Unit 2: Differentiation: Definition and Basic Rules
+**Big Idea:** The derivative is the instantaneous rate of change of a function, or the slope of the tangent line at a point.
 
-**Topic Overview:**  
-Limits describe the behavior of a function as it gets infinitely close to a point. Continuity means a function's graph has no breaks or holes.
+**2.1 The Definition of the Derivative**
+- **Limit Definition:** f'(x) = lim (h→0) [f(x+h) - f(x)] / h. This finds the slope of the secant line between two points that are infinitely close together.
+- **Notation:** f'(x), dy/dx, y'
 
-**Core Concepts:**
-- A limit exists if and only if the left-hand limit equals the right-hand limit.
-- A function f(x) is continuous at x=c if lim(x→c) f(x) = f(c).
-- Types of discontinuities: Removable (hole), Infinite (asymptote), Jump.
-
-> **Study Hack:** To find the limit of a rational function, first try direct substitution. If you get 0/0, it's an indeterminate form—time to use algebra (factor) or L'Hopital's Rule!
-
----
-
-## Unit 2: Differentiation
-
-**Topic Overview:**  
-The derivative is the instantaneous rate of change, or the slope of the tangent line at a point.
-
-**Must-Know Concepts:**
-- **Power Rule:** d/dx (x^n) = n*x^(n-1)
-- **Product Rule:** (fg)' = f'g + fg'
-- **Quotient Rule:** (f/g)' = (f'g - fg') / g^2
-- **Chain Rule:** d/dx f(g(x)) = f'(g(x)) * g'(x)
-
-> **Mnemonic:** For the Quotient Rule: *"Low D-High minus High D-Low, over the square of what's below."*
+**2.2 Basic Differentiation Rules**
+- **Power Rule:** d/dx (xⁿ) = nxⁿ⁻¹
+- **Constant Rule:** d/dx (c) = 0
+- **Constant Multiple Rule:** d/dx [c * f(x)] = c * f'(x)
+- **Sum/Difference Rule:** d/dx [f(x) ± g(x)] = f'(x) ± g'(x)
+- **Product Rule:** d/dx [f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
+- **Quotient Rule:** d/dx [f(x)/g(x)] = [f'(x)g(x) - f(x)g'(x)] / [g(x)]²
+  - *Mnemonic: "Low D-High minus High D-Low, over the square of what's below."*
 
 ---
 
-## Unit 3: Integration
+### Unit 3: Differentiation: Composite, Implicit, and Inverse Functions
+**Big Idea:** The Chain Rule is one of the most powerful differentiation rules and is used for composite functions.
 
-- The **definite integral** of a function from a to b represents the accumulated area under the curve.
-- The **Fundamental Theorem of Calculus (Part 1)** connects differentiation and integration: d/dx ∫[a,x] f(t) dt = f(x).
-- **U-Substitution** is the "reverse chain rule" for integrals.
+**3.1 The Chain Rule**
+- **Formula:** d/dx [f(g(x))] = f'(g(x)) * g'(x)
+- **In words:** "The derivative of the outer function (with the inside function left alone), times the derivative of the inner function."
+- **Example:** To find the derivative of sin(x²), the outer function is sin() and the inner is x². The derivative is cos(x²) * 2x.
 
----
+**3.2 Implicit Differentiation**
+- **Use When:** You can't easily solve an equation for y.
+- **Method:**
+  1. Differentiate both sides of the equation with respect to x.
+  2. When differentiating a term with y, remember to multiply by dy/dx (the chain rule).
+  3. Solve for dy/dx.
 
-## Final Tips
-
-- Understand the geometric meaning of the derivative (slope) and the integral (area).
-- Know your derivative rules cold. They are non-negotiable.
-- Practice interpreting problems in context (e.g., if v(t) is velocity, its integral is displacement).
-
----
-
-_"Calculus is not just a subject; it's a new way of seeing the world.”_
+**3.3 Derivatives of Inverse Functions**
+- If f and g are inverse functions, then g'(x) = 1 / f'(g(x)).
 `
   },
   {
@@ -440,7 +474,67 @@ _"Calculus is not just a subject; it's a new way of seeing the world.”_
             recommended: true,
         },
     ],
-    pdfMarkdown: '# AP Chemistry Notes\n\nDetails to come.'
+    pdfMarkdown: `
+# AP Chemistry Crash Course
+
+### Unit 1: Atomic Structure and Properties
+
+**1.1 Moles and Molar Mass**
+- **The Mole:** A unit representing 6.022 x 10²³ particles (Avogadro's Number). It's a bridge between the atomic scale and the macroscopic scale.
+- **Molar Mass:** The mass (in grams) of one mole of a substance. It is numerically equal to the atomic mass in amu found on the periodic table.
+- **Calculations:** Use molar mass to convert between grams and moles. Use Avogadro's number to convert between moles and number of atoms/molecules.
+
+**1.2 Electron Configuration & PES**
+- **Electron Configuration:** Describes the arrangement of electrons in an atom's orbitals (e.g., 1s², 2s², 2p⁶).
+- **Photoelectron Spectroscopy (PES):** An experimental technique that provides evidence for electron shells and subshells.
+  - Each peak in a PES spectrum represents the electrons in a single subshell.
+  - The height of the peak is proportional to the number of electrons in that subshell.
+  - The binding energy (x-axis) is the energy required to remove an electron. Higher binding energy means the electrons are closer to the nucleus.
+
+**1.3 Periodic Trends**
+- **Atomic Radius:** Decreases across a period (due to increasing nuclear charge) and increases down a group (due to adding more electron shells).
+- **Ionization Energy:** The energy required to remove an electron. Increases across a period and decreases down a group.
+- **Electronegativity:** The ability of an atom to attract electrons in a bond. Increases across a period and decreases down a group.
+- **Ionic Radius:** Cations (+) are smaller than their parent atoms. Anions (-) are larger than their parent atoms.
+
+---
+
+### Unit 2: Molecular and Ionic Compound Structure
+
+**2.1 Types of Bonds**
+- **Ionic Bonds:** Formed between a metal and a nonmetal. Involves the *transfer* of electrons, creating ions that are held together by electrostatic attraction.
+- **Covalent Bonds:** Formed between two nonmetals. Involves the *sharing* of electrons.
+  - **Nonpolar Covalent:** Electrons are shared equally (e.g., H₂, Cl₂).
+  - **Polar Covalent:** Electrons are shared unequally due to differences in electronegativity, creating partial positive (δ+) and partial negative (δ-) charges.
+
+**2.2 Lewis Structures & VSEPR Theory**
+- **Lewis Structures:** Diagrams that show the bonding between atoms and the lone pairs of electrons. The goal is usually to satisfy the **octet rule** (8 valence electrons) for each atom.
+- **VSEPR Theory (Valence Shell Electron Pair Repulsion):** Predicts the 3D geometry of molecules. The basic idea is that electron pairs (both bonding and lone pairs) will repel each other and arrange themselves as far apart as possible.
+  - **Key Geometries:** Linear, Trigonal Planar, Tetrahedral, Trigonal Bipyramidal, Octahedral.
+  - **Lone Pairs:** Lone pairs have a stronger repulsion than bonding pairs, which can distort bond angles.
+
+**2.3 Polarity**
+- **Bond Polarity:** Determined by the difference in electronegativity between two bonded atoms.
+- **Molecular Polarity:** Determined by the overall distribution of charge in a molecule. A molecule can have polar bonds but be nonpolar overall if the polarities cancel out due to symmetry (e.g., CO₂).
+
+---
+
+### Unit 3: Intermolecular Forces (IMFs)
+
+**3.1 Types of IMFs**
+- **IMFs** are the attractive forces *between* molecules. They are much weaker than intramolecular bonds (like covalent bonds).
+- **London Dispersion Forces (LDFs):** Weakest IMF. Present in *all* molecules. Caused by temporary, random shifts in electron density. LDFs increase with the size of the electron cloud (i.e., more electrons).
+- **Dipole-Dipole Forces:** Present in *polar* molecules. The attraction between the permanent partial positive charge on one molecule and the permanent partial negative charge on another.
+- **Hydrogen Bonding:** Strongest type of dipole-dipole force. Occurs when hydrogen is bonded to a highly electronegative atom (N, O, or F).
+
+**3.2 Properties and IMFs**
+- The strength of a substance's IMFs determines its physical properties.
+- **Stronger IMFs lead to:**
+  - Higher boiling point and melting point
+  - Lower vapor pressure
+  - Higher viscosity
+  - Higher surface tension
+`
   },
   {
     id: '5',
@@ -506,55 +600,57 @@ _"Calculus is not just a subject; it's a new way of seeing the world.”_
     pdfMarkdown: `
 # AP Psychology Crash Course
 
-### "The greatest discovery is that a human can alter his life by altering his attitudes."
+### Unit 1: Scientific Foundations of Psychology
+**Big Idea:** Psychology is a science that uses empirical methods to study behavior and mental processes.
+
+- **Major Perspectives:**
+  - **Psychoanalytic (Freud):** Emphasizes unconscious conflicts and childhood experiences.
+  - **Behavioral (Watson, Skinner):** Focuses on observable behaviors and how they are learned through conditioning (rewards, punishments).
+  - **Humanistic (Maslow, Rogers):** Highlights human potential for growth and free will.
+  - **Cognitive:** Studies mental processes like thinking, memory, and problem-solving.
+  - **Biological:** Explains behavior through genetics, brain structures, and neurotransmitters.
+  - **Sociocultural:** Examines how social and cultural factors influence behavior.
+- **Research Methods:**
+  - **Experiment:** The only method that can establish cause and effect. Involves manipulating an **Independent Variable (IV)** to see its effect on a **Dependent Variable (DV)**. Requires **random assignment** to control and experimental groups.
+  - **Correlational Study:** Shows the relationship between two variables. **Correlation does not equal causation!**
+  - **Survey, Naturalistic Observation, Case Study:** Descriptive methods used to gather data.
+- **Ethics:** Researchers must obtain **informed consent**, protect participants from harm, ensure confidentiality, and provide a **debriefing**.
 
 ---
 
-## Unit 1: Scientific Foundations of Psychology
+### Unit 2: Biological Bases of Behavior
+**Big Idea:** All psychological processes have a biological basis.
 
-**Topic Overview:**  
-Psychology is the scientific study of behavior and mental processes. This unit explores its history, methods, and ethical considerations.
-
-**Core Concepts:**
-- **Major Perspectives:** Psychoanalytic, Behaviorist, Humanistic, Cognitive, Biological, Sociocultural.
-- **Research Methods:** Experiments (show cause-and-effect), Correlational studies (show relationships), Surveys, Naturalistic Observation.
-- **Ethics:** Informed consent, debriefing, confidentiality are crucial.
-
-> **Study Hack:** To remember neurotransmitter functions, create a silly story. "Dopey Al the Sergeant was so excited..." (Dopamine, Acetylcholine, Serotonin).
-
----
-
-## Unit 2: Biological Bases of Behavior
-
-**Topic Overview:**  
-This unit explores the link between biology and behavior, from neurons to brain structures.
-
-**Must-Know Concepts:**
-- **Neuron:** The basic cell of the nervous system. Key parts: dendrite (receives signals), axon (sends signals), synapse (gap between neurons).
-- **Action Potential:** An all-or-none electrical signal that travels down the axon.
-- **Key Brain Lobes:** Frontal (planning, personality), Parietal (sensation, touch), Temporal (hearing, language), Occipital (vision).
-
-> **Mnemonic:** *"The Four F's of the Frontal Lobe: Foresight, Fluency, Feeling, Function."*
+- **The Neuron:** The basic cell of the nervous system.
+  - **Dendrites:** Receive messages.
+  - **Axon:** Sends messages.
+  - **Myelin Sheath:** Speeds up neural impulses.
+  - **Action Potential:** A brief, all-or-none electrical charge that travels down the axon.
+  - **Synapse:** The gap between neurons where communication occurs via **neurotransmitters** (e.g., dopamine, serotonin, acetylcholine).
+- **The Brain:**
+  - **Cerebral Cortex (Lobes):**
+    - **Frontal Lobe:** Planning, decision-making, personality.
+    - **Parietal Lobe:** Processes sensory information (touch, temperature).
+    - **Temporal Lobe:** Auditory processing, language comprehension.
+    - **Occipital Lobe:** Visual processing.
+  - **Key Structures:**
+    - **Limbic System (Amygdala, Hippocampus, Hypothalamus):** Deals with emotion, memory, and drives.
+    - **Cerebellum:** Coordinates voluntary movement and balance.
+- **Endocrine System:** A system of glands that secrete hormones into the bloodstream.
 
 ---
 
-## Unit 3: Sensation and Perception
+### Unit 3: Sensation and Perception
+**Big Idea:** There is a difference between the physical world and our psychological experience of it.
 
-- **Sensation vs. Perception:** Sensation is receiving sensory data; Perception is interpreting it.
-- **Bottom-Up vs. Top-Down Processing:** Bottom-up starts with senses; Top-down starts with the brain's expectations.
-- **Vision:** Rods (black/white, peripheral), Cones (color, detail).
-
----
-
-## Final Tips
-
-- Apply concepts to your own life. When do you conform? How have you been operantly conditioned?
-- Focus on the key experiments and what they demonstrated about human behavior.
-- Distinguish between similar-sounding terms (e.g., retroactive vs. proactive interference).
-
----
-
-_"The purpose of psychology is to give us a completely different idea of the things we know best.”_
+- **Sensation vs. Perception:**
+  - **Sensation:** The process by which our sensory receptors receive stimulus energy from the environment. This is **bottom-up processing** (data-driven).
+  - **Perception:** The process of organizing and interpreting sensory information, enabling us to recognize meaningful objects and events. This is **top-down processing** (concept-driven).
+- **Vision:**
+  - **Rods:** Detect black, white, and gray; necessary for peripheral and twilight vision.
+  - **Cones:** Detect fine detail and color; function in daylight or well-lit conditions.
+- **Hearing:** Sound waves are converted into neural impulses in the cochlea.
+- **Gestalt Principles:** The brain's tendency to organize sensory information into a meaningful "whole" (e.g., proximity, similarity, continuity).
 `
   },
   {
@@ -620,59 +716,62 @@ _"The purpose of psychology is to give us a completely different idea of the thi
       }
     ],
     pdfMarkdown: `
-# Intro to Microeconomics Crash Course
+# AP Microeconomics Crash Course
 
-### "Economics is the study of choice under scarcity."
+### Unit 1: Basic Economic Concepts
+**Big Idea:** Economics is the study of scarcity and choice.
 
----
-
-## Unit 1: Basic Economic Concepts
-
-**Topic Overview:**  
-Economics is about making decisions when you can't have everything you want (scarcity).
-
-**Core Concepts:**
-- **Scarcity:** The fundamental economic problem. Unlimited wants, limited resources.
-- **Opportunity Cost:** The value of the next best alternative you give up when you make a choice. There's no such thing as a free lunch!
-- **Production Possibilities Curve (PPC):** A graph showing the maximum combinations of two goods that can be produced with available resources. Points on the curve are efficient.
-
-> **Study Hack:** For any decision, always ask: "What is the opportunity cost?" This is the core of economic thinking.
+- **Scarcity:** The fundamental problem of economics. We have unlimited wants but limited resources. This forces us to make choices.
+- **Opportunity Cost:** The value of the best alternative forgone when a choice is made. It's the cost of what you *give up*.
+- **Production Possibilities Curve (PPC):** A model that shows the different combinations of two goods that can be produced using all available resources efficiently.
+  - **Points on the curve:** Efficient.
+  - **Points inside the curve:** Inefficient (unemployment).
+  - **Points outside the curve:** Unattainable.
+  - **Bowed-out shape:** Illustrates the **Law of Increasing Opportunity Cost**.
+- **Comparative Advantage:** The ability to produce a good at a lower opportunity cost than another producer. This is the basis for the gains from trade.
 
 ---
 
-## Unit 2: Supply and Demand
+### Unit 2: Supply and Demand
+**Big Idea:** The interaction of buyers and sellers in markets determines prices and quantities.
 
-**Topic Overview:**  
-The interaction of buyers (demand) and sellers (supply) determines the price and quantity of goods in a market.
-
-**Must-Know Concepts:**
-- **Law of Demand:** As price falls, quantity demanded rises (downward-sloping curve).
-- **Law of Supply:** As price rises, quantity supplied rises (upward-sloping curve).
-- **Equilibrium:** The point where the supply and demand curves intersect. This is the market-clearing price and quantity.
-- **Shifters:** Know what shifts the entire curve (e.g., income for demand, technology for supply) vs. what causes movement along it (a price change).
-
-> **Mnemonic:** For demand curve shifters: **TRIBE** (Tastes, Related goods, Income, Buyers, Expectations).
-
----
-
-## Unit 4: Imperfect Competition
-
-- **Perfect Competition:** Many firms, identical products, no barriers to entry (e.g., agriculture). Price takers.
-- **Monopoly:** One firm, unique product, high barriers to entry (e.g., local utility). Price makers.
-- **Oligopoly:** A few large firms dominate (e.g., cell phone carriers). Strategic interaction is key.
-- **Monopolistic Competition:** Many firms, differentiated products (e.g., restaurants, hair salons).
+- **Demand:**
+  - **Law of Demand:** As the price of a good falls, the quantity demanded increases (downward-sloping curve).
+  - **Determinants (Shifters) of Demand:** Changes in **T**astes, price of **R**elated goods (substitutes, complements), **I**ncome, number of **B**uyers, **E**xpectations. (TRIBE)
+- **Supply:**
+  - **Law of Supply:** As the price of a good rises, the quantity supplied increases (upward-sloping curve).
+  - **Determinants (Shifters) of Supply:** Changes in **R**esource prices, **O**ther goods' prices, **T**echnology, **T**axes and subsidies, **E**xpectations, **N**umber of sellers. (ROTTEN)
+- **Equilibrium:** The point where the supply and demand curves intersect. At this price, the quantity supplied equals the quantity demanded (the market clears).
+- **Surplus & Shortage:**
+  - **Surplus:** When price is above equilibrium (Qs > Qd).
+  - **Shortage:** When price is below equilibrium (Qd > Qs).
+- **Government Intervention:**
+  - **Price Ceiling:** A legal maximum price (e.g., rent control). If set below equilibrium, it causes a shortage.
+  - **Price Floor:** A legal minimum price (e.g., minimum wage). If set above equilibrium, it causes a surplus.
+  - **Taxes & Subsidies:** Taxes shift the supply curve left; subsidies shift it right.
 
 ---
 
-## Final Tips
+### Unit 4: Imperfect Competition
+**Big Idea:** Most real-world markets are imperfectly competitive, where firms have some power to set their own prices.
 
-- **Draw the graph!** Visualizing supply and demand shifts is the most important skill in this course.
-- Clearly distinguish between a "change in demand" (shift of the curve) and a "change in quantity demanded" (movement along the curve).
-- Think at the margin. Economic decisions are about the cost and benefit of the *next* one.
+- **Market Structures:**
+  | Feature | Perfect Competition | Monopolistic Comp. | Oligopoly | Monopoly |
+  | :--- | :--- | :--- | :--- | :--- |
+  | **# of Firms** | Many | Many | Few | One |
+  | **Product Type** | Identical | Differentiated | Identical or Diff. | Unique |
+  | **Barriers** | None | Low | High | Very High |
+  | **Example** | Agriculture | Restaurants, Salons | Cars, Cell Phones | Local Utility |
 
----
-
-_"The art of economics consists in looking not merely at the immediate but at the longer effects of any act or policy.”_
+- **Monopoly:**
+  - A single seller with high barriers to entry.
+  - The firm *is* the industry; it faces a downward-sloping demand curve.
+  - To maximize profit, a monopolist produces where **Marginal Revenue (MR) = Marginal Cost (MC)**.
+  - Monopolies produce less and charge a higher price than perfectly competitive firms, creating **deadweight loss**.
+- **Oligopoly & Game Theory:**
+  - A market dominated by a few large firms.
+  - Firms are interdependent; their decisions affect each other.
+  - **Game Theory** is used to model this strategic behavior. A **Nash Equilibrium** is a situation where no player can benefit by changing their strategy while the other players keep theirs unchanged.
 `
   },
   {
@@ -832,13 +931,26 @@ const apBiologyContent: LessonContent = {
       'Confusing dehydration synthesis with hydrolysis.',
       'Thinking that all macromolecules are polymers (lipids are a key exception).'
     ]
-  }
+  },
+  'enzyme-structure-catalysis': {
+    summary: 'Enzymes are biological catalysts, typically proteins, that speed up biochemical reactions by lowering the activation energy. The specific shape of an enzyme, particularly its active site, is crucial for its function, as it binds to a specific substrate.',
+    keyConcepts: [
+      'Catalyst: A substance that increases the rate of a chemical reaction without itself undergoing any permanent chemical change.',
+      'Activation Energy: The minimum amount of energy required to initiate a chemical reaction.',
+      'Substrate: The reactant molecule that an enzyme acts on.',
+      'Active Site: The specific region of an enzyme that binds to the substrate and forms the enzyme-substrate complex.'
+    ],
+    commonPitfalls: [
+      'Thinking that enzymes are "used up" in a reaction. They are not; they can be used over and over.',
+      'Forgetting that enzyme structure is critical. If the shape changes (denaturation), the function is lost.'
+    ]
+  },
 };
 
 // AP US History Content
 const apUSHistoryContent: LessonContent = {
   'columbian-exchange-spanish-exploration-and-conquest': {
-    summary: 'The Columbian Exchange refers to the widespread transfer of plants, animals, culture, human populations, technology, diseases, and ideas between the Americas, West Africa, and the Old World in the 15th and 16th centuries. Spanish exploration and conquest were driven by a desire for wealth (gold), national glory, and the spread of Christianity.',
+    summary: 'The Columbian Exchange refers to the widespread transfer of plants, animals, culture, human populations, technology, diseases, and ideas between the Americas, West Africa, and the Old World in the 15th and 16th centuries. Spanish exploration and conquest were driven by a desire for wealth (gold), national glory, and the spread of Christianity (God, Gold, and Glory).',
     keyConcepts: [
       'Columbian Exchange: The transfer of goods, diseases, and ideas between the Eastern and Western Hemispheres.',
       'Encomienda System: A Spanish labor system that rewarded conquerors with the labor of particular groups of conquered non-Christian people.',
@@ -851,7 +963,7 @@ const apUSHistoryContent: LessonContent = {
     ]
   },
   'the-french-and-indian-war': {
-    summary: 'Fought between Great Britain and France (and their respective native allies) from 1754-1763, the French and Indian War was part of a larger global conflict known as the Seven Years\' War. British victory resulted in France being expelled from North America but also led to massive debt for Britain, which it sought to repay by taxing its American colonies.',
+    summary: 'Fought between Great Britain and France (and their respective native allies) from 1754-1763, the French and Indian War was part of a larger global conflict known as the Seven Years\' War. British victory resulted in France being expelled from North America but also led to massive debt for Britain, which it sought to repay by taxing its American colonies, ending the period of salutary neglect.',
     keyConcepts: [
       'Causes: Competing claims over the Ohio River Valley.',
       'Albany Plan of Union (1754): Benjamin Franklin\'s early attempt to unite the colonies for common defense, which failed.',
@@ -862,7 +974,20 @@ const apUSHistoryContent: LessonContent = {
       'Thinking the war was between the French and the Indians; it was Britain and its colonies vs. France and its native allies.',
       'Failing to connect the war directly to the causes of the American Revolution.'
     ]
-  }
+  },
+  'the-articles-of-confederation': {
+    summary: 'The Articles of Confederation was the first written constitution of the United States. It created a weak central government with most powers retained by the states. This design was intentional, born from a fear of a strong, tyrannical central authority like the British monarchy. However, its weaknesses soon became apparent.',
+    keyConcepts: [
+      'Weak Central Government: No executive or judicial branch, only a unicameral legislature.',
+      'Powers: Could declare war, make treaties, and borrow money.',
+      'Weaknesses: Could not levy taxes, raise a national army, or regulate interstate commerce.',
+      'Shays\' Rebellion: A farmer uprising in Massachusetts that highlighted the inability of the central government to maintain order, serving as a major catalyst for the Constitutional Convention.'
+    ],
+    commonPitfalls: [
+      'Seeing the Articles as a total failure without understanding why they were created that way (fear of centralized power).',
+      'Confusing the powers it had with the more significant powers it lacked.'
+    ]
+  },
 };
 
 // AP Calculus AB Content
@@ -876,7 +1001,7 @@ const apCalculusABContent: LessonContent = {
       'Graphical Interpretation: Visualizing how a function behaves near a specific x-value, even if the function is undefined at that exact point.'
     ],
     commonPitfalls: [
-      'Confusing the limit of a function at a point, f(c), with the value of the function at that point. They can be different!',
+      'Confusing the limit of a function at a point, lim(x→c)f(x), with the value of the function at that point, f(c). They can be different!',
       'Assuming a limit does not exist just because there is a hole in the graph. The limit can exist at a hole.'
     ]
   },
@@ -891,7 +1016,21 @@ const apCalculusABContent: LessonContent = {
     commonPitfalls: [
       'Forgetting to subtract one from the exponent.',
       'Incorrectly applying the rule to functions that are not in the form xⁿ (e.g., eˣ or sin(x)).',
-      'Making mistakes with negative or fractional exponents.'
+      'Making mistakes with negative or fractional exponents (remember your exponent rules!).'
+    ]
+  },
+  'the-chain-rule': {
+    summary: 'The Chain Rule is arguably the most essential differentiation rule. It is used to find the derivative of composite functions (a function "nested" inside another function).',
+    keyConcepts: [
+      'Composite Function: A function of the form f(g(x)).',
+      'Formula: d/dx[f(g(x))] = f\'(g(x)) * g\'(x).',
+      'The "Onion" Analogy: Differentiate the "outer layer" (the f function), leaving the "inner layer" (the g(x) function) unchanged. Then, multiply by the derivative of the "inner layer".',
+      'Repeated Application: For functions with multiple nested layers, the chain rule can be applied sequentially.'
+    ],
+    commonPitfalls: [
+      'Forgetting to multiply by the derivative of the inside function.',
+      'Incorrectly identifying the "inner" and "outer" functions.',
+      'Trying to differentiate the inner function first.'
     ]
   }
 };
@@ -908,7 +1047,7 @@ const apChemistryContent: LessonContent = {
         ],
         commonPitfalls: [
             'Confusing molar mass with molecular mass (amu vs. g/mol).',
-            'Using Avogadro\'s number when converting between grams and moles.',
+            'Using Avogadro\'s number when converting between grams and moles (it\'s for converting moles to particles).',
             'Forgetting to account for the number of atoms of each element in a compound when calculating molar mass (e.g., H₂O has two H atoms).'
         ]
     },
@@ -917,13 +1056,27 @@ const apChemistryContent: LessonContent = {
         keyConcepts: [
             'Valence Electrons: The electrons in the outermost energy level of an atom, which are involved in bonding.',
             'Octet Rule: The tendency of atoms to prefer to have eight electrons in their valence shell.',
-            'Bonding Pairs vs. Lone Pairs: Electrons shared between two atoms are-bonding pairs; electrons not involved in bonding are lone pairs.',
+            'Bonding Pairs vs. Lone Pairs: Electrons shared between two atoms are bonding pairs; electrons not involved in bonding are lone pairs.',
             'Steps: 1. Count total valence electrons. 2. Arrange atoms with the least electronegative in the center. 3. Connect atoms with single bonds. 4. Distribute remaining electrons to satisfy octets.'
         ],
         commonPitfalls: [
             'Miscounting the total number of valence electrons.',
             'Violating the octet rule for elements that must obey it (like C, N, O, F).',
             'Forgetting to check for formal charge to find the most stable structure when resonance is possible.'
+        ]
+    },
+     'intermolecular-forces': {
+        summary: 'Intermolecular forces (IMFs) are the attractive forces between neighboring molecules. They are much weaker than the intramolecular forces (like covalent bonds) that hold atoms together within a molecule. The strength of IMFs determines a substance\'s physical properties.',
+        keyConcepts: [
+            'London Dispersion Forces (LDF): Weakest IMF, present in all molecules. Caused by temporary shifts in electron density.',
+            'Dipole-Dipole Forces: Present in polar molecules. Caused by the attraction between permanent partial positive and negative charges.',
+            'Hydrogen Bonding: A special, strong type of dipole-dipole force. Occurs only when Hydrogen is bonded directly to Nitrogen, Oxygen, or Fluorine (H-N, H-O, H-F).',
+            'Property Correlation: Stronger IMFs lead to higher boiling points, lower vapor pressure, and greater surface tension.'
+        ],
+        commonPitfalls: [
+            'Confusing intermolecular forces (between molecules) with intramolecular forces (within a molecule).',
+            'Thinking hydrogen bonding is a true bond; it\'s an IMF.',
+            'Assuming a molecule is nonpolar just because it has nonpolar bonds; molecular geometry matters.'
         ]
     }
 };
@@ -943,7 +1096,20 @@ const apPsychologyContent: LessonContent = {
             'Mixing up random assignment (for experiments) with random sampling (for surveys).',
             'Forgetting that correlation does not equal causation; only a true experiment can prove causation.'
         ]
-    }
+    },
+    'the-neuron-and-neural-firing': {
+        summary: 'The neuron is the basic building block of the nervous system. Communication within a neuron is an electrical process (the action potential), while communication between neurons is a chemical process involving neurotransmitters.',
+        keyConcepts: [
+            'Parts of a Neuron: Dendrites (receive), Soma (cell body), Axon (transmits), Myelin Sheath (speeds up signal).',
+            'Action Potential: An "all-or-none" electrical impulse that travels down the axon when a neuron reaches its threshold of excitation.',
+            'Synapse: The microscopic gap between the axon tip of the sending neuron and the dendrite of the receiving neuron.',
+            'Neurotransmitters: Chemical messengers that cross the synapse and bind to receptor sites on the receiving neuron (e.g., serotonin, dopamine).'
+        ],
+        commonPitfalls: [
+            'Thinking the action potential can be "strong" or "weak". It is all-or-none; its frequency can change, but not its intensity.',
+            'Describing the process as purely electrical, forgetting the critical chemical step at the synapse.'
+        ]
+    },
 };
 
 // AP Microeconomics Content
@@ -953,13 +1119,26 @@ const apMicroeconomicsContent: LessonContent = {
         keyConcepts: [
             'Opportunity Cost: The cost of what you give up.',
             'Production Possibilities Curve (PPC): A graph showing efficient production combinations.',
-            'Efficiency: Points on the PPC are productively efficient.',
+            'Efficiency: Points on the PPC are productively efficient. Points inside are inefficient. Points outside are unattainable.',
             'Law of Increasing Opportunity Cost: As you produce more of one good, the opportunity cost (in terms of the other good) increases. This gives the PPC its bowed-out shape.'
         ],
         commonPitfalls: [
             'Calculating opportunity cost incorrectly (it\'s what is given up, not what is gained).',
             'Confusing a linear PPC (constant opportunity cost) with a bowed-out PPC (increasing opportunity cost).',
             'Thinking that a point inside the PPC is unattainable (it\'s attainable but inefficient).'
+        ]
+    },
+    'market-equilibrium': {
+        summary: 'Market equilibrium is the point where the quantity of a good that buyers are willing and able to buy is exactly equal to the quantity that sellers are willing and able to sell. It is found at the intersection of the supply and demand curves.',
+        keyConcepts: [
+            'Equilibrium Price (P*): The price at which quantity demanded equals quantity supplied. Also called the market-clearing price.',
+            'Equilibrium Quantity (Q*): The quantity bought and sold at the equilibrium price.',
+            'Surplus: Occurs when the market price is above equilibrium (Qs > Qd). This puts downward pressure on price.',
+            'Shortage: Occurs when the market price is below equilibrium (Qd > Qs). This puts upward pressure on price.'
+        ],
+        commonPitfalls: [
+            'Confusing a change in demand/supply (a curve shift) with a change in quantity demanded/supplied (a movement along a curve).',
+            'Incorrectly identifying the new equilibrium point after a curve shift.'
         ]
     }
 };
