@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { courses } from '@/lib/courses';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Clock } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -23,7 +23,11 @@ export default function Home() {
                 <CardTitle className="font-headline text-2xl mb-2">{course.courseTitle}</CardTitle>
                 <CardDescription>{course.courseDescription}</CardDescription>
               </CardHeader>
-              <div className="p-6 pt-0">
+              <div className="p-6 pt-0 flex justify-between items-center">
+                  <div className="flex items-center text-sm text-muted-foreground">
+                      <Clock className="mr-2 h-4 w-4" />
+                      {course.timeEstimateMinutes} min
+                  </div>
                   <div className="flex items-center text-primary font-semibold">
                       Start Learning
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

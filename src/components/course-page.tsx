@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Download, Lightbulb } from 'lucide-react';
+import { Download, BookOpen, Clock, Lightbulb, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { marked } from 'marked';
 
@@ -99,16 +99,28 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
         </div>
 
         <div className="mb-12">
-          <h2 className="text-2xl font-bold font-headline mb-4">Table of Contents</h2>
-          <ul className="list-disc list-inside space-y-2">
-            {course.sections.map((section, index) => (
-              <li key={index}>
-                <a href={`#section-${index}`} className="text-primary hover:underline">
-                  {section.topicTitle}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <h2 className="text-2xl font-bold font-headline mb-4">Course Outline</h2>
+          <Card>
+            <CardContent className="pt-6">
+                <ul className="space-y-4">
+                {course.sections.map((section, index) => (
+                  <li key={index} className="flex items-start">
+                    <BookOpen className="h-5 w-5 text-primary mr-4 mt-1 flex-shrink-0" />
+                    <div className="flex-grow">
+                        <p className="font-semibold">{section.topicTitle}</p>
+                        <p className="text-sm text-muted-foreground">
+                            {section.lessonHeaders.length} lessons
+                        </p>
+                    </div>
+                    <div className="flex items-center text-sm text-muted-foreground ml-4 flex-shrink-0">
+                      <Clock className="h-4 w-4 mr-1.5" />
+                      {section.totalTimeMinutes} min
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
         </div>
 
         <div>
@@ -121,6 +133,19 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
                 </AccordionTrigger>
                 <AccordionContent className="text-base leading-relaxed py-4">
                   <p className="whitespace-pre-wrap">{section.explanation}</p>
+                  
+                  <div className="mt-6">
+                    <h4 className="font-bold text-lg mb-3">Lessons in this unit:</h4>
+                    <ul className="space-y-2">
+                      {section.lessonHeaders.map((lesson, lessonIndex) => (
+                        <li key={lessonIndex} className="flex items-center">
+                          <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
+                          <span>{lesson}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
                   {section.studyTip && (
                     <Card className="mt-6 bg-secondary border-primary/50">
                         <CardContent className="pt-6">

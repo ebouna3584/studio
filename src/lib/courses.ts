@@ -3,6 +3,8 @@ export type CourseSection = {
   topicTitle: string;
   explanation: string;
   studyTip?: string;
+  lessonHeaders: string[];
+  totalTimeMinutes: number;
 };
 
 export type Course = {
@@ -12,6 +14,7 @@ export type Course = {
   courseDescription:string;
   sections: CourseSection[];
   pdfMarkdown: string;
+  timeEstimateMinutes: number;
 };
 
 const allCourses: Course[] = [
@@ -20,21 +23,52 @@ const allCourses: Course[] = [
     slug: 'ap-biology',
     courseTitle: 'AP Biology',
     courseDescription: 'A deep dive into the study of life and living organisms, from molecular biology to ecosystems.',
+    timeEstimateMinutes: 900,
     sections: [
       {
-        topicTitle: 'Chemistry of Life',
+        topicTitle: 'Unit 1: Chemistry of Life',
         explanation: `All life is subject to the laws of chemistry. This unit explores the chemical building blocks of life, including the properties of water, the structure of macromolecules like carbohydrates, lipids, proteins, and nucleic acids, and the principles of energy and metabolism.`,
-        studyTip: 'Create flashcards for the four main macromolecules and their monomers. Understanding their structure is key to understanding their function.'
+        studyTip: 'Create flashcards for the four main macromolecules and their monomers. Understanding their structure is key to understanding their function.',
+        lessonHeaders: [
+            "Structure of Water and Hydrogen Bonding",
+            "Elements of Life",
+            "Introduction to Macromolecules",
+            "Properties of Macromolecules",
+            "Structure and Function of Biological Macromolecules",
+            "Nucleic Acids"
+        ],
+        totalTimeMinutes: 120
       },
       {
-        topicTitle: 'Cell Structure and Function',
+        topicTitle: 'Unit 2: Cell Structure and Function',
         explanation: 'The cell is the basic unit of life. We will examine the differences between prokaryotic and eukaryotic cells, tour the various organelles and their functions, and understand how cells transport materials across their membranes.',
-        studyTip: 'Draw and label a diagram of both a plant and animal cell. Explain the function of each organelle in your own words.'
+        studyTip: 'Draw and label a diagram of both a plant and animal cell. Explain the function of each organelle in your own words.',
+        lessonHeaders: [
+            "Cell Structure: Subcellular Components",
+            "Cell Size",
+            "Plasma Membranes",
+            "Membrane Transport",
+            "Facilitated Diffusion",
+            "Tonicity and Osmoregulation",
+            "Mechanisms of Transport",
+            "Compartmentalization",
+            "Origins of Cell Compartmentalization"
+        ],
+        totalTimeMinutes: 160
       },
       {
-        topicTitle: 'Cellular Energetics',
+        topicTitle: 'Unit 3: Cellular Energetics',
         explanation: `This section covers how cells acquire and use energy. Key processes include photosynthesis, where organisms capture light energy to build sugars, and cellular respiration, where sugars are broken down to produce ATP.`,
-        studyTip: 'Focus on the inputs and outputs for each major stage of photosynthesis and cellular respiration. A flowchart can be very helpful here.'
+        studyTip: 'Focus on the inputs and outputs for each major stage of photosynthesis and cellular respiration. A flowchart can be very helpful here.',
+        lessonHeaders: [
+            "Enzyme Structure",
+            "Enzyme Catalysis",
+            "Environmental Impacts on Enzyme Function",
+            "Cellular Energy",
+            "Photosynthesis",
+            "Cellular Respiration"
+        ],
+        totalTimeMinutes: 140
       }
     ],
     pdfMarkdown: `
@@ -96,21 +130,51 @@ _"You're not just learning to pass. You're learning to think precisely.”_
     slug: 'ap-us-history',
     courseTitle: 'AP U.S. History (APUSH)',
     courseDescription: 'Explore the vast history of the United States from the pre-Columbian era to the present.',
+    timeEstimateMinutes: 900,
     sections: [
       {
         topicTitle: 'Period 1: 1491-1607',
         explanation: 'This period covers the Americas before European contact and the early stages of the Columbian Exchange. We explore diverse Native American societies and the initial impacts of Spanish, French, and Dutch colonization.',
-        studyTip: 'Focus on the concept of the Columbian Exchange and its impact on both the Old World and the New World. It\'s a foundational concept for the rest of the course.'
+        studyTip: 'Focus on the concept of the Columbian Exchange and its impact on both the Old World and the New World. It\'s a foundational concept for the rest of the course.',
+        lessonHeaders: [
+            "Contextualizing Period 1",
+            "Native American Societies Before European Contact",
+            "European Exploration in the Americas",
+            "Columbian Exchange, Spanish Exploration, and Conquest",
+            "Labor, Slavery, and Caste in the Spanish Colonial System",
+            "Cultural Interactions Between Europeans, Native Americans, and Africans"
+        ],
+        totalTimeMinutes: 90
       },
       {
         topicTitle: 'Period 3: 1754-1800',
         explanation: 'A pivotal era covering the lead-up to the American Revolution, the war itself, and the challenges of creating a new nation under the Articles of Confederation and, later, the Constitution.',
-        studyTip: 'Create a timeline of key events from the French and Indian War to the election of 1800. Note the cause-and-effect relationships between events.'
+        studyTip: 'Create a timeline of key events from the French and Indian War to the election of 1800. Note the cause-and-effect relationships between events.',
+        lessonHeaders: [
+            "The French and Indian War",
+            "The Imperial Crisis and the Road to Revolution",
+            "The American Revolution",
+            "The Articles of Confederation",
+            "The Constitutional Convention and Debates over Ratification",
+            "The Development of Political Parties",
+            "America on the World Stage"
+        ],
+        totalTimeMinutes: 150
       },
       {
         topicTitle: 'Period 7: 1890-1945',
         explanation: 'This period examines the Progressive Era, U.S. expansionism, World War I, the Roaring Twenties, the Great Depression, and World War II. It\'s a time of immense social, political, and economic change.',
-        studyTip: 'Use thematic learning. For example, trace the changing role of the federal government through the Progressive Era, the New Deal, and WWII.'
+        studyTip: 'Use thematic learning. For example, trace the changing role of the federal government through the Progressive Era, the New Deal, and WWII.',
+        lessonHeaders: [
+            "The Gilded Age",
+            "The Progressive Era",
+            "U.S. Imperialism",
+            "World War I",
+            "The 1920s: Innovation and Conflict",
+            "The Great Depression and the New Deal",
+            "World War II"
+        ],
+        totalTimeMinutes: 200
       }
     ],
     pdfMarkdown: `
@@ -173,21 +237,58 @@ _"The past is never dead. It's not even past.”_
     slug: 'ap-calculus-ab',
     courseTitle: 'AP Calculus AB',
     courseDescription: 'An introduction to the fundamental concepts of calculus, including limits, derivatives, and integrals.',
+    timeEstimateMinutes: 900,
     sections: [
       {
-        topicTitle: 'Limits and Continuity',
+        topicTitle: 'Unit 1: Limits and Continuity',
         explanation: 'Limits are the foundation of calculus. They describe the value that a function approaches as the input approaches some value. We\'ll explore how to find limits graphically and algebraically and connect this to the concept of continuity.',
-        studyTip: 'Practice, practice, practice algebraic manipulation for finding limits. Factoring, multiplying by the conjugate, and finding common denominators are essential skills.'
+        studyTip: 'Practice, practice, practice algebraic manipulation for finding limits. Factoring, multiplying by the conjugate, and finding common denominators are essential skills.',
+        lessonHeaders: [
+            "Introducing Calculus: Can Change Occur at an Instant?",
+            "Defining Limits and Using Limit Notation",
+            "Estimating Limit Values from Graphs",
+            "Estimating Limit Values from Tables",
+            "Determining Limits Using Algebraic Properties of Limits",
+            "Determining Limits Using Algebraic Manipulation",
+            "Selecting Procedures for Determining Limits",
+            "Determining Limits Using the Squeeze Theorem",
+            "Connecting Multiple Representations of Limits",
+            "Exploring Types of Discontinuities",
+            "Defining Continuity at a Point",
+            "Confirming Continuity over an Interval",
+            "Removing Discontinuities",
+            "Connecting Infinite Limits and Vertical Asymptotes",
+            "Connecting Limits at Infinity and Horizontal Asymptotes"
+        ],
+        totalTimeMinutes: 200
       },
       {
-        topicTitle: 'Differentiation: Definition and Fundamental Properties',
+        topicTitle: 'Unit 2: Differentiation: Definition and Fundamental Properties',
         explanation: 'The derivative represents the instantaneous rate of change of a function. This section introduces the formal definition of the derivative and covers essential rules like the Power, Product, and Quotient Rules.',
-        studyTip: 'Do not just memorize the rules; understand what the derivative represents (slope of the tangent line). This conceptual understanding is crucial.'
+        studyTip: 'Do not just memorize the rules; understand what the derivative represents (slope of the tangent line). This conceptual understanding is crucial.',
+        lessonHeaders: [
+            "Defining the Derivative of a Function and Using Derivative Notation",
+            "Estimating Derivatives of a Function at a Point",
+            "Applying the Power Rule",
+            "The Product Rule",
+            "The Quotient Rule",
+            "Derivatives of Trigonometric Functions"
+        ],
+        totalTimeMinutes: 150
       },
       {
-        topicTitle: 'Integration and Accumulation of Change',
-        explanation: 'Integration can be understood as the process of summing up infinite small pieces, often to find the area under a curve. We introduce the concept of the definite integral and the Fundamental Theorem of Calculus, which links derivatives and integrals.',
-        studyTip: 'Connect the concepts. The Fundamental Theorem of Calculus is the bridge between differentiation and integration. Make sure you understand why it works.'
+        topicTitle: 'Unit 3: Differentiation: Composite, Implicit, and Inverse Functions',
+        explanation: 'This unit focuses on more advanced differentiation techniques, including the chain rule for composite functions, implicit differentiation for relations that are not functions, and finding derivatives of inverse functions.',
+        studyTip: 'The Chain Rule is one of the most important concepts in calculus. Practice it with various combinations of functions until it becomes second nature.',
+        lessonHeaders: [
+            "The Chain Rule",
+            "Implicit Differentiation",
+            "Differentiating Inverse Functions",
+            "Differentiating Inverse Trigonometric Functions",
+            "Selecting Procedures for Calculating Derivatives",
+            "Calculating Higher-Order Derivatives"
+        ],
+        totalTimeMinutes: 150
       }
     ],
     pdfMarkdown: `
@@ -246,113 +347,65 @@ _"Calculus is not just a subject; it's a new way of seeing the world.”_
 `
   },
   {
-    id: '4',
-    slug: 'organic-chemistry-i',
-    courseTitle: 'Organic Chemistry I',
-    courseDescription: 'The study of the structure, properties, composition, reactions, and preparation of carbon-containing compounds.',
-    sections: [
-        {
-            topicTitle: 'Structure and Bonding',
-            explanation: 'This foundational unit introduces atomic and molecular orbitals, hybridization (sp3, sp2, sp), and the geometry of organic molecules. Understanding VSEPR theory is crucial for predicting molecular shapes.',
-            studyTip: 'Get a molecular model kit. Physically building molecules will give you a much better intuition for 3D structure and stereochemistry.'
-        },
-        {
-            topicTitle: 'Stereochemistry',
-            explanation: 'Stereochemistry is the study of the 3D arrangement of atoms in molecules. Key concepts include chirality, enantiomers, diastereomers, and the Cahn-Ingold-Prelog (R/S) system for naming stereocenters.',
-            studyTip: 'Practice identifying chiral centers and assigning R/S configurations until it becomes second nature. This skill is required for almost every subsequent chapter.'
-        },
-        {
-            topicTitle: 'Substitution and Elimination Reactions (SN1, SN2, E1, E2)',
-            explanation: 'These are the cornerstone reactions of Organic Chemistry I. We analyze the mechanisms, substrates, nucleophiles/bases, leaving groups, and solvent effects that determine which reaction pathway is favored.',
-            studyTip: 'Create a summary chart that compares the four main reaction types (SN1, SN2, E1, E2) based on key factors. This will be your most valuable study aid.'
-        }
-    ],
-    pdfMarkdown: `
-# Organic Chemistry I Crash Course
-
-### "It's like building with LEGOs, but on a molecular level."
-
----
-
-## Unit 1: Structure and Bonding
-
-**Topic Overview:**  
-The shape and stability of organic molecules are determined by how carbon atoms bond using hybridized orbitals.
-
-**Core Concepts:**
-- **sp3 hybridization** (e.g., methane): tetrahedral geometry, 109.5° bond angles.
-- **sp2 hybridization** (e.g., ethene): trigonal planar geometry, 120° bond angles, contains one double bond (1 sigma, 1 pi).
-- **sp hybridization** (e.g., ethyne): linear geometry, 180° bond angles, contains one triple bond (1 sigma, 2 pi).
-
-> **Study Hack:** Use a molecular model kit. Seeing the 3D shapes is far more effective than just looking at 2D drawings.
-
----
-
-## Unit 2: Stereochemistry
-
-**Topic Overview:**  
-Molecules can have the same connectivity but different 3D arrangements, known as stereoisomers.
-
-**Must-Know Concepts:**
-- A **chiral center** is a carbon atom bonded to four different groups.
-- **Enantiomers** are non-superimposable mirror images of each other (like left and right hands).
-- **Diastereomers** are stereoisomers that are not mirror images.
-- Use the **Cahn-Ingold-Prelog** rules to assign R (clockwise) or S (counter-clockwise) configuration to a chiral center.
-
-> **Mnemonic:** *"Enantiomers are Evil twins (mirror images). Diastereomers are Distant relatives."*
-
----
-
-## Unit 3: Substitution & Elimination
-
-- **SN2:** 1 step (concerted), needs a strong/unhindered nucleophile, prefers primary substrates, inverts stereochemistry.
-- **SN1:** 2 steps (carbocation intermediate), needs a weak nucleophile/polar protic solvent, prefers tertiary substrates, creates a racemic mixture.
-- **E2:** 1 step, needs a strong/bulky base, requires an anti-periplanar proton.
-- **E1:** 2 steps, competes with SN1, favored by heat.
-
----
-
-## Final Tips
-
-- Don't just memorize reactions, learn the **mechanisms** (the "why"). Pushing arrows is key.
-- Make reaction flashcards with the substrate, reagents, and product.
-- Redraw mechanisms over and over until you can do them from memory.
-
----
-
-_"Organic chemistry is the study of the flow of electrons.”_
-`
-  },
-  {
     id: '5',
-    slug: 'introduction-to-psychology',
-    courseTitle: 'Introduction to Psychology',
+    slug: 'ap-psychology',
+    courseTitle: 'AP Psychology',
     courseDescription: 'A scientific exploration of human behavior and mental processes.',
+    timeEstimateMinutes: 900,
     sections: [
-        {
-            topicTitle: 'Biological Bases of Behavior',
-            explanation: 'This unit explores the link between biology and behavior. Topics include the structure and function of neurons, the nervous system, the endocrine system, and how genetics and brain structures influence our thoughts and actions.',
-            studyTip: 'Draw a neuron and trace the path of an action potential, labeling all key parts and ions involved. This visual mapping helps solidify the concept.'
-        },
-        {
-            topicTitle: 'Learning',
-            explanation: 'How do we learn? This section covers major theories of learning, including classical conditioning (Pavlov), operant conditioning (Skinner), and observational learning (Bandura).',
-            studyTip: 'Think of real-life examples for each type of learning. For operant conditioning, clearly distinguish between positive/negative reinforcement/punishment.'
-        },
-        {
-            topicTitle: 'Social Psychology',
-            explanation: 'This fascinating area examines how our thoughts, feelings, and behaviors are influenced by the presence of others. Key topics include conformity, obedience, attribution theory, and cognitive dissonance.',
-            studyTip: 'Focus on classic experiments like Asch\'s conformity study and Milgram\'s obedience study. Understand their methodology and implications.'
-        }
+      {
+        topicTitle: 'Unit 1: Scientific Foundations of Psychology',
+        explanation: 'This unit introduces the history of psychology and its various approaches. It also covers the research methods psychologists use to study behavior and mental processes scientifically.',
+        studyTip: 'Focus on the differences between research methods (e.g., correlational vs. experimental) and be able to identify independent and dependent variables.',
+        lessonHeaders: [
+            "Introducing Psychology",
+            "Research Methods in Psychology",
+            "The Experimental Method",
+            "Selecting a Research Method",
+            "Statistical Analysis in Psychology",
+            "Ethical Guidelines in Psychology"
+        ],
+        totalTimeMinutes: 100,
+      },
+      {
+        topicTitle: 'Unit 2: Biological Bases of Behavior',
+        explanation: 'This unit explores the link between biology and behavior. Topics include the structure and function of neurons, the nervous system, the endocrine system, and how genetics and brain structures influence our thoughts and actions.',
+        studyTip: 'Draw a neuron and trace the path of an action potential, labeling all key parts and ions involved. This visual mapping helps solidify the concept.',
+        lessonHeaders: [
+            "Interaction of Heredity and Environment",
+            "The Endocrine System",
+            "Tools for Examining Brain Structure and Function",
+            "The Brain",
+            "The Neuron",
+            "Neural Firing",
+            "Influence of Drugs on Neural Firing"
+        ],
+        totalTimeMinutes: 120,
+      },
+      {
+        topicTitle: 'Unit 3: Sensation and Perception',
+        explanation: 'Sensation is the process of receiving stimulus energy from the environment, while perception is the process of organizing and interpreting that sensory information. This unit covers all the major senses.',
+        studyTip: 'Clearly distinguish between sensation (bottom-up processing) and perception (top-down processing). Use examples to illustrate the difference.',
+        lessonHeaders: [
+            "Principles of Sensation",
+            "Principles of Perception",
+            "Visual Anatomy",
+            "Visual Perception",
+            "Auditory Sensation and Perception",
+            "Chemical Senses",
+            "Body Senses"
+        ],
+        totalTimeMinutes: 110,
+      }
     ],
     pdfMarkdown: `
-# Introduction to Psychology Crash Course
+# AP Psychology Crash Course
 
 ### "The greatest discovery is that a human can alter his life by altering his attitudes."
 
 ---
 
-## Unit 1: Biological Bases of Behavior
+## Unit 1: Scientific Foundations of Psychology
 
 **Topic Overview:**  
 Our brains, neurons, and hormones are the biological hardware that runs our mental software.
@@ -366,10 +419,10 @@ Our brains, neurons, and hormones are the biological hardware that runs our ment
 
 ---
 
-## Unit 2: Learning
+## Unit 2: Biological Bases of Behavior
 
 **Topic Overview:**  
-Learning is a relatively permanent change in behavior due to experience.
+This unit explores the link between biology and behavior, from neurons to brain structures.
 
 **Must-Know Concepts:**
 - **Classical Conditioning (Pavlov):** Learning by association. A neutral stimulus (bell) becomes paired with an unconditioned stimulus (food) to elicit a conditioned response (salivation).
@@ -380,7 +433,7 @@ Learning is a relatively permanent change in behavior due to experience.
 
 ---
 
-## Unit 3: Social Psychology
+## Unit 3: Sensation and Perception
 
 - **Conformity (Asch):** Adjusting our behavior or thinking to coincide with a group standard.
 - **Obedience (Milgram):** Compliance with commands given by an authority figure.
@@ -401,25 +454,52 @@ _"The purpose of psychology is to give us a completely different idea of the thi
   },
   {
     id: '6',
-    slug: 'intro-to-microeconomics',
-    courseTitle: 'Intro to Microeconomics',
+    slug: 'ap-microeconomics',
+    courseTitle: 'AP Microeconomics',
     courseDescription: 'The study of how individuals and firms make decisions regarding the allocation of scarce resources.',
-     sections: [
-        {
-            topicTitle: 'Basic Economic Concepts',
-            explanation: 'This unit introduces the fundamental ideas of economics, including scarcity, opportunity cost, and the production possibilities curve (PPC). These concepts form the basis for all economic reasoning.',
-            studyTip: 'Be able to draw and interpret a PPC graph. Understand what points inside, on, and outside the curve represent, and what causes the curve to shift.'
-        },
-        {
-            topicTitle: 'Supply and Demand',
-            explanation: 'The model of supply and demand is the economist\'s most important tool. We analyze how markets work, what determines the price and quantity of goods, and how government policies like price ceilings and taxes affect market outcomes.',
-            studyTip: 'Practice drawing supply and demand graphs and shifting the curves. Clearly label your axes (Price and Quantity) and equilibrium points. This is the single most important skill in the course.'
-        },
-        {
-            topicTitle: 'Market Structures',
-            explanation: 'This section compares different types of markets: perfect competition, monopolistic competition, oligopoly, and monopoly. We examine how firms behave in each structure regarding pricing and output decisions.',
-            studyTip: 'Create a table comparing the four market structures based on number of firms, type of product, barriers to entry, and long-run profitability.'
-        }
+    timeEstimateMinutes: 900,
+    sections: [
+      {
+        topicTitle: 'Unit 1: Basic Economic Concepts',
+        explanation: 'This unit introduces the fundamental ideas of economics, including scarcity, opportunity cost, and the production possibilities curve (PPC). These concepts form the basis for all economic reasoning.',
+        studyTip: 'Be able to draw and interpret a PPC graph. Understand what points inside, on, and outside the curve represent, and what causes the curve to shift.',
+        lessonHeaders: [
+            "Scarcity",
+            "Opportunity Cost and the Production Possibilities Curve (PPC)",
+            "Comparative Advantage and Gains from Trade",
+            "Demand",
+            "Supply",
+            "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+        ],
+        totalTimeMinutes: 150
+      },
+      {
+        topicTitle: 'Unit 2: Supply and Demand',
+        explanation: 'The model of supply and demand is the economist\'s most important tool. We analyze how markets work, what determines the price and quantity of goods, and how government policies like price ceilings and taxes affect market outcomes.',
+        studyTip: 'Practice drawing supply and demand graphs and shifting the curves. Clearly label your axes (Price and Quantity) and equilibrium points. This is the single most important skill in the course.',
+        lessonHeaders: [
+            "Price Elasticity of Demand",
+            "Price Elasticity of Supply",
+            "Income Elasticity and Cross-Price Elasticity of Demand",
+            "Consumer Surplus, Producer Surplus, and Market Efficiency",
+            "Effect of Government Intervention in Markets",
+            "International Trade and Public Policy"
+        ],
+        totalTimeMinutes: 200
+      },
+      {
+        topicTitle: 'Unit 4: Imperfect Competition',
+        explanation: 'This section compares different types of markets that are not perfectly competitive: monopolistic competition, oligopoly, and monopoly. We examine how firms behave in each structure regarding pricing and output decisions.',
+        studyTip: 'Create a table comparing the four market structures (including perfect competition) based on number of firms, type of product, barriers to entry, and long-run profitability.',
+        lessonHeaders: [
+            "Introduction to Imperfectly Competitive Markets",
+            "Monopoly",
+            "Price Discrimination",
+            "Monopolistic Competition",
+            "Oligopoly and Game Theory"
+        ],
+        totalTimeMinutes: 200
+      }
     ],
     pdfMarkdown: `
 # Intro to Microeconomics Crash Course
@@ -457,7 +537,7 @@ The interaction of buyers (demand) and sellers (supply) determines the price and
 
 ---
 
-## Unit 3: Market Structures
+## Unit 4: Imperfect Competition
 
 - **Perfect Competition:** Many firms, identical products, no barriers to entry (e.g., agriculture). Price takers.
 - **Monopoly:** One firm, unique product, high barriers to entry (e.g., local utility). Price makers.
@@ -477,86 +557,6 @@ The interaction of buyers (demand) and sellers (supply) determines the price and
 _"The art of economics consists in looking not merely at the immediate but at the longer effects of any act or policy.”_
 `
   },
-  {
-    id: '7',
-    slug: 'college-algebra',
-    courseTitle: 'College Algebra',
-    courseDescription: 'A foundational course covering functions, equations, and graphs.',
-    sections: [
-        {
-            topicTitle: 'Functions',
-            explanation: 'A function is a rule that assigns each input to exactly one output. This unit covers function notation, domain and range, transformations of graphs (shifting, stretching, reflecting), and operations on functions.',
-            studyTip: 'The concept of domain is crucial. Always be thinking: "What values of x are not allowed?" Look for division by zero and square roots of negative numbers.'
-        },
-        {
-            topicTitle: 'Polynomial and Rational Functions',
-            explanation: 'We explore the properties of polynomial functions, including finding roots (zeros), end behavior, and graphing. Rational functions (ratios of polynomials) introduce concepts like vertical and horizontal asymptotes.',
-            studyTip: 'For rational functions, finding the vertical asymptotes (from the denominator) and horizontal/slant asymptotes (by comparing degrees) is the first step to graphing.'
-        },
-        {
-            topicTitle: 'Exponential and Logarithmic Functions',
-            explanation: 'These functions model growth and decay. We cover the properties of exponents and logarithms, solving exponential and logarithmic equations, and applications like compound interest and population growth.',
-            studyTip: 'Logarithms are the inverse of exponentials. Being able to switch between log form and exponential form (e.g., log_b(x) = y <=> b^y = x) is the key to solving equations.'
-        }
-    ],
-    pdfMarkdown: `
-# College Algebra Crash Course
-
-### "Algebra is the language of patterns and relationships."
-
----
-
-## Unit 1: Functions
-
-**Topic Overview:**  
-A function is a machine that takes an input (x) and gives exactly one output (y or f(x)).
-
-**Core Concepts:**
-- **Domain:** The set of all possible input values (x-values). Watch for division by zero and square roots of negative numbers.
-- **Range:** The set of all possible output values (y-values).
-- **Vertical Line Test:** A graph represents a function if and only if no vertical line intersects the graph more than once.
-- **Transformations:** Learn how f(x-h)+k shifts a graph h units horizontally and k units vertically.
-
-> **Study Hack:** Think of the domain as the "allowed ingredients" for your function machine.
-
----
-
-## Unit 2: Polynomial and Rational Functions
-
-**Topic Overview:**  
-Analyzing the graphs and behavior of functions made from polynomials.
-
-**Must-Know Concepts:**
-- **Zeros/Roots:** The x-values where the polynomial equals zero (where the graph crosses the x-axis).
-- **End Behavior:** What happens to the graph as x approaches positive or negative infinity. Determined by the term with the highest power.
-- **Asymptotes (for Rational Functions):**
-  - **Vertical:** Occur where the denominator is zero.
-  - **Horizontal:** Compare the degrees of the numerator and denominator to find them.
-
-> **Mnemonic:** For horizontal asymptotes: **BOBO BOTN EATS DC** (Bigger On Bottom -> y=0; Bigger On Top -> None; Exponents Are The Same -> Divide Coefficients).
-
----
-
-## Unit 3: Exponential and Log Functions
-
-- **Exponential Functions (y = a*b^x)** model rapid growth or decay.
-- **Logarithmic Functions (y = log_b(x))** are the inverse of exponential functions.
-- **Key Property:** log_b(x) = y is the same as b^y = x. Being able to switch between these forms is essential for solving equations.
-- **Compound Interest Formula:** A = P(1 + r/n)^(nt)
-
----
-
-## Final Tips
-
-- Master factoring. It is used everywhere, especially for finding zeros and simplifying rational functions.
-- Understand the properties of logarithms. They allow you to solve for variables that are in the exponent.
-- Practice the order of operations (PEMDAS) meticulously.
-
----
-
-_"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.”_
-`
-  },
 ];
 
-export const courses = allCourses;
+export const courses = allCourses.filter(c => ['ap-biology', 'ap-us-history', 'ap-calculus-ab', 'ap-psychology', 'ap-microeconomics'].includes(c.slug));
