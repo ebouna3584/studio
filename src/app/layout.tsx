@@ -3,6 +3,15 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/header';
 import Script from 'next/script';
+import { Inter, DM_Serif_Display } from 'next/font/google';
+import Footer from '@/components/footer';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const dmSerifDisplay = DM_Serif_Display({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-dm-serif',
+});
 
 export const metadata: Metadata = {
   title: 'Course Compass',
@@ -15,18 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${dmSerifDisplay.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,14..72,200..900;1,14..72,200..900&display=swap"
-          rel="stylesheet"
-        />
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" 
-          rel="stylesheet"
-        />
         <Script
           src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
           integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
@@ -35,9 +34,10 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className="font-body antialiased min-h-screen flex flex-col">
+      <body className="font-body bg-background text-foreground antialiased min-h-screen flex flex-col">
         <Header />
         <main className="flex-grow">{children}</main>
+        <Footer />
         <Toaster />
       </body>
     </html>

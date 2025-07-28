@@ -1,75 +1,98 @@
 import Link from 'next/link';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { courses } from '@/lib/courses';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { ArrowRight, BookOpen, Clock, BarChart, Dna, Landmark, BrainCircuit, Microscope, Atom } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, BookOpen, Clock, BrainCircuit, Dna, Landmark, Palette, Languages } from 'lucide-react';
 
 export default function Home() {
-  const fieldsOfStudy = Array.from(new Set(courses.map(course => course.fieldOfStudy)));
-  
-  const getFieldIcon = (field: string) => {
-    switch (field) {
-      case 'STEM':
-        return <Dna className="h-6 w-6 text-primary" />;
-      case 'Social Sciences':
-        return <BrainCircuit className="h-6 w-6 text-primary" />;
-      case 'Humanities':
-        return <Landmark className="h-6 w-6 text-primary" />;
-      default:
-        return <BookOpen className="h-6 w-6 text-primary" />;
-    }
-  };
+  const fieldsOfStudy = [
+    { name: 'STEM', icon: <Dna className="h-8 w-8 text-primary" />, courses: courses.filter(c => c.fieldOfStudy === 'STEM') },
+    { name: 'Humanities', icon: <Landmark className="h-8 w-8 text-primary" />, courses: courses.filter(c => c.fieldOfStudy === 'Humanities') },
+    { name: 'Social Sciences', icon: <BrainCircuit className="h-8 w-8 text-primary" />, courses: courses.filter(c => c.fieldOfStudy === 'Social Sciences') },
+    { name: 'Arts', icon: <Palette className="h-8 w-8 text-primary" />, courses: courses.filter(c => c.fieldOfStudy === 'Arts')},
+    { name: 'Language', icon: <Languages className="h-8 w-8 text-primary" />, courses: courses.filter(c => c.fieldOfStudy === 'Language')},
+  ];
+
+  const popularCourses = courses.slice(0, 5);
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="text-center mb-16">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground mb-4 font-headline">
-          Master Your Courses
-        </h1>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-          Your compass to navigating complex subjects with clarity and confidence. Select a field of study to begin your journey.
-        </p>
-      </div>
+    <div className="w-full">
+      {/* Hero Section */}
+      <section className="min-h-screen flex flex-col items-center justify-center text-center p-4 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/notebook.png')] opacity-5"></div>
+        <div className="z-10">
+          <h1 className="text-5xl md:text-8xl font-headline font-bold text-foreground">
+            <span className="animate-float inline-block">Master</span>{" "}
+            <span className="animate-fade-in-out inline-block">Anything.</span>
+          </h1>
+          <h1 className="text-5xl md:text-8xl font-headline font-bold text-foreground mt-4">Efficiently.</h1>
+          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            Crash courses powered by smart learning science.
+          </p>
+          <Link href="/courses">
+            <Button size="lg" variant="outline" className="mt-8 glassmorphism hover:bg-primary/20 transition-all duration-300 border-primary/50">
+              Explore Courses
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+        </div>
+      </section>
 
-      <Accordion type="multiple" defaultValue={fieldsOfStudy} className="w-full max-w-4xl mx-auto space-y-4">
-        {fieldsOfStudy.map(field => (
-          <AccordionItem value={field} key={field} className="border-b-0">
-             <AccordionTrigger className="text-2xl font-bold font-headline py-4 px-6 bg-card border rounded-lg hover:no-underline hover:bg-accent/50 transition-colors">
-                <div className="flex items-center gap-4">
-                  {getFieldIcon(field)} 
-                  <span>{field}</span>
-                </div>
-              </AccordionTrigger>
-            <AccordionContent className="pt-6 pb-2">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {courses.filter(course => course.fieldOfStudy === field).map((course) => (
-                  <Link href={`/courses/${course.slug}`} key={course.id} className="group">
-                    <Card className="h-full flex flex-col transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1.5 border-2 border-transparent hover:border-primary/80">
-                      <CardHeader className="flex-grow">
-                        <CardTitle className="font-headline text-xl mb-2 group-hover:text-primary transition-colors">{course.courseTitle}</CardTitle>
-                        <CardDescription className="italic text-sm mb-3">{course.mindsetTagline}</CardDescription>
-                        <CardDescription className="text-sm">{course.courseDescription}</CardDescription>
-                      </CardHeader>
-                      <CardContent className="pt-0">
-                        <div className="flex justify-between items-center text-sm text-muted-foreground border-t pt-4">
-                          <div className="flex items-center">
-                            <Clock className="mr-1.5 h-4 w-4" />
-                            {course.totalEstimatedTimeHours} hours
-                          </div>
-                          <div className="flex items-center text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                              Start
-                              <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+      {/* How It Works */}
+      <section className="py-20 px-4 md:px-12 bg-background/80">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-headline font-bold text-center mb-12">How It Works</h2>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="p-8 glassmorphism transition-all duration-300 hover:scale-105">
+              <h3 className="text-2xl font-headline font-semibold mb-2">1. Choose Your Field</h3>
+              <p className="text-muted-foreground">Navigate through curated fields of study to find your subject.</p>
+            </div>
+            <div className="p-8 glassmorphism transition-all duration-300 hover:scale-105">
+              <h3 className="text-2xl font-headline font-semibold mb-2">2. Select Your Course</h3>
+              <p className="text-muted-foreground">Pick a crash course designed for focused, high-impact learning.</p>
+            </div>
+            <div className="p-8 glassmorphism transition-all duration-300 hover:scale-105">
+              <h3 className="text-2xl font-headline font-semibold mb-2">3. Study Smarter</h3>
+              <p className="text-muted-foreground">Use our materials to absorb key concepts faster than ever before.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Field of Study Explorer */}
+      <section className="py-20 px-4 md:px-12 bg-background">
+         <div className="container mx-auto">
+           <h2 className="text-4xl font-headline font-bold text-center mb-12">Explore Fields of Study</h2>
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+             {fieldsOfStudy.filter(field => field.courses.length > 0).map(field => (
+               <Link href="/courses" key={field.name}>
+                 <div className="p-8 glassmorphism h-full flex flex-col justify-between items-center text-center transition-all duration-300 hover:scale-105 hover:bg-primary/10">
+                    <div>
+                        {field.icon}
+                        <h3 className="text-3xl font-headline font-semibold mt-4">{field.name}</h3>
+                    </div>
+                    <p className="text-muted-foreground mt-2">{field.courses.length} Courses</p>
+                 </div>
+               </Link>
+             ))}
+           </div>
+         </div>
+      </section>
+
+      {/* CTA Footer Strip */}
+      <section className="bg-foreground text-background">
+        <div className="container mx-auto px-4 py-16 text-center">
+          <h2 className="text-4xl font-headline font-bold">Ready to reinvent how you learn?</h2>
+          <div className="flex gap-4 justify-center mt-8">
+            <Link href="/courses">
+                <Button size="lg" variant="outline" className="bg-transparent border-primary text-primary hover:bg-primary hover:text-foreground">Start Now</Button>
+            </Link>
+            <Link href="/courses">
+                <Button size="lg" variant="secondary" className="bg-primary/80 text-foreground hover:bg-primary">Browse All Courses</Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
