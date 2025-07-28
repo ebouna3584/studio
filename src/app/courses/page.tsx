@@ -31,7 +31,7 @@ export default function CoursesPage() {
         </p>
       </div>
 
-      <Accordion type="multiple" defaultValue={fieldsOfStudy} className="w-full max-w-5xl mx-auto space-y-8">
+      <Accordion type="multiple" className="w-full max-w-5xl mx-auto space-y-8">
         {fieldsOfStudy.map(field => (
           <AccordionItem value={field} key={field} className="border-none">
              <AccordionTrigger className="text-3xl font-bold font-headline py-4 px-6 glassmorphism border-none hover:no-underline hover:bg-primary/10 transition-colors">
