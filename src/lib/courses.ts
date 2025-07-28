@@ -452,12 +452,12 @@ _"Calculus is not just a subject; it's a new way of seeing the world.”_
 ## Unit 1: Scientific Foundations of Psychology
 
 **Topic Overview:**  
-Our brains, neurons, and hormones are the biological hardware that runs our mental software.
+Psychology is the scientific study of behavior and mental processes. This unit explores its history, methods, and ethical considerations.
 
 **Core Concepts:**
-- **Neuron:** The basic cell of the nervous system. Key parts: dendrite (receives signals), axon (sends signals), synapse (gap between neurons).
-- **Action Potential:** An all-or-none electrical signal that travels down the axon.
-- **Key Brain Lobes:** Frontal (planning, personality), Parietal (sensation, touch), Temporal (hearing, language), Occipital (vision).
+- **Major Perspectives:** Psychoanalytic, Behaviorist, Humanistic, Cognitive, Biological, Sociocultural.
+- **Research Methods:** Experiments (show cause-and-effect), Correlational studies (show relationships), Surveys, Naturalistic Observation.
+- **Ethics:** Informed consent, debriefing, confidentiality are crucial.
 
 > **Study Hack:** To remember neurotransmitter functions, create a silly story. "Dopey Al the Sergeant was so excited..." (Dopamine, Acetylcholine, Serotonin).
 
@@ -469,19 +469,19 @@ Our brains, neurons, and hormones are the biological hardware that runs our ment
 This unit explores the link between biology and behavior, from neurons to brain structures.
 
 **Must-Know Concepts:**
-- **Classical Conditioning (Pavlov):** Learning by association. A neutral stimulus (bell) becomes paired with an unconditioned stimulus (food) to elicit a conditioned response (salivation).
-- **Operant Conditioning (Skinner):** Learning through consequences. Reinforcement increases a behavior; punishment decreases it.
-- **Observational Learning (Bandura):** Learning by watching others (modeling). Bobo doll experiment is the classic example.
+- **Neuron:** The basic cell of the nervous system. Key parts: dendrite (receives signals), axon (sends signals), synapse (gap between neurons).
+- **Action Potential:** An all-or-none electrical signal that travels down the axon.
+- **Key Brain Lobes:** Frontal (planning, personality), Parietal (sensation, touch), Temporal (hearing, language), Occipital (vision).
 
-> **Mnemonic:** *"Reinforcement is Rewarding. Punishment is a Pain."*
+> **Mnemonic:** *"The Four F's of the Frontal Lobe: Foresight, Fluency, Feeling, Function."*
 
 ---
 
 ## Unit 3: Sensation and Perception
 
-- **Conformity (Asch):** Adjusting our behavior or thinking to coincide with a group standard.
-- **Obedience (Milgram):** Compliance with commands given by an authority figure.
-- **Fundamental Attribution Error:** Overestimating personality and underestimating the situation when explaining others' behavior.
+- **Sensation vs. Perception:** Sensation is receiving sensory data; Perception is interpreting it.
+- **Bottom-Up vs. Top-Down Processing:** Bottom-up starts with senses; Top-down starts with the brain's expectations.
+- **Vision:** Rods (black/white, peripheral), Cones (color, detail).
 
 ---
 
