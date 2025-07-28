@@ -11,7 +11,7 @@ export default function Home() {
           Welcome to Course Compass
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-          Your minimalist guide to mastering complex subjects. Select a course below to begin your journey.
+          Your guide to mastering complex subjects. Select a course below to begin your journey.
         </p>
       </div>
 

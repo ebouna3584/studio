@@ -8,9 +8,9 @@ export type Course = {
   id: string;
   slug: string;
   courseTitle: string;
-  courseDescription: string;
+  courseDescription:string;
   sections: CourseSection[];
-  pdfMarkdown: string; // For future use as requested
+  pdfMarkdown: string;
 };
 
 const allCourses: Course[] = [
@@ -36,7 +36,59 @@ const allCourses: Course[] = [
         studyTip: 'Focus on the inputs and outputs for each major stage of photosynthesis and cellular respiration. A flowchart can be very helpful here.'
       }
     ],
-    pdfMarkdown: '...'
+    pdfMarkdown: `
+# 📘 AP Biology Crash Course
+
+### "Precision over pressure. Learn less, retain more."
+
+---
+
+## 🧬 Unit 1: Chemistry of Life
+
+**Topic Overview:**  
+Biological macromolecules are molecules that support life and include carbohydrates, proteins, lipids, and nucleic acids.
+
+**Core Concepts:**
+- Water’s polarity gives it adhesive, cohesive, and thermal properties.
+- Carbon can form up to four covalent bonds → foundation of organic molecules.
+- Proteins are made of amino acids joined by peptide bonds.
+
+> 🔍 **Study Hack:** When memorizing molecules, imagine building LEGO structures—start from the smallest piece and connect.
+
+---
+
+## 🧠 Unit 2: Cell Structure and Function
+
+**Topic Overview:**  
+Cells are the fundamental units of life, divided into prokaryotic and eukaryotic.
+
+**Must-Know Concepts:**
+- Prokaryotes have no membrane-bound organelles.
+- Ribosomes synthesize proteins; mitochondria make ATP via cellular respiration.
+- Cell membranes are selectively permeable due to the phospholipid bilayer.
+
+> 🧩 **Mnemonic:** *"Rough ER has Ribosomes. Smooth ER is Slippery."*
+
+---
+
+## 🔬 Unit 3: Cellular Energetics
+
+- Enzymes lower activation energy
+- Photosynthesis occurs in chloroplasts (light-dependent and Calvin Cycle)
+- Cellular respiration includes glycolysis, Krebs cycle, and ETC
+
+---
+
+## 🧷 Final Tips
+
+- Understand → don’t memorize. Ask "why does this happen?" after every concept.
+- Link terms to visuals or analogies.
+- Repeat concepts every 2–3 days (spaced repetition).
+
+---
+
+_"You're not just learning to pass. You're learning to think precisely.”_
+`
   },
   {
     id: '2',
@@ -60,7 +112,60 @@ const allCourses: Course[] = [
         studyTip: 'Use thematic learning. For example, trace the changing role of the federal government through the Progressive Era, the New Deal, and WWII.'
       }
     ],
-    pdfMarkdown: '...'
+    pdfMarkdown: `
+# 🇺🇸 AP U.S. History Crash Course
+
+### "History is not a set of facts, but a story of change."
+
+---
+
+## 🌎 Period 1: 1491-1607
+
+**Topic Overview:**  
+Native American societies had complex structures before European arrival, which was followed by the transformative Columbian Exchange.
+
+**Core Concepts:**
+- Maize cultivation in the Southwest supported large-scale irrigation and settlement.
+- The Great Basin and Great Plains tribes were largely mobile due to a lack of resources.
+- The Columbian Exchange brought new crops to Europe and new diseases to the Americas.
+
+> 🔍 **Study Hack:** Compare and contrast the goals of the Spanish, French, and Dutch in the New World. It reveals their different settlement patterns.
+
+---
+
+## 🗽 Period 3: 1754-1800
+
+**Topic Overview:**  
+The American colonies moved from being part of the British Empire to an independent nation, facing internal and external challenges.
+
+**Must-Know Concepts:**
+- The French and Indian War (Seven Years' War) led to the end of salutary neglect and increased British taxation.
+- Enlightenment ideas from Locke (natural rights) and Montesquieu (separation of powers) fueled revolutionary sentiment.
+- The Articles of Confederation were weak; Shay's Rebellion highlighted the need for a stronger central government, leading to the Constitution.
+
+> 🧩 **Mnemonic:** *"Proclamation of 1763, Stamp Act, Townshend Acts, Tea Act... See The Trouble?"*
+
+---
+
+## 🏛️ Period 7: 1890-1945
+
+- **Progressive Era:** Muckrakers exposed corruption, leading to reforms like the Pure Food and Drug Act and the 17th Amendment.
+- **Imperialism:** Debates over expansion in places like the Philippines (Anti-Imperialist League).
+- **WWI & WWII:** The U.S. moved from isolationism to global leadership.
+- **Great Depression:** FDR's New Deal drastically expanded the role of the federal government in the economy.
+
+---
+
+## 🧷 Final Tips
+
+- Think thematically (e.g., how did the definition of 'American identity' change over time?).
+- Always connect historical events to their broader context (Causation).
+- For DBQs, your documents are your evidence. Use them to support your argument, don't just summarize them.
+
+---
+
+_"The past is never dead. It's not even past.”_
+`
   },
   {
     id: '3',
@@ -84,7 +189,60 @@ const allCourses: Course[] = [
         studyTip: 'Connect the concepts. The Fundamental Theorem of Calculus is the bridge between differentiation and integration. Make sure you understand why it works.'
       }
     ],
-    pdfMarkdown: '...'
+    pdfMarkdown: `
+# 📈 AP Calculus AB Crash Course
+
+### "Calculus is the art of measuring change."
+
+---
+
+## 📉 Unit 1: Limits and Continuity
+
+**Topic Overview:**  
+Limits describe the behavior of a function as it gets infinitely close to a point. Continuity means a function's graph has no breaks or holes.
+
+**Core Concepts:**
+- A limit exists if and only if the left-hand limit equals the right-hand limit.
+- A function f(x) is continuous at x=c if lim(x→c) f(x) = f(c).
+- Types of discontinuities: Removable (hole), Infinite (asymptote), Jump.
+
+> 🔍 **Study Hack:** To find the limit of a rational function, first try direct substitution. If you get 0/0, it's an indeterminate form—time to use algebra (factor) or L'Hopital's Rule!
+
+---
+
+## 📐 Unit 2: Differentiation
+
+**Topic Overview:**  
+The derivative is the instantaneous rate of change, or the slope of the tangent line at a point.
+
+**Must-Know Concepts:**
+- **Power Rule:** d/dx (x^n) = n*x^(n-1)
+- **Product Rule:** (fg)' = f'g + fg'
+- **Quotient Rule:** (f/g)' = (f'g - fg') / g^2
+- **Chain Rule:** d/dx f(g(x)) = f'(g(x)) * g'(x)
+
+> 🧩 **Mnemonic:** For the Quotient Rule: *"Low D-High minus High D-Low, over the square of what's below."*
+
+---
+
+## 📊 Unit 3: Integration
+
+- The **definite integral** of a function from a to b represents the accumulated area under the curve.
+- The **Fundamental Theorem of Calculus (Part 1)** connects differentiation and integration: d/dx ∫[a,x] f(t) dt = f(x).
+- **U-Substitution** is the "reverse chain rule" for integrals.
+
+---
+
+## 🧷 Final Tips
+
+- Understand the geometric meaning of the derivative (slope) and the integral (area).
+- Know your derivative rules cold. They are non-negotiable.
+- Practice interpreting problems in context (e.g., if v(t) is velocity, its integral is displacement).
+
+---
+
+_"Calculus is not just a subject; it's a new way of seeing the world.”_
+`
   },
   {
     id: '4',
@@ -108,7 +266,61 @@ const allCourses: Course[] = [
             studyTip: 'Create a summary chart that compares the four main reaction types (SN1, SN2, E1, E2) based on key factors. This will be your most valuable study aid.'
         }
     ],
-    pdfMarkdown: '...'
+    pdfMarkdown: `
+# 🧪 Organic Chemistry I Crash Course
+
+### "It's like building with LEGOs, but on a molecular level."
+
+---
+
+## ⚛️ Unit 1: Structure and Bonding
+
+**Topic Overview:**  
+The shape and stability of organic molecules are determined by how carbon atoms bond using hybridized orbitals.
+
+**Core Concepts:**
+- **sp3 hybridization** (e.g., methane): tetrahedral geometry, 109.5° bond angles.
+- **sp2 hybridization** (e.g., ethene): trigonal planar geometry, 120° bond angles, contains one double bond (1 sigma, 1 pi).
+- **sp hybridization** (e.g., ethyne): linear geometry, 180° bond angles, contains one triple bond (1 sigma, 2 pi).
+
+> 🔍 **Study Hack:** Use a molecular model kit. Seeing the 3D shapes is far more effective than just looking at 2D drawings.
+
+---
+
+## 🔄 Unit 2: Stereochemistry
+
+**Topic Overview:**  
+Molecules can have the same connectivity but different 3D arrangements, known as stereoisomers.
+
+**Must-Know Concepts:**
+- A **chiral center** is a carbon atom bonded to four different groups.
+- **Enantiomers** are non-superimposable mirror images of each other (like left and right hands).
+- **Diastereomers** are stereoisomers that are not mirror images.
+- Use the **Cahn-Ingold-Prelog** rules to assign R (clockwise) or S (counter-clockwise) configuration to a chiral center.
+
+> 🧩 **Mnemonic:** *"Enantiomers are Evil twins (mirror images). Diastereomers are Distant relatives."*
+
+---
+
+## 💥 Unit 3: Substitution & Elimination
+
+- **SN2:** 1 step (concerted), needs a strong/unhindered nucleophile, prefers primary substrates, inverts stereochemistry.
+- **SN1:** 2 steps (carbocation intermediate), needs a weak nucleophile/polar protic solvent, prefers tertiary substrates, creates a racemic mixture.
+- **E2:** 1 step, needs a strong/bulky base, requires an anti-periplanar proton.
+- **E1:** 2 steps, competes with SN1, favored by heat.
+
+---
+
+## 🧷 Final Tips
+
+- Don't just memorize reactions, learn the **mechanisms** (the "why"). Pushing arrows is key.
+- Make reaction flashcards with the substrate, reagents, and product.
+- Redraw mechanisms over and over until you can do them from memory.
+
+---
+
+_"Organic chemistry is the study of the flow of electrons.”_
+`
   },
   {
     id: '5',
@@ -132,7 +344,59 @@ const allCourses: Course[] = [
             studyTip: 'Focus on classic experiments like Asch\'s conformity study and Milgram\'s obedience study. Understand their methodology and implications.'
         }
     ],
-    pdfMarkdown: '...'
+    pdfMarkdown: `
+# 🧠 Introduction to Psychology Crash Course
+
+### "The greatest discovery is that a human can alter his life by altering his attitudes."
+
+---
+
+## 🔬 Unit 1: Biological Bases of Behavior
+
+**Topic Overview:**  
+Our brains, neurons, and hormones are the biological hardware that runs our mental software.
+
+**Core Concepts:**
+- **Neuron:** The basic cell of the nervous system. Key parts: dendrite (receives signals), axon (sends signals), synapse (gap between neurons).
+- **Action Potential:** An all-or-none electrical signal that travels down the axon.
+- **Key Brain Lobes:** Frontal (planning, personality), Parietal (sensation, touch), Temporal (hearing, language), Occipital (vision).
+
+> 🔍 **Study Hack:** To remember neurotransmitter functions, create a silly story. "Dopey Al the Sergeant was so excited..." (Dopamine, Acetylcholine, Serotonin).
+
+---
+
+## 🔔 Unit 2: Learning
+
+**Topic Overview:**  
+Learning is a relatively permanent change in behavior due to experience.
+
+**Must-Know Concepts:**
+- **Classical Conditioning (Pavlov):** Learning by association. A neutral stimulus (bell) becomes paired with an unconditioned stimulus (food) to elicit a conditioned response (salivation).
+- **Operant Conditioning (Skinner):** Learning through consequences. Reinforcement increases a behavior; punishment decreases it.
+- **Observational Learning (Bandura):** Learning by watching others (modeling). Bobo doll experiment is the classic example.
+
+> 🧩 **Mnemonic:** *"Reinforcement is Rewarding. Punishment is a Pain."*
+
+---
+
+## 👥 Unit 3: Social Psychology
+
+- **Conformity (Asch):** Adjusting our behavior or thinking to coincide with a group standard.
+- **Obedience (Milgram):** Compliance with commands given by an authority figure.
+- **Fundamental Attribution Error:** Overestimating personality and underestimating the situation when explaining others' behavior.
+
+---
+
+## 🧷 Final Tips
+
+- Apply concepts to your own life. When do you conform? How have you been operantly conditioned?
+- Focus on the key experiments and what they demonstrated about human behavior.
+- Distinguish between similar-sounding terms (e.g., retroactive vs. proactive interference).
+
+---
+
+_"The purpose of psychology is to give us a completely different idea of the things we know best.”_
+`
   },
   {
     id: '6',
@@ -156,7 +420,61 @@ const allCourses: Course[] = [
             studyTip: 'Create a table comparing the four market structures based on number of firms, type of product, barriers to entry, and long-run profitability.'
         }
     ],
-    pdfMarkdown: '...'
+    pdfMarkdown: `
+# 💰 Intro to Microeconomics Crash Course
+
+### "Economics is the study of choice under scarcity."
+
+---
+
+## 📈 Unit 1: Basic Economic Concepts
+
+**Topic Overview:**  
+Economics is about making decisions when you can't have everything you want (scarcity).
+
+**Core Concepts:**
+- **Scarcity:** The fundamental economic problem. Unlimited wants, limited resources.
+- **Opportunity Cost:** The value of the next best alternative you give up when you make a choice. There's no such thing as a free lunch!
+- **Production Possibilities Curve (PPC):** A graph showing the maximum combinations of two goods that can be produced with available resources. Points on the curve are efficient.
+
+> 🔍 **Study Hack:** For any decision, always ask: "What is the opportunity cost?" This is the core of economic thinking.
+
+---
+
+## ⚖️ Unit 2: Supply and Demand
+
+**Topic Overview:**  
+The interaction of buyers (demand) and sellers (supply) determines the price and quantity of goods in a market.
+
+**Must-Know Concepts:**
+- **Law of Demand:** As price falls, quantity demanded rises (downward-sloping curve).
+- **Law of Supply:** As price rises, quantity supplied rises (upward-sloping curve).
+- **Equilibrium:** The point where the supply and demand curves intersect. This is the market-clearing price and quantity.
+- **Shifters:** Know what shifts the entire curve (e.g., income for demand, technology for supply) vs. what causes movement along it (a price change).
+
+> 🧩 **Mnemonic:** For demand curve shifters: **TRIBE** (Tastes, Related goods, Income, Buyers, Expectations).
+
+---
+
+## 🏪 Unit 3: Market Structures
+
+- **Perfect Competition:** Many firms, identical products, no barriers to entry (e.g., agriculture). Price takers.
+- **Monopoly:** One firm, unique product, high barriers to entry (e.g., local utility). Price makers.
+- **Oligopoly:** A few large firms dominate (e.g., cell phone carriers). Strategic interaction is key.
+- **Monopolistic Competition:** Many firms, differentiated products (e.g., restaurants, hair salons).
+
+---
+
+## 🧷 Final Tips
+
+- **Draw the graph!** Visualizing supply and demand shifts is the most important skill in this course.
+- Clearly distinguish between a "change in demand" (shift of the curve) and a "change in quantity demanded" (movement along the curve).
+- Think at the margin. Economic decisions are about the cost and benefit of the *next* one.
+
+---
+
+_"The art of economics consists in looking not merely at the immediate but at the longer effects of any act or policy.”_
+`
   },
   {
     id: '7',
@@ -180,7 +498,63 @@ const allCourses: Course[] = [
             studyTip: 'Logarithms are the inverse of exponentials. Being able to switch between log form and exponential form (e.g., log_b(x) = y <=> b^y = x) is the key to solving equations.'
         }
     ],
-    pdfMarkdown: '...'
+    pdfMarkdown: `
+# 🧮 College Algebra Crash Course
+
+### "Algebra is the language of patterns and relationships."
+
+---
+
+## ⚙️ Unit 1: Functions
+
+**Topic Overview:**  
+A function is a machine that takes an input (x) and gives exactly one output (y or f(x)).
+
+**Core Concepts:**
+- **Domain:** The set of all possible input values (x-values). Watch for division by zero and square roots of negative numbers.
+- **Range:** The set of all possible output values (y-values).
+- **Vertical Line Test:** A graph represents a function if and only if no vertical line intersects the graph more than once.
+- **Transformations:** Learn how f(x-h)+k shifts a graph h units horizontally and k units vertically.
+
+> 🔍 **Study Hack:** Think of the domain as the "allowed ingredients" for your function machine.
+
+---
+
+## 📈 Unit 2: Polynomial and Rational Functions
+
+**Topic Overview:**  
+Analyzing the graphs and behavior of functions made from polynomials.
+
+**Must-Know Concepts:**
+- **Zeros/Roots:** The x-values where the polynomial equals zero (where the graph crosses the x-axis).
+- **End Behavior:** What happens to the graph as x approaches positive or negative infinity. Determined by the term with the highest power.
+- **Asymptotes (for Rational Functions):**
+  - **Vertical:** Occur where the denominator is zero.
+  - **Horizontal:** Compare the degrees of the numerator and denominator to find them.
+
+> 🧩 **Mnemonic:** For horizontal asymptotes: **BOBO BOTN EATS DC** (Bigger On Bottom -> y=0; Bigger On Top -> None; Exponents Are The Same -> Divide Coefficients).
+
+---
+
+## 🌿 Unit 3: Exponential and Log Functions
+
+- **Exponential Functions (y = a*b^x)** model rapid growth or decay.
+- **Logarithmic Functions (y = log_b(x))** are the inverse of exponential functions.
+- **Key Property:** log_b(x) = y is the same as b^y = x. Being able to switch between these forms is essential for solving equations.
+- **Compound Interest Formula:** A = P(1 + r/n)^(nt)
+
+---
+
+## 🧷 Final Tips
+
+- Master factoring. It is used everywhere, especially for finding zeros and simplifying rational functions.
+- Understand the properties of logarithms. They allow you to solve for variables that are in the exponent.
+- Practice the order of operations (PEMDAS) meticulously.
+
+---
+
+_"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.”_
+`
   },
 ];
 
