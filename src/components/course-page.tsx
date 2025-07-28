@@ -9,10 +9,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Download, BookOpen, Clock, Lightbulb, CheckCircle, Star } from 'lucide-react';
+import { Download, BookOpen, Clock, Lightbulb, CheckCircle, Star, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { marked } from 'marked';
+import Link from 'next/link';
 
 // Extend window type for html2pdf
 declare global {
@@ -24,6 +25,12 @@ declare global {
 type CoursePageProps = {
   course: Course;
   quote: string;
+};
+
+const toSlug = (text: string) => {
+    return text.toLowerCase()
+      .replace(/ /g, '-')
+      .replace(/[^\w-]+/g, '');
 };
 
 export default function CoursePage({ course, quote }: CoursePageProps) {
@@ -134,9 +141,12 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
                     <h4 className="font-bold text-lg mb-3">Lessons in this unit:</h4>
                     <ul className="space-y-2">
                       {section.lessonHeaders.map((lesson, lessonIndex) => (
-                        <li key={lessonIndex} className="flex items-center">
+                        <li key={lessonIndex} className="flex items-center group">
                           <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                          <span>{lesson}</span>
+                          <Link href={`/courses/${course.slug}/${toSlug(lesson)}`} className="hover:text-primary hover:underline flex-grow">
+                            {lesson}
+                          </Link>
+                          <ArrowRight className="h-4 w-4 text-primary ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
                         </li>
                       ))}
                     </ul>
