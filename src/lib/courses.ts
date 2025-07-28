@@ -819,17 +819,159 @@ export const apBiologyContent: LessonContent = {
       'Memorizing the elements without understanding why carbon is so central to life\'s chemistry.',
       'Overlooking the importance of phosphorus in DNA and ATP, and sulfur in proteins.'
     ]
+  },
+  'introduction-to-macromolecules': {
+    summary: 'There are four main classes of large biological molecules, or macromolecules: carbohydrates, lipids, proteins, and nucleic acids. Many of these are polymers, built from smaller, repeating units called monomers.',
+    keyConcepts: [
+      'Monomer: The repeating subunit that serves as a building block of a polymer.',
+      'Polymer: A long molecule consisting of many similar or identical building blocks linked by covalent bonds.',
+      'Dehydration Synthesis: A reaction in which two molecules are covalently bonded to each other with the removal of a water molecule.',
+      'Hydrolysis: A reaction that breaks bonds between two molecules by the addition of water.'
+    ],
+    commonPitfalls: [
+      'Confusing dehydration synthesis with hydrolysis.',
+      'Thinking that all macromolecules are polymers (lipids are a key exception).'
+    ]
   }
 };
 
-// Placeholder for other courses - in a real app, these would be populated
-export const apUSHistoryContent: LessonContent = {};
-export const apCalculusABContent: LessonContent = {};
+// AP US History Content
+export const apUSHistoryContent: LessonContent = {
+  'columbian-exchange-spanish-exploration-and-conquest': {
+    summary: 'The Columbian Exchange refers to the widespread transfer of plants, animals, culture, human populations, technology, diseases, and ideas between the Americas, West Africa, and the Old World in the 15th and 16th centuries. Spanish exploration and conquest were driven by a desire for wealth (gold), national glory, and the spread of Christianity.',
+    keyConcepts: [
+      'Columbian Exchange: The transfer of goods, diseases, and ideas between the Eastern and Western Hemispheres.',
+      'Encomienda System: A Spanish labor system that rewarded conquerors with the labor of particular groups of conquered non-Christian people.',
+      'Impact of Disease: Smallpox and other European diseases devastated Native American populations, making conquest easier.',
+      'Caste System: A social hierarchy developed in the Spanish colonies that was based on racial ancestry.'
+    ],
+    commonPitfalls: [
+      'Viewing the Columbian Exchange as only a positive event, without acknowledging the catastrophic impact of disease on native populations.',
+      'Underestimating the complexity and resistance of Native American societies to Spanish conquest.'
+    ]
+  },
+  'the-french-and-indian-war': {
+    summary: 'Fought between Great Britain and France (and their respective native allies) from 1754-1763, the French and Indian War was part of a larger global conflict known as the Seven Years\' War. British victory resulted in France being expelled from North America but also led to massive debt for Britain, which it sought to repay by taxing its American colonies.',
+    keyConcepts: [
+      'Causes: Competing claims over the Ohio River Valley.',
+      'Albany Plan of Union (1754): Benjamin Franklin\'s early attempt to unite the colonies for common defense, which failed.',
+      'Treaty of Paris (1763): Ended the war, giving Britain control of French territory east of the Mississippi.',
+      'Consequences: End of salutary neglect, increased British control and taxation, and colonial resentment.'
+    ],
+    commonPitfalls: [
+      'Thinking the war was between the French and the Indians; it was Britain and its colonies vs. France and its native allies.',
+      'Failing to connect the war directly to the causes of the American Revolution.'
+    ]
+  }
+};
+
+// AP Calculus AB Content
+export const apCalculusABContent: LessonContent = {
+  'defining-limits-and-using-limit-notation': {
+    summary: 'A limit is the value that a function "approaches" as the input "approaches" some value. It is the foundational concept of calculus, used to define continuity, derivatives, and integrals. We use the notation lim(x→c) f(x) = L to express that the limit of f(x) as x approaches c is L.',
+    keyConcepts: [
+      'Limit: The y-value a function gets closer and closer to as the x-value gets closer and closer to a certain point.',
+      'One-Sided Limits: Analyzing the limit from either the left (x→c⁻) or the right (x→c⁺).',
+      'Existence of a Limit: A limit at a point c exists if and only if the left-hand limit equals the right-hand limit.',
+      'Graphical Interpretation: Visualizing how a function behaves near a specific x-value, even if the function is undefined at that exact point.'
+    ],
+    commonPitfalls: [
+      'Confusing the limit of a function at a point, f(c), with the value of the function at that point. They can be different!',
+      'Assuming a limit does not exist just because there is a hole in the graph. The limit can exist at a hole.'
+    ]
+  },
+  'the-power-rule': {
+    summary: 'The Power Rule is a fundamental shortcut for finding the derivative of functions of the form f(x) = xⁿ. Instead of using the long limit definition of the derivative, the Power Rule states that the derivative is simply nxⁿ⁻¹.',
+    keyConcepts: [
+      'Derivative: The instantaneous rate of change, or the slope of the tangent line to a curve at a point.',
+      'Power Rule Formula: d/dx(xⁿ) = nxⁿ⁻¹.',
+      'Applying the Rule: Bring the exponent down as a coefficient and subtract one from the original exponent.',
+      'Constants: The derivative of a constant is always zero.'
+    ],
+    commonPitfalls: [
+      'Forgetting to subtract one from the exponent.',
+      'Incorrectly applying the rule to functions that are not in the form xⁿ (e.g., eˣ or sin(x)).',
+      'Making mistakes with negative or fractional exponents.'
+    ]
+  }
+};
+
+// AP Chemistry Content
+export const apChemistryContent: LessonContent = {
+    'moles-and-molar-mass': {
+        summary: 'The mole is the unit for counting atoms and molecules in chemistry, where 1 mole equals 6.022 x 10²³ particles (Avogadro\'s number). Molar mass is the mass of one mole of a substance, expressed in grams/mole, and is numerically equal to the atomic mass in amu.',
+        keyConcepts: [
+            'Avogadro\'s Number: 6.022 x 10²³ particles/mole.',
+            'Mole (mol): A unit that bridges the microscopic world of atoms to the macroscopic world of grams.',
+            'Molar Mass: The mass of one mole of a substance (g/mol). Calculated by summing the atomic masses of all atoms in a chemical formula.',
+            'Conversions: Using molar mass and Avogadro\'s number to convert between mass, moles, and number of particles.'
+        ],
+        commonPitfalls: [
+            'Confusing molar mass with molecular mass (amu vs. g/mol).',
+            'Using Avogadro\'s number when converting between grams and moles.',
+            'Forgetting to account for the number of atoms of each element in a compound when calculating molar mass (e.g., H₂O has two H atoms).'
+        ]
+    },
+    'lewis-diagrams': {
+        summary: 'Lewis diagrams (or Lewis structures) are visual representations of the valence electrons of atoms within a molecule. They are used to show how electrons are arranged around atoms and the bonding patterns in a molecule.',
+        keyConcepts: [
+            'Valence Electrons: The electrons in the outermost energy level of an atom, which are involved in bonding.',
+            'Octet Rule: The tendency of atoms to prefer to have eight electrons in their valence shell.',
+            'Bonding Pairs vs. Lone Pairs: Electrons shared between two atoms are bonding pairs; electrons not involved in bonding are lone pairs.',
+            'Steps: 1. Count total valence electrons. 2. Arrange atoms with the least electronegative in the center. 3. Connect atoms with single bonds. 4. Distribute remaining electrons to satisfy octets.'
+        ],
+        commonPitfalls: [
+            'Miscounting the total number of valence electrons.',
+            'Violating the octet rule for elements that must obey it (like C, N, O, F).',
+            'Forgetting to check for formal charge to find the most stable structure when resonance is possible.'
+        ]
+    }
+};
+
+// AP Psychology Content
+export const apPsychologyContent: LessonContent = {
+    'the-experimental-method': {
+        summary: 'The experimental method is the only research method that can establish a cause-and-effect relationship between variables. It involves manipulating one variable (the independent variable) to determine if it causes a change in another variable (the dependent variable), while controlling for all other variables.',
+        keyConcepts: [
+            'Independent Variable (IV): The variable that is manipulated by the experimenter.',
+            'Dependent Variable (DV): The variable that is measured to see if the IV had an effect.',
+            'Experimental Group vs. Control Group: The group that receives the treatment vs. the group that does not, used for comparison.',
+            'Random Assignment: Placing participants into groups by chance to minimize preexisting differences.'
+        ],
+        commonPitfalls: [
+            'Confusing the independent and dependent variables.',
+            'Mixing up random assignment (for experiments) with random sampling (for surveys).',
+            'Forgetting that correlation does not equal causation; only a true experiment can prove causation.'
+        ]
+    }
+};
+
+// AP Microeconomics Content
+export const apMicroeconomicsContent: LessonContent = {
+    'opportunity-cost-and-the-production-possibilities-curve-(ppc)': {
+        summary: 'Opportunity cost is the value of the next-best alternative that must be forgone to pursue a certain action. The Production Possibilities Curve (PPC) is a model that illustrates the trade-offs and opportunity costs an economy faces when producing two goods, showing the maximum attainable combinations with available resources.',
+        keyConcepts: [
+            'Opportunity Cost: The cost of what you give up.',
+            'Production Possibilities Curve (PPC): A graph showing efficient production combinations.',
+            'Efficiency: Points on the PPC are productively efficient.',
+            'Law of Increasing Opportunity Cost: As you produce more of one good, the opportunity cost (in terms of the other good) increases. This gives the PPC its bowed-out shape.'
+        ],
+        commonPitfalls: [
+            'Calculating opportunity cost incorrectly (it\'s what is given up, not what is gained).',
+            'Confusing a linear PPC (constant opportunity cost) with a bowed-out PPC (increasing opportunity cost).',
+            'Thinking that a point inside the PPC is unattainable (it\'s attainable but inefficient).'
+        ]
+    }
+};
 
 export const allLessonContent: { [courseSlug: string]: LessonContent } = {
   'ap-biology': apBiologyContent,
   'ap-us-history': apUSHistoryContent,
   'ap-calculus-ab': apCalculusABContent,
+  'ap-chemistry': apChemistryContent,
+  'ap-psychology': apPsychologyContent,
+  'ap-microeconomics': apMicroeconomicsContent,
+  // Add other courses here once they have content
+  'ap-computer-science-principles': {},
+  'ap-english-language': {},
 };
-
-    
