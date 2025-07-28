@@ -12,11 +12,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full glassmorphism">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-headline text-foreground">
-            <div className="p-2 glassmorphism">
+            <div className="p-2 bg-background/80 border rounded-md">
               <Compass className="h-6 w-6 text-primary" />
             </div>
             Course Compass
