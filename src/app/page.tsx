@@ -20,7 +20,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/notebook-dark.png')] opacity-5"></div>
         <div className="z-10 max-w-4xl">
           <h1 className="text-6xl md:text-8xl font-headline font-bold text-shadow">
-            Learn Anything, Faster.
+            Learn Anything, <mark>Faster</mark>.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-shadow">
             AI-generated, student-focused courses that let you learn smarter.
@@ -149,4 +149,3 @@ export default function Home() {
       </section>
     </div>
   );
-}

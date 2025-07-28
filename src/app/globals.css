@@ -84,7 +84,7 @@
   mark {
     animation: highlight linear forwards;
     animation-timeline: view(60% 20%);
-    background: linear-gradient(to right, oklch(0.95 0.15 90 / 1) 50%, oklch(0.95 0.15 90 / 0) 50%);
+    background: linear-gradient(to right, hsl(var(--primary) / 0.5) 50%, hsl(var(--primary) / 0) 50%);
     background-position: 100%;
     background-size: 200% 100%;
     padding-inline: 0.125rem;
