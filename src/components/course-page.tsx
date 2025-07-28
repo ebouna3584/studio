@@ -9,8 +9,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Download, BookOpen, Clock, Lightbulb, CheckCircle } from 'lucide-react';
+import { Download, BookOpen, Clock, Lightbulb, CheckCircle, Star } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { marked } from 'marked';
 
 // Extend window type for html2pdf
@@ -84,6 +85,7 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground font-headline">
             {course.courseTitle}
           </h1>
+          <p className="text-lg text-muted-foreground mt-2">{course.mindsetTagline}</p>
           <blockquote className="mt-4 border-l-4 border-accent pl-4 italic text-muted-foreground">
             {quote}
           </blockquote>
@@ -97,44 +99,38 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
                 Download Notes as PDF
             </Button>
         </div>
-
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold font-headline mb-4">Course Outline</h2>
-          <Card>
-            <CardContent className="pt-6">
-                <ul className="space-y-4">
-                {course.sections.map((section, index) => (
-                  <li key={index} className="flex items-start">
-                    <BookOpen className="h-5 w-5 text-primary mr-4 mt-1 flex-shrink-0" />
-                    <div className="flex-grow">
-                        <p className="font-semibold">{section.topicTitle}</p>
-                        <p className="text-sm text-muted-foreground">
-                            {section.lessonHeaders.length} lessons
-                        </p>
-                    </div>
-                    <div className="flex items-center text-sm text-muted-foreground ml-4 flex-shrink-0">
-                      <Clock className="h-4 w-4 mr-1.5" />
-                      {section.totalTimeMinutes} min
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
-
+        
         <div>
           <h2 className="text-3xl font-bold font-headline mb-6">Course Sections</h2>
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="w-full" defaultValue="item-0">
             {course.sections.map((section, index) => (
               <AccordionItem value={`item-${index}`} key={index}>
                 <AccordionTrigger id={`section-${index}`} className="text-xl hover:no-underline font-headline">
-                  {section.topicTitle}
+                  <div className="flex items-center gap-4">
+                    <span>{section.topicTitle}</span>
+                    {section.recommended && (
+                       <Badge variant="secondary" className="bg-green-100 text-green-800 border-green-300">
+                        <Star className="h-4 w-4 mr-1.5 text-green-600" />
+                        Recommended Start
+                      </Badge>
+                    )}
+                  </div>
                 </AccordionTrigger>
                 <AccordionContent className="text-base leading-relaxed py-4">
-                  <p className="whitespace-pre-wrap">{section.explanation}</p>
+                  <div className="flex items-center text-sm text-muted-foreground mb-4">
+                      <Clock className="h-4 w-4 mr-1.5" />
+                      Approx. {section.estimatedUnitTimeMinutes} minutes per unit
+                  </div>
+
+                  {section.understandFirst && (
+                    <Card className="mb-6 bg-secondary border-primary/20">
+                      <CardContent className="pt-6">
+                          <p className="font-semibold text-secondary-foreground">{section.understandFirst}</p>
+                      </CardContent>
+                    </Card>
+                  )}
                   
-                  <div className="mt-6">
+                  <div className="mb-6">
                     <h4 className="font-bold text-lg mb-3">Lessons in this unit:</h4>
                     <ul className="space-y-2">
                       {section.lessonHeaders.map((lesson, lessonIndex) => (
@@ -146,14 +142,18 @@ export default function CoursePage({ course, quote }: CoursePageProps) {
                     </ul>
                   </div>
 
-                  {section.studyTip && (
-                    <Card className="mt-6 bg-secondary border-primary/50">
+                  {section.studyTips && section.studyTips.length > 0 && (
+                    <Card className="bg-blue-50 border-blue-200">
                         <CardContent className="pt-6">
                             <div className="flex items-start gap-4">
-                                <Lightbulb className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                                <Lightbulb className="h-6 w-6 text-blue-500 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h4 className="font-bold text-secondary-foreground mb-2">Study Tip</h4>
-                                    <p className="text-secondary-foreground">{section.studyTip}</p>
+                                    <h4 className="font-bold text-blue-900 mb-2">Study Tips</h4>
+                                    <ul className="list-disc pl-5 space-y-1 text-blue-800">
+                                      {section.studyTips.map((tip, tipIndex) => (
+                                          <li key={tipIndex}>{tip}</li>
+                                      ))}
+                                    </ul>
                                 </div>
                             </div>
                         </CardContent>

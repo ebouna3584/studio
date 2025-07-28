@@ -1,34 +1,38 @@
 
 export type CourseSection = {
   topicTitle: string;
-  explanation: string;
-  studyTip?: string;
+  understandFirst: string;
   lessonHeaders: string[];
-  totalTimeMinutes: number;
+  estimatedUnitTimeMinutes: number;
+  studyTips?: string[];
+  recommended?: boolean;
 };
 
 export type Course = {
   id: string;
   slug: string;
+  fieldOfStudy: 'STEM' | 'Social Sciences' | 'Humanities' | 'Foundations / General';
   courseTitle: string;
-  courseDescription:string;
+  courseDescription: string;
+  mindsetTagline: string;
+  totalEstimatedTimeHours: number;
   sections: CourseSection[];
   pdfMarkdown: string;
-  timeEstimateMinutes: number;
 };
 
 const allCourses: Course[] = [
   {
     id: '1',
     slug: 'ap-biology',
+    fieldOfStudy: 'STEM',
     courseTitle: 'AP Biology',
     courseDescription: 'A deep dive into the study of life and living organisms, from molecular biology to ecosystems.',
-    timeEstimateMinutes: 900,
+    mindsetTagline: 'Grasp the big ideas of biology, from the smallest cells to entire ecosystems.',
+    totalEstimatedTimeHours: 8,
     sections: [
       {
         topicTitle: 'Unit 1: Chemistry of Life',
-        explanation: `All life is subject to the laws of chemistry. This unit explores the chemical building blocks of life, including the properties of water, the structure of macromolecules like carbohydrates, lipids, proteins, and nucleic acids, and the principles of energy and metabolism.`,
-        studyTip: 'Create flashcards for the four main macromolecules and their monomers. Understanding their structure is key to understanding their function.',
+        understandFirst: 'Focus on the properties of water and the basic structure of macromolecules. This is the chemical alphabet for the language of biology.',
         lessonHeaders: [
             "Structure of Water and Hydrogen Bonding",
             "Elements of Life",
@@ -37,12 +41,16 @@ const allCourses: Course[] = [
             "Structure and Function of Biological Macromolecules",
             "Nucleic Acids"
         ],
-        totalTimeMinutes: 120
+        estimatedUnitTimeMinutes: 60,
+        studyTips: [
+            'Create flashcards for the four main macromolecules and their monomers.',
+            'Draw a water molecule and illustrate how hydrogen bonds form between multiple molecules.'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Unit 2: Cell Structure and Function',
-        explanation: 'The cell is the basic unit of life. We will examine the differences between prokaryotic and eukaryotic cells, tour the various organelles and their functions, and understand how cells transport materials across their membranes.',
-        studyTip: 'Draw and label a diagram of both a plant and animal cell. Explain the function of each organelle in your own words.',
+        understandFirst: 'Clearly distinguish between prokaryotic and eukaryotic cells before memorizing individual organelles. It provides a framework for everything else.',
         lessonHeaders: [
             "Cell Structure: Subcellular Components",
             "Cell Size",
@@ -54,21 +62,29 @@ const allCourses: Course[] = [
             "Compartmentalization",
             "Origins of Cell Compartmentalization"
         ],
-        totalTimeMinutes: 160
+        estimatedUnitTimeMinutes: 75,
+        studyTips: [
+            'Draw and label a diagram of both a plant and animal cell. Explain the function of each organelle in your own words.',
+            'Use an analogy, like a factory, to remember the functions of different organelles.'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Unit 3: Cellular Energetics',
-        explanation: `This section covers how cells acquire and use energy. Key processes include photosynthesis, where organisms capture light energy to build sugars, and cellular respiration, where sugars are broken down to produce ATP.`,
-        studyTip: 'Focus on the inputs and outputs for each major stage of photosynthesis and cellular respiration. A flowchart can be very helpful here.',
+        understandFirst: 'Master the overall inputs and outputs of photosynthesis and cellular respiration before getting lost in the details of each step.',
         lessonHeaders: [
-            "Enzyme Structure",
-            "Enzyme Catalysis",
+            "Enzyme Structure & Catalysis",
             "Environmental Impacts on Enzyme Function",
             "Cellular Energy",
             "Photosynthesis",
-            "Cellular Respiration"
+            "Cellular Respiration",
+            "Fitness"
         ],
-        totalTimeMinutes: 140
+        estimatedUnitTimeMinutes: 75,
+        studyTips: [
+            'Create a flowchart for both photosynthesis and cellular respiration, highlighting where key molecules are used and produced.',
+            'Focus on the role of enzymes as catalysts that drive these reactions.'
+        ]
       }
     ],
     pdfMarkdown: `
@@ -128,44 +144,52 @@ _"You're not just learning to pass. You're learning to think precisely.”_
   {
     id: '2',
     slug: 'ap-us-history',
+    fieldOfStudy: 'Humanities',
     courseTitle: 'AP U.S. History (APUSH)',
     courseDescription: 'Explore the vast history of the United States from the pre-Columbian era to the present.',
-    timeEstimateMinutes: 900,
+    mindsetTagline: 'Connect the dots across American history by thinking in themes, not just timelines.',
+    totalEstimatedTimeHours: 8,
     sections: [
       {
         topicTitle: 'Period 1: 1491-1607',
-        explanation: 'This period covers the Americas before European contact and the early stages of the Columbian Exchange. We explore diverse Native American societies and the initial impacts of Spanish, French, and Dutch colonization.',
-        studyTip: 'Focus on the concept of the Columbian Exchange and its impact on both the Old World and the New World. It\'s a foundational concept for the rest of the course.',
+        understandFirst: 'Grasp the diversity of Native American societies before European contact. This context is crucial for understanding the changes that followed.',
         lessonHeaders: [
             "Contextualizing Period 1",
             "Native American Societies Before European Contact",
             "European Exploration in the Americas",
             "Columbian Exchange, Spanish Exploration, and Conquest",
-            "Labor, Slavery, and Caste in the Spanish Colonial System",
-            "Cultural Interactions Between Europeans, Native Americans, and Africans"
+            "Labor, Slavery, and Caste in the Spanish Colonial System"
         ],
-        totalTimeMinutes: 90
+        estimatedUnitTimeMinutes: 45,
+        studyTips: [
+          'Focus on the concept of the Columbian Exchange and its impact on both the Old World and the New World.',
+          'Compare the motivations and settlement patterns of the Spanish, French, and Dutch.'
+        ]
       },
       {
         topicTitle: 'Period 3: 1754-1800',
-        explanation: 'A pivotal era covering the lead-up to the American Revolution, the war itself, and the challenges of creating a new nation under the Articles of Confederation and, later, the Constitution.',
-        studyTip: 'Create a timeline of key events from the French and Indian War to the election of 1800. Note the cause-and-effect relationships between events.',
+        understandFirst: "Understand the causes and effects of the French and Indian War, as it directly led to the British policies that sparked the American Revolution.",
         lessonHeaders: [
             "The French and Indian War",
             "The Imperial Crisis and the Road to Revolution",
             "The American Revolution",
             "The Articles of Confederation",
             "The Constitutional Convention and Debates over Ratification",
-            "The Development of Political Parties",
-            "America on the World Stage"
+            "Washington's Farewell",
+            "Development of Political Parties"
         ],
-        totalTimeMinutes: 150
+        estimatedUnitTimeMinutes: 75,
+        studyTips: [
+            'Create a timeline of key events from the French and Indian War to the election of 1800.',
+            'Explain the key weaknesses of the Articles of Confederation that led to the creation of the Constitution.'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Period 7: 1890-1945',
-        explanation: 'This period examines the Progressive Era, U.S. expansionism, World War I, the Roaring Twenties, the Great Depression, and World War II. It\'s a time of immense social, political, and economic change.',
-        studyTip: 'Use thematic learning. For example, trace the changing role of the federal government through the Progressive Era, the New Deal, and WWII.',
+        understandFirst: "Recognize the major problems of the Gilded Age (industrialization, urbanization, immigration) to understand the motivations behind the Progressive Era reforms.",
         lessonHeaders: [
+            "Contextualizing Period 7",
             "The Gilded Age",
             "The Progressive Era",
             "U.S. Imperialism",
@@ -174,7 +198,12 @@ _"You're not just learning to pass. You're learning to think precisely.”_
             "The Great Depression and the New Deal",
             "World War II"
         ],
-        totalTimeMinutes: 200
+        estimatedUnitTimeMinutes: 90,
+        studyTips: [
+            'Use thematic learning. For example, trace the changing role of the federal government through the Progressive Era, the New Deal, and WWII.',
+            'Connect literary and cultural movements to the historical events of the 1920s and 1930s.'
+        ],
+        recommended: true
       }
     ],
     pdfMarkdown: `
@@ -235,60 +264,66 @@ _"The past is never dead. It's not even past.”_
   {
     id: '3',
     slug: 'ap-calculus-ab',
+    fieldOfStudy: 'STEM',
     courseTitle: 'AP Calculus AB',
     courseDescription: 'An introduction to the fundamental concepts of calculus, including limits, derivatives, and integrals.',
-    timeEstimateMinutes: 900,
+    mindsetTagline: 'Master the rules, understand the concepts. Calculus is a new way to see the world.',
+    totalEstimatedTimeHours: 7,
     sections: [
       {
         topicTitle: 'Unit 1: Limits and Continuity',
-        explanation: 'Limits are the foundation of calculus. They describe the value that a function approaches as the input approaches some value. We\'ll explore how to find limits graphically and algebraically and connect this to the concept of continuity.',
-        studyTip: 'Practice, practice, practice algebraic manipulation for finding limits. Factoring, multiplying by the conjugate, and finding common denominators are essential skills.',
+        understandFirst: "Limits are the bedrock of calculus. Focus on what it means for a function to 'approach' a value before you tackle the algebraic tricks.",
         lessonHeaders: [
-            "Introducing Calculus: Can Change Occur at an Instant?",
             "Defining Limits and Using Limit Notation",
-            "Estimating Limit Values from Graphs",
-            "Estimating Limit Values from Tables",
-            "Determining Limits Using Algebraic Properties of Limits",
+            "Estimating Limit Values from Graphs & Tables",
+            "Determining Limits Using Algebraic Properties",
             "Determining Limits Using Algebraic Manipulation",
-            "Selecting Procedures for Determining Limits",
-            "Determining Limits Using the Squeeze Theorem",
-            "Connecting Multiple Representations of Limits",
+            "The Squeeze Theorem",
             "Exploring Types of Discontinuities",
             "Defining Continuity at a Point",
-            "Confirming Continuity over an Interval",
-            "Removing Discontinuities",
-            "Connecting Infinite Limits and Vertical Asymptotes",
-            "Connecting Limits at Infinity and Horizontal Asymptotes"
+            "Infinite Limits and Vertical Asymptotes",
+            "Limits at Infinity and Horizontal Asymptotes"
         ],
-        totalTimeMinutes: 200
+        estimatedUnitTimeMinutes: 60,
+        studyTips: [
+          'Practice algebraic manipulation for finding limits. Factoring and multiplying by the conjugate are key skills.',
+          'Draw graphs to visualize limits and discontinuities. A picture is worth a thousand equations here.'
+        ],
+        recommended: true
       },
       {
-        topicTitle: 'Unit 2: Differentiation: Definition and Fundamental Properties',
-        explanation: 'The derivative represents the instantaneous rate of change of a function. This section introduces the formal definition of the derivative and covers essential rules like the Power, Product, and Quotient Rules.',
-        studyTip: 'Do not just memorize the rules; understand what the derivative represents (slope of the tangent line). This conceptual understanding is crucial.',
+        topicTitle: 'Unit 2: Differentiation: Definition and Basic Rules',
+        understandFirst: "The derivative is just the slope of a curve at a single point. Internalize this concept before memorizing the rules.",
         lessonHeaders: [
-            "Defining the Derivative of a Function and Using Derivative Notation",
-            "Estimating Derivatives of a Function at a Point",
-            "Applying the Power Rule",
+            "Defining the Derivative of a Function",
+            "Estimating Derivatives",
+            "The Power Rule",
             "The Product Rule",
             "The Quotient Rule",
             "Derivatives of Trigonometric Functions"
         ],
-        totalTimeMinutes: 150
+        estimatedUnitTimeMinutes: 60,
+        studyTips: [
+            'Do not just memorize the rules; understand what the derivative represents (slope of the tangent line).',
+            'Write out each step of the Product and Quotient rules. Do not try to do them in your head at first.'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Unit 3: Differentiation: Composite, Implicit, and Inverse Functions',
-        explanation: 'This unit focuses on more advanced differentiation techniques, including the chain rule for composite functions, implicit differentiation for relations that are not functions, and finding derivatives of inverse functions.',
-        studyTip: 'The Chain Rule is one of the most important concepts in calculus. Practice it with various combinations of functions until it becomes second nature.',
+        understandFirst: 'The Chain Rule is for differentiating a "function within a function." Practice identifying the "inner" and "outer" functions.',
         lessonHeaders: [
             "The Chain Rule",
             "Implicit Differentiation",
             "Differentiating Inverse Functions",
             "Differentiating Inverse Trigonometric Functions",
-            "Selecting Procedures for Calculating Derivatives",
             "Calculating Higher-Order Derivatives"
         ],
-        totalTimeMinutes: 150
+        estimatedUnitTimeMinutes: 75,
+        studyTips: [
+            'The Chain Rule is one of the most important concepts in calculus. Practice it until it becomes second nature.',
+            'For implicit differentiation, remember to multiply by dy/dx every time you differentiate a y-term.'
+        ],
       }
     ],
     pdfMarkdown: `
@@ -349,53 +384,62 @@ _"Calculus is not just a subject; it's a new way of seeing the world.”_
   {
     id: '5',
     slug: 'ap-psychology',
+    fieldOfStudy: 'Social Sciences',
     courseTitle: 'AP Psychology',
     courseDescription: 'A scientific exploration of human behavior and mental processes.',
-    timeEstimateMinutes: 900,
+    mindsetTagline: 'Learn the "why" behind human behavior by connecting theories to real-life examples.',
+    totalEstimatedTimeHours: 6,
     sections: [
       {
         topicTitle: 'Unit 1: Scientific Foundations of Psychology',
-        explanation: 'This unit introduces the history of psychology and its various approaches. It also covers the research methods psychologists use to study behavior and mental processes scientifically.',
-        studyTip: 'Focus on the differences between research methods (e.g., correlational vs. experimental) and be able to identify independent and dependent variables.',
+        understandFirst: 'Psychology is a science. Focus on the differences between research methods (e.g., correlational vs. experimental) to understand how psychologists draw conclusions.',
         lessonHeaders: [
-            "Introducing Psychology",
+            "Introducing Psychology: The Historical Perspectives",
+            "Contemporary Approaches to Psychology",
             "Research Methods in Psychology",
             "The Experimental Method",
-            "Selecting a Research Method",
-            "Statistical Analysis in Psychology",
             "Ethical Guidelines in Psychology"
         ],
-        totalTimeMinutes: 100,
+        estimatedUnitTimeMinutes: 45,
+        studyTips: [
+          'Be able to identify independent and dependent variables in an experiment.',
+          'Create a chart comparing the major psychological perspectives (e.g., behavioral, cognitive, psychoanalytic).'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Unit 2: Biological Bases of Behavior',
-        explanation: 'This unit explores the link between biology and behavior. Topics include the structure and function of neurons, the nervous system, the endocrine system, and how genetics and brain structures influence our thoughts and actions.',
-        studyTip: 'Draw a neuron and trace the path of an action potential, labeling all key parts and ions involved. This visual mapping helps solidify the concept.',
+        understandFirst: 'The neuron is the fundamental building block. Understand how one neuron fires (action potential) and communicates with another (neurotransmitters) before exploring the whole brain.',
         lessonHeaders: [
             "Interaction of Heredity and Environment",
             "The Endocrine System",
             "Tools for Examining Brain Structure and Function",
             "The Brain",
-            "The Neuron",
-            "Neural Firing",
+            "The Neuron and Neural Firing",
             "Influence of Drugs on Neural Firing"
         ],
-        totalTimeMinutes: 120,
+        estimatedUnitTimeMinutes: 60,
+        studyTips: [
+          'Draw a neuron and trace the path of an action potential, labeling all key parts.',
+          'Use mnemonics to remember the functions of the brain lobes (e.g., "Front door" for Frontal lobe planning).'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Unit 3: Sensation and Perception',
-        explanation: 'Sensation is the process of receiving stimulus energy from the environment, while perception is the process of organizing and interpreting that sensory information. This unit covers all the major senses.',
-        studyTip: 'Clearly distinguish between sensation (bottom-up processing) and perception (top-down processing). Use examples to illustrate the difference.',
+        understandFirst: 'Sensation is about receiving data from your senses (bottom-up), while perception is how your brain interprets that data (top-down). Get this distinction clear first.',
         lessonHeaders: [
-            "Principles of Sensation",
-            "Principles of Perception",
+            "Principles of Sensation & Perception",
             "Visual Anatomy",
             "Visual Perception",
             "Auditory Sensation and Perception",
-            "Chemical Senses",
-            "Body Senses"
+            "Chemical and Body Senses"
         ],
-        totalTimeMinutes: 110,
+        estimatedUnitTimeMinutes: 45,
+        studyTips: [
+            'Use examples from your own life to illustrate the difference between sensation and perception.',
+            'Draw a diagram of the eye and ear, tracing the path of light and sound.'
+        ]
       }
     ],
     pdfMarkdown: `
@@ -455,42 +499,51 @@ _"The purpose of psychology is to give us a completely different idea of the thi
   {
     id: '6',
     slug: 'ap-microeconomics',
+    fieldOfStudy: 'Social Sciences',
     courseTitle: 'AP Microeconomics',
     courseDescription: 'The study of how individuals and firms make decisions regarding the allocation of scarce resources.',
-    timeEstimateMinutes: 900,
+    mindsetTagline: 'Think like an economist by mastering the core graphs. Every scenario is a puzzle to solve.',
+    totalEstimatedTimeHours: 6,
     sections: [
       {
         topicTitle: 'Unit 1: Basic Economic Concepts',
-        explanation: 'This unit introduces the fundamental ideas of economics, including scarcity, opportunity cost, and the production possibilities curve (PPC). These concepts form the basis for all economic reasoning.',
-        studyTip: 'Be able to draw and interpret a PPC graph. Understand what points inside, on, and outside the curve represent, and what causes the curve to shift.',
+        understandFirst: 'Scarcity is the fundamental problem of economics. Understand this and opportunity cost, and you have the foundation for everything else.',
         lessonHeaders: [
             "Scarcity",
             "Opportunity Cost and the Production Possibilities Curve (PPC)",
             "Comparative Advantage and Gains from Trade",
             "Demand",
             "Supply",
-            "Market Equilibrium, Disequilibrium, and Changes in Equilibrium"
+            "Market Equilibrium"
         ],
-        totalTimeMinutes: 150
+        estimatedUnitTimeMinutes: 45,
+        studyTips: [
+            'Be able to draw and interpret a PPC graph. Understand what points inside, on, and outside the curve mean.',
+            'For any decision, always ask: "What is the opportunity cost?" This is the core of economic thinking.'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Unit 2: Supply and Demand',
-        explanation: 'The model of supply and demand is the economist\'s most important tool. We analyze how markets work, what determines the price and quantity of goods, and how government policies like price ceilings and taxes affect market outcomes.',
-        studyTip: 'Practice drawing supply and demand graphs and shifting the curves. Clearly label your axes (Price and Quantity) and equilibrium points. This is the single most important skill in the course.',
+        understandFirst: 'This is the most important unit. Master drawing supply and demand graphs and identifying what causes the curves to shift.',
         lessonHeaders: [
             "Price Elasticity of Demand",
             "Price Elasticity of Supply",
-            "Income Elasticity and Cross-Price Elasticity of Demand",
-            "Consumer Surplus, Producer Surplus, and Market Efficiency",
-            "Effect of Government Intervention in Markets",
-            "International Trade and Public Policy"
+            "Income and Cross-Price Elasticity",
+            "Consumer and Producer Surplus",
+            "Market Efficiency and Deadweight Loss",
+            "Effect of Government Intervention (Taxes, Subsidies, Price Controls)"
         ],
-        totalTimeMinutes: 200
+        estimatedUnitTimeMinutes: 75,
+        studyTips: [
+            'Practice drawing S&D graphs and shifting the curves daily. Clearly label everything.',
+            'Use the mnemonic "TRIBE" for demand shifters (Tastes, Related goods, Income, Buyers, Expectations).'
+        ],
+        recommended: true
       },
       {
         topicTitle: 'Unit 4: Imperfect Competition',
-        explanation: 'This section compares different types of markets that are not perfectly competitive: monopolistic competition, oligopoly, and monopoly. We examine how firms behave in each structure regarding pricing and output decisions.',
-        studyTip: 'Create a table comparing the four market structures (including perfect competition) based on number of firms, type of product, barriers to entry, and long-run profitability.',
+        understandFirst: 'Understand the characteristics of a monopoly (one seller, high barriers to entry) as the extreme opposite of perfect competition.',
         lessonHeaders: [
             "Introduction to Imperfectly Competitive Markets",
             "Monopoly",
@@ -498,7 +551,11 @@ _"The purpose of psychology is to give us a completely different idea of the thi
             "Monopolistic Competition",
             "Oligopoly and Game Theory"
         ],
-        totalTimeMinutes: 200
+        estimatedUnitTimeMinutes: 75,
+        studyTips: [
+            'Create a table comparing the four market structures (Perfect Competition, Monopoly, Oligopoly, Monopolistic Competition).',
+            'For game theory, always look for the dominant strategy for each player first.'
+        ]
       }
     ],
     pdfMarkdown: `
@@ -559,4 +616,4 @@ _"The art of economics consists in looking not merely at the immediate but at th
   },
 ];
 
-export const courses = allCourses.filter(c => ['ap-biology', 'ap-us-history', 'ap-calculus-ab', 'ap-psychology', 'ap-microeconomics'].includes(c.slug));
+export const courses = allCourses;

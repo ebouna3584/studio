@@ -1,9 +1,24 @@
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { courses } from '@/lib/courses';
-import { ArrowRight, Clock } from 'lucide-react';
+import { ArrowRight, Clock, Star } from 'lucide-react';
 
 export default function Home() {
+  const fieldsOfStudy = Array.from(new Set(courses.map(course => course.fieldOfStudy)));
+  
+  const getFieldIcon = (field: string) => {
+    switch (field) {
+        case 'STEM':
+            return '🔬';
+        case 'Social Sciences':
+            return '🧠';
+        case 'Humanities':
+            return '🏛️';
+        default:
+            return '📚';
+    }
+  }
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-12">
@@ -15,26 +30,36 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {courses.map((course) => (
-          <Link href={`/courses/${course.slug}`} key={course.id} className="group">
-            <Card className="h-full flex flex-col transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 border-2 border-transparent hover:border-primary">
-              <CardHeader className="flex-grow">
-                <CardTitle className="font-headline text-2xl mb-2">{course.courseTitle}</CardTitle>
-                <CardDescription>{course.courseDescription}</CardDescription>
-              </CardHeader>
-              <div className="p-6 pt-0 flex justify-between items-center">
-                  <div className="flex items-center text-sm text-muted-foreground">
-                      <Clock className="mr-2 h-4 w-4" />
-                      {course.timeEstimateMinutes} min
-                  </div>
-                  <div className="flex items-center text-primary font-semibold">
-                      Start Learning
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </div>
-              </div>
-            </Card>
-          </Link>
+      <div className="space-y-12">
+        {fieldsOfStudy.map(field => (
+          <section key={field}>
+            <h2 className="text-3xl font-bold font-headline mb-6 border-b pb-3">
+              {getFieldIcon(field)} {field}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {courses.filter(course => course.fieldOfStudy === field).map((course) => (
+                <Link href={`/courses/${course.slug}`} key={course.id} className="group">
+                  <Card className="h-full flex flex-col transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 border-2 border-transparent hover:border-primary">
+                    <CardHeader className="flex-grow">
+                      <CardTitle className="font-headline text-2xl mb-2">{course.courseTitle}</CardTitle>
+                      <CardDescription className="italic text-sm mb-2">{course.mindsetTagline}</CardDescription>
+                      <CardDescription>{course.courseDescription}</CardDescription>
+                    </CardHeader>
+                    <div className="p-6 pt-0 flex justify-between items-center">
+                        <div className="flex items-center text-sm text-muted-foreground">
+                            <Clock className="mr-2 h-4 w-4" />
+                            {course.totalEstimatedTimeHours} hours
+                        </div>
+                        <div className="flex items-center text-primary font-semibold">
+                            Start Learning
+                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </div>
+                    </div>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
     </div>
