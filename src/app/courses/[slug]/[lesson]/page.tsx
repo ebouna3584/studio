@@ -1,4 +1,4 @@
-import { courses } from '@/lib/courses';
+import { courses, allLessonContent } from '@/lib/courses';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -58,7 +58,7 @@ export async function generateStaticParams() {
 export default function Page({ params }: { params: { slug: string; lesson: string } }) {
   const course = courses.find((c) => c.slug === params.slug);
   
-  let lesson: string | undefined;
+  let lessonTitle: string | undefined;
   let unitTitle: string | undefined;
 
   if (course) {
@@ -67,14 +67,17 @@ export default function Page({ params }: { params: { slug: string; lesson: strin
         (header) => toSlug(header) === params.lesson
       );
       if (foundLesson) {
-        lesson = foundLesson;
+        lessonTitle = foundLesson;
         unitTitle = section.topicTitle;
         break;
       }
     }
   }
+  
+  const courseContent = allLessonContent[params.slug] || {};
+  const lessonContent = courseContent[params.lesson];
 
-  if (!course || !lesson) {
+  if (!course || !lessonTitle) {
     notFound();
   }
 
@@ -89,31 +92,44 @@ export default function Page({ params }: { params: { slug: string; lesson: strin
         </Link>
         <p className="text-sm font-semibold text-primary uppercase tracking-wider">{unitTitle}</p>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground font-headline mt-2">
-          {lesson}
+          {lessonTitle}
         </h1>
       </div>
 
       <div className="prose prose-lg dark:prose-invert max-w-none">
-        <h2 className="text-2xl font-bold font-headline">Lesson Analysis</h2>
-        <p>
-            This is a placeholder for the detailed analysis of the lesson: <strong>{lesson}</strong>.
-        </p>
-        <p>
-            In a future step, this page will be populated with AI-generated content that provides a thorough and efficient rundown of the topic, including key concepts, examples, and study hacks.
-        </p>
-        
-        <h3 className="text-xl font-bold font-headline mt-8">Key Concepts</h3>
-        <ul>
-            <li>Concept A will be explained here.</li>
-            <li>Concept B will be explained here.</li>
-            <li>Concept C will be explained here.</li>
-        </ul>
+        {lessonContent ? (
+          <>
+            <h2 className="text-2xl font-bold font-headline">Lesson Analysis</h2>
+            <p>{lessonContent.summary}</p>
+            
+            <h3 className="text-xl font-bold font-headline mt-8">Key Concepts</h3>
+            <ul>
+              {lessonContent.keyConcepts.map((concept, index) => (
+                <li key={index}>{concept}</li>
+              ))}
+            </ul>
 
-        <h3 className="text-xl font-bold font-headline mt-8">Common Pitfalls</h3>
-        <p>
-            Students often misunderstand X about this topic. It's important to remember Y to avoid this confusion.
-        </p>
+            <h3 className="text-xl font-bold font-headline mt-8">Common Pitfalls</h3>
+            <ul>
+              {lessonContent.commonPitfalls.map((pitfall, index) => (
+                <li key={index}>{pitfall}</li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <>
+            <h2 className="text-2xl font-bold font-headline">Lesson Analysis</h2>
+            <p>
+              This is a placeholder for the detailed analysis of the lesson: <strong>{lessonTitle}</strong>.
+            </p>
+            <p>
+              Content for this lesson is being prepared and will be available soon. It will include a thorough and efficient rundown of the topic, including key concepts, examples, and study hacks.
+            </p>
+          </>
+        )}
       </div>
     </div>
   );
 }
+
+    

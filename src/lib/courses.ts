@@ -782,3 +782,54 @@ _"The art of economics consists in looking not merely at the immediate but at th
 ];
 
 export const courses = allCourses;
+
+type LessonContentDetails = {
+  summary: string;
+  keyConcepts: string[];
+  commonPitfalls: string[];
+};
+
+type LessonContent = {
+  [lessonSlug: string]: LessonContentDetails;
+};
+
+// AP Biology Content
+export const apBiologyContent: LessonContent = {
+  'structure-of-water-and-hydrogen-bonding': {
+    summary: 'Water is a polar molecule, meaning it has a slight positive charge on the hydrogen side and a slight negative charge on the oxygen side. This polarity allows water molecules to form hydrogen bonds with each other, which are responsible for many of water\'s unique properties, such as cohesion, adhesion, and its high specific heat.',
+    keyConcepts: [
+      'Polarity: The unequal sharing of electrons in the H-O bonds.',
+      'Hydrogen Bonds: Weak attractions between the positive hydrogen of one water molecule and the negative oxygen of another.',
+      'Cohesion: Water molecules sticking to each other.',
+      'Adhesion: Water molecules sticking to other surfaces.'
+    ],
+    commonPitfalls: [
+      'Confusing hydrogen bonds (between molecules) with covalent bonds (within a molecule).',
+      'Forgetting that hydrogen bonds are relatively weak individually but strong collectively.'
+    ]
+  },
+  'elements-of-life': {
+    summary: 'Life is primarily composed of a few key elements: Carbon, Hydrogen, Oxygen, Nitrogen, Phosphorus, and Sulfur (CHONPS). Carbon is the backbone of organic molecules due to its ability to form four stable covalent bonds.',
+    keyConcepts: [
+      'CHONPS: The six most abundant elements in living organisms.',
+      'Carbon Skeleton: The chain of carbon atoms in an organic molecule that provides its basic structure.',
+      'Functional Groups: Specific groups of atoms attached to the carbon skeleton that determine the chemical properties of a molecule.'
+    ],
+    commonPitfalls: [
+      'Memorizing the elements without understanding why carbon is so central to life\'s chemistry.',
+      'Overlooking the importance of phosphorus in DNA and ATP, and sulfur in proteins.'
+    ]
+  }
+};
+
+// Placeholder for other courses - in a real app, these would be populated
+export const apUSHistoryContent: LessonContent = {};
+export const apCalculusABContent: LessonContent = {};
+
+export const allLessonContent: { [courseSlug: string]: LessonContent } = {
+  'ap-biology': apBiologyContent,
+  'ap-us-history': apUSHistoryContent,
+  'ap-calculus-ab': apCalculusABContent,
+};
+
+    
