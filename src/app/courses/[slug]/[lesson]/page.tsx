@@ -131,5 +131,3 @@ export default function Page({ params }: { params: { slug: string; lesson: strin
     </div>
   );
 }
-
-    

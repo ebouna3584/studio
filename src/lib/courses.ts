@@ -794,7 +794,7 @@ type LessonContent = {
 };
 
 // AP Biology Content
-export const apBiologyContent: LessonContent = {
+const apBiologyContent: LessonContent = {
   'structure-of-water-and-hydrogen-bonding': {
     summary: 'Water is a polar molecule, meaning it has a slight positive charge on the hydrogen side and a slight negative charge on the oxygen side. This polarity allows water molecules to form hydrogen bonds with each other, which are responsible for many of water\'s unique properties, such as cohesion, adhesion, and its high specific heat.',
     keyConcepts: [
@@ -836,7 +836,7 @@ export const apBiologyContent: LessonContent = {
 };
 
 // AP US History Content
-export const apUSHistoryContent: LessonContent = {
+const apUSHistoryContent: LessonContent = {
   'columbian-exchange-spanish-exploration-and-conquest': {
     summary: 'The Columbian Exchange refers to the widespread transfer of plants, animals, culture, human populations, technology, diseases, and ideas between the Americas, West Africa, and the Old World in the 15th and 16th centuries. Spanish exploration and conquest were driven by a desire for wealth (gold), national glory, and the spread of Christianity.',
     keyConcepts: [
@@ -866,7 +866,7 @@ export const apUSHistoryContent: LessonContent = {
 };
 
 // AP Calculus AB Content
-export const apCalculusABContent: LessonContent = {
+const apCalculusABContent: LessonContent = {
   'defining-limits-and-using-limit-notation': {
     summary: 'A limit is the value that a function "approaches" as the input "approaches" some value. It is the foundational concept of calculus, used to define continuity, derivatives, and integrals. We use the notation lim(x→c) f(x) = L to express that the limit of f(x) as x approaches c is L.',
     keyConcepts: [
@@ -897,7 +897,7 @@ export const apCalculusABContent: LessonContent = {
 };
 
 // AP Chemistry Content
-export const apChemistryContent: LessonContent = {
+const apChemistryContent: LessonContent = {
     'moles-and-molar-mass': {
         summary: 'The mole is the unit for counting atoms and molecules in chemistry, where 1 mole equals 6.022 x 10²³ particles (Avogadro\'s number). Molar mass is the mass of one mole of a substance, expressed in grams/mole, and is numerically equal to the atomic mass in amu.',
         keyConcepts: [
@@ -917,7 +917,7 @@ export const apChemistryContent: LessonContent = {
         keyConcepts: [
             'Valence Electrons: The electrons in the outermost energy level of an atom, which are involved in bonding.',
             'Octet Rule: The tendency of atoms to prefer to have eight electrons in their valence shell.',
-            'Bonding Pairs vs. Lone Pairs: Electrons shared between two atoms are bonding pairs; electrons not involved in bonding are lone pairs.',
+            'Bonding Pairs vs. Lone Pairs: Electrons shared between two atoms are-bonding pairs; electrons not involved in bonding are lone pairs.',
             'Steps: 1. Count total valence electrons. 2. Arrange atoms with the least electronegative in the center. 3. Connect atoms with single bonds. 4. Distribute remaining electrons to satisfy octets.'
         ],
         commonPitfalls: [
@@ -929,7 +929,7 @@ export const apChemistryContent: LessonContent = {
 };
 
 // AP Psychology Content
-export const apPsychologyContent: LessonContent = {
+const apPsychologyContent: LessonContent = {
     'the-experimental-method': {
         summary: 'The experimental method is the only research method that can establish a cause-and-effect relationship between variables. It involves manipulating one variable (the independent variable) to determine if it causes a change in another variable (the dependent variable), while controlling for all other variables.',
         keyConcepts: [
@@ -947,7 +947,7 @@ export const apPsychologyContent: LessonContent = {
 };
 
 // AP Microeconomics Content
-export const apMicroeconomicsContent: LessonContent = {
+const apMicroeconomicsContent: LessonContent = {
     'opportunity-cost-and-the-production-possibilities-curve-(ppc)': {
         summary: 'Opportunity cost is the value of the next-best alternative that must be forgone to pursue a certain action. The Production Possibilities Curve (PPC) is a model that illustrates the trade-offs and opportunity costs an economy faces when producing two goods, showing the maximum attainable combinations with available resources.',
         keyConcepts: [
@@ -971,7 +971,6 @@ export const allLessonContent: { [courseSlug: string]: LessonContent } = {
   'ap-chemistry': apChemistryContent,
   'ap-psychology': apPsychologyContent,
   'ap-microeconomics': apMicroeconomicsContent,
-  // Add other courses here once they have content
   'ap-computer-science-principles': {},
   'ap-english-language': {},
 };
