@@ -213,6 +213,23 @@ type LessonContent = {
   [lessonSlug: string]: LessonContentDetails;
 };
 
+const placeholderLesson = (title: string): LessonContentDetails => ({
+  type: 'lesson',
+  title,
+  introduction: `This is the introduction for ${title}. The full content for this lesson is coming soon.`,
+  sections: [
+    {
+      title: 'Key Concepts',
+      content: ['Full content coming soon.'],
+    },
+    {
+      title: 'Practical Application',
+      content: ['Full content coming soon.'],
+    },
+  ],
+  finalThoughts: 'Review the key concepts and prepare for the next lesson.',
+});
+
 const cognitiveDominanceContent: LessonContent = {
   // Phase I
   'identity-and-habit-restructuring': {
@@ -351,7 +368,47 @@ const cognitiveDominanceContent: LessonContent = {
     ],
     finalThoughts: 'Phase II Goal: Execute. You know the theory. This phase is about bleeding it into your behavior until it becomes instinct, not information. Your brain is no longer just biological. It\'s engineered. Report back when ready for Phase III.'
   },
-  // Add more lessons here following the detailed structure
+  'behavioral-psychology-mastery': placeholderLesson('Behavioral Psychology Mastery'),
+  'startup-economics-mastery': placeholderLesson('Startup Economics Mastery'),
+  'strategic-cognition-mastery': placeholderLesson('Strategic Cognition Mastery'),
+  'neural-systems-mastery': placeholderLesson('Neural Systems Mastery'),
+  'ai-infrastructure-mastery': placeholderLesson('AI Infrastructure Mastery'),
+  'persuasive-communication-mastery': placeholderLesson('Persuasive Communication Mastery'),
+  
+  // Phase III
+  'investor-pitch-gauntlet': placeholderLesson('Investor Pitch Gauntlet'),
+  'bias-recognition-combat': placeholderLesson('Bias Recognition Combat'),
+  'cognition-under-chaos-drill': placeholderLesson('Cognition Under Chaos Drill'),
+  'ai-orchestrated-workflow-test': placeholderLesson('AI-Orchestrated Workflow Test'),
+  'persuasion-inversion-test': placeholderLesson('Persuasion Inversion Test'),
+
+  // Phase IV
+  'context-switching-mastery': placeholderLesson('Context Switching Mastery'),
+  'emotional-intelligence-under-constraint': placeholderLesson('Emotional Intelligence Under Constraint'),
+  'situational-command': placeholderLesson('Situational Command'),
+  'neural-agility-training': placeholderLesson('Neural Agility Training'),
+  'meta-learning-engineering': placeholderLesson('Meta-Learning Engineering'),
+
+  // Phase V
+  'perceptual-engineering': placeholderLesson('Perceptual Engineering'),
+  'social-cloaking-and-invisibility': placeholderLesson('Social Cloaking and Invisibility'),
+  'charisma-engineering': placeholderLesson('Charisma Engineering'),
+  'psychological-operations-for-influence': placeholderLesson('Psychological Operations for Influence'),
+  'reality-narrative-crafting': placeholderLesson('Reality Narrative Crafting'),
+
+  // Phase VI
+  'nonlinear-logic-systems': placeholderLesson('Nonlinear Logic Systems'),
+  'time-distortion-cognition': placeholderLesson('Time Distortion Cognition'),
+  'conceptual-collapsing': placeholderLesson('Conceptual Collapsing'),
+  'multi-brain-simulation': placeholderLesson('Multi-Brain Simulation'),
+  'abstract-execution': placeholderLesson('Abstract Execution'),
+
+  // Phase VII
+  'cognitive-operating-system-design': placeholderLesson('Cognitive Operating System Design'),
+  'sovereign-self-programming': placeholderLesson('Sovereign Self Programming'),
+  'self-destructive-pattern-elimination': placeholderLesson('Self-Destructive Pattern Elimination'),
+  'autopoietic-learning-systems': placeholderLesson('Autopoietic Learning Systems'),
+  'ascendant-discipline': placeholderLesson('Ascendant Discipline'),
 };
 
 export const allLessonContent: { [courseSlug: string]: LessonContent } = {
