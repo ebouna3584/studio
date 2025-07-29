@@ -16,6 +16,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { marked } from 'marked';
 
 const toSlug = (text: string) => {
     return text.toLowerCase()
@@ -53,7 +54,7 @@ export default function Page() {
     }
   }
   
-  const courseContent = allLessonContent[params.slug] || {};
+  const courseContent = allLessonContent[course.slug] || {};
   const lessonData = courseContent[params.lesson];
 
   if (!lessonTitle || !lessonData) {
@@ -95,6 +96,15 @@ export default function Page() {
       router.push('/'); // Or a "Course Completed" page
     }
   };
+  
+  const renderMarkdown = (content: string | string[]) => {
+    const text = Array.isArray(content) ? content.join('\n\n') : content;
+    const dirtyHtml = marked(text, { breaks: true });
+    // In a real app, you MUST sanitize this HTML before rendering to prevent XSS attacks.
+    // For this prototype, we'll trust the source.
+    return { __html: dirtyHtml };
+  };
+
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -114,7 +124,7 @@ export default function Page() {
       <div className="prose prose-lg dark:prose-invert max-w-none space-y-8">
         <Card className="bg-secondary border-primary/20">
             <CardContent className="pt-6">
-                <p className="text-lg italic">{lessonData.introduction}</p>
+                <div className="text-lg italic" dangerouslySetInnerHTML={renderMarkdown(lessonData.introduction)} />
             </CardContent>
         </Card>
 
@@ -124,13 +134,7 @@ export default function Page() {
                 <CardTitle className="font-headline text-2xl">{section.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {typeof section.content === 'string' ? (
-                  <p dangerouslySetInnerHTML={{ __html: section.content }}></p>
-                ) : (
-                  section.content.map((paragraph, pIndex) => (
-                    <p key={pIndex} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
-                  ))
-                )}
+                 <div dangerouslySetInnerHTML={renderMarkdown(section.content)} />
                 {section.chart && (
                     <div className="overflow-x-auto">
                         <Table>
@@ -163,7 +167,7 @@ export default function Page() {
                 <CardTitle className="font-headline text-2xl text-destructive">Final Thoughts</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-bold">{lessonData.finalThoughts}</p>
+                <div className="text-lg font-bold" dangerouslySetInnerHTML={renderMarkdown(lessonData.finalThoughts)} />
               </CardContent>
             </Card>
         )}
@@ -185,8 +189,3 @@ export default function Page() {
     </div>
   );
 }
-
-// Since this is a client component, we handle static params generation differently if needed,
-// but for this structure, dynamic routing on the client is sufficient.
-// To optimize for build times, you could fetch this data in a parent server component
-// and pass it down, but for this case, we'll keep it simple.
