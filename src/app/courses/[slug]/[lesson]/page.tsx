@@ -1,4 +1,4 @@
-import { courses, allLessonContent } from '@/lib/courses';
+import { course, allLessonContent } from '@/lib/courses';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -16,25 +16,22 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const course = courses.find((c) => c.slug === params.slug);
-  let lessonTitle = "Lesson Not Found";
-
-  if (course) {
-    for (const section of course.sections) {
-      const foundLesson = section.lessonHeaders.find(
-        (header) => toSlug(header) === params.lesson
-      );
-      if (foundLesson) {
-        lessonTitle = foundLesson;
-        break;
-      }
-    }
-  }
-
-  if (!course) {
+  if (course.slug !== params.slug) {
     return {
       title: 'Course Not Found',
     };
+  }
+
+  let lessonTitle = "Lesson Not Found";
+
+  for (const section of course.sections) {
+    const foundLesson = section.lessonHeaders.find(
+      (header) => toSlug(header) === params.lesson
+    );
+    if (foundLesson) {
+      lessonTitle = foundLesson;
+      break;
+    }
   }
 
   return {
@@ -45,46 +42,44 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export async function generateStaticParams() {
     const params: { slug: string; lesson: string }[] = [];
-    courses.forEach(course => {
-        course.sections.forEach(section => {
-            section.lessonHeaders.forEach(lessonHeader => {
-                params.push({ slug: course.slug, lesson: toSlug(lessonHeader) });
-            });
+    course.sections.forEach(section => {
+        section.lessonHeaders.forEach(lessonHeader => {
+            params.push({ slug: course.slug, lesson: toSlug(lessonHeader) });
         });
     });
     return params;
 }
 
 export default function Page({ params }: { params: { slug: string; lesson: string } }) {
-  const course = courses.find((c) => c.slug === params.slug);
+  if (course.slug !== params.slug) {
+    notFound();
+  }
   
   let lessonTitle: string | undefined;
   let unitTitle: string | undefined;
 
-  if (course) {
-    for (const section of course.sections) {
-      const foundLesson = section.lessonHeaders.find(
-        (header) => toSlug(header) === params.lesson
-      );
-      if (foundLesson) {
-        lessonTitle = foundLesson;
-        unitTitle = section.topicTitle;
-        break;
-      }
+  for (const section of course.sections) {
+    const foundLesson = section.lessonHeaders.find(
+      (header) => toSlug(header) === params.lesson
+    );
+    if (foundLesson) {
+      lessonTitle = foundLesson;
+      unitTitle = section.topicTitle;
+      break;
     }
   }
   
   const courseContent = allLessonContent[params.slug] || {};
   const lessonContent = courseContent[params.lesson];
 
-  if (!course || !lessonTitle) {
+  if (!lessonTitle) {
     notFound();
   }
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       <div className="mb-8">
-        <Link href={`/courses/${course.slug}`}>
+        <Link href={`/`}>
           <Button variant="ghost" className="mb-4">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to {course.courseTitle}
