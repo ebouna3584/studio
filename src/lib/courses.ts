@@ -1,4 +1,5 @@
 
+
 export type CourseSection = {
   topicTitle: string;
   understandFirst: string;
@@ -31,7 +32,7 @@ const cognitiveDominanceCourse: Course = {
     sections: [
         {
             topicTitle: 'Phase I: Core Rewiring & Scientific Foundations',
-            understandFirst: 'Purpose: Build your neurobiological backend and understand brain optimization. Your habits and identity are the result of repeated Cue → Craving → Action → Reward → Reinforcement loops.',
+            understandFirst: 'Build your neurobiological backend and understand brain optimization. This is mental architecture — not skill, but the operating system on which skills will run.',
             lessonHeaders: [
                 'Identity and Habit Restructuring', 
                 'Neurological Mechanisms to Rewire',
@@ -40,86 +41,100 @@ const cognitiveDominanceCourse: Course = {
             ],
             estimatedUnitTimeMinutes: 420,
             studyTips: [
-                'The brain doesn’t care what’s true. It believes what you repeat with intensity. Most people fail not from lack of talent—but because their amygdala never felt urgency. Identity = repetition + emotion + reflection. Repeat. Reflect. Rewire.'
+                'Phase I is internal war. You debug your mind like code, removing inefficiencies, emotional noise, and false narratives. You walk out with internal sovereignty and total clarity.'
             ],
             recommended: true
         },
         {
             topicTitle: 'Phase II: Reinforcement & Neural Encoding',
-            understandFirst: 'Purpose: Lock in habits, rituals, and neurological anchoring of behaviors. This phase is about bleeding theory into your behavior until it becomes instinct, not information.',
+            understandFirst: 'Lock in habits, rituals, and neurological anchoring of behaviors. This phase is about bleeding theory into your behavior until it becomes instinct, not information.',
             lessonHeaders: [
                 'Deep Practice and Immersion Training',
                 'Behavioral Psychology Mastery',
-                'Startup Economics Mastery'
+                'Startup Economics Mastery',
+                'Strategic Cognition Mastery',
+                'Neural Systems Mastery',
+                'AI Infrastructure Mastery',
+                'Persuasive Communication Mastery'
             ],
             estimatedUnitTimeMinutes: 300,
             studyTips: [
-                'Your brain is no longer just biological. It\'s engineered. Execute until it becomes instinct.'
+                'You begin thinking in layers. This phase rewires your mind to become predictive, architectural, and strategic. No more linear thinking — now you see webs of influence and pathways of leverage.'
             ]
         },
         {
             topicTitle: 'Phase III: Performance Simulations & Feedback Loops',
-            understandFirst: 'Purpose: Stress test cognition and refine execution through scenario-based learning. This phase forges your cognitive steel through high-stress, high-fidelity simulation.',
+            understandFirst: 'Stress test cognition and refine execution through scenario-based learning. This phase forges your cognitive steel through high-stress, high-fidelity simulation.',
             lessonHeaders: [
                 'Investor Pitch Gauntlet',
                 'Bias Recognition Combat',
-                'Cognition Under Chaos Drill'
+                'Cognition Under Chaos Drill',
+                'AI-Orchestrated Workflow Test',
+                'Persuasion Inversion Test'
             ],
             estimatedUnitTimeMinutes: 300,
             studyTips: [
-                'It’s not what you know. It’s how you perform when watched, stressed, or constrained. When these simulations become second nature, you are no longer training. You are operating.'
+                'You become a machine, but not in the mechanical sense — you are fluid, frictionless, and impossible to stop. Everything in your life aligns around output, and you’re no longer fighting resistance; you’ve built an engine.'
             ]
         },
         {
             topicTitle: 'Phase IV: Adaptive Intelligence & Situational Mastery',
-            understandFirst: 'Purpose: Master ambiguity, fluidity, and environmental control. This is the phase where you cease being merely a thinker or performer and become a living system.',
+            understandFirst: 'Master ambiguity, fluidity, and environmental control. This is the phase where you cease being merely a thinker or performer and become a living system.',
             lessonHeaders: [
                 'Context Switching Mastery',
                 'Emotional Intelligence Under Constraint',
+                'Situational Command',
+                'Neural Agility Training',
                 'Meta-Learning Engineering'
             ],
             estimatedUnitTimeMinutes: 300,
             studyTips: [
-                'To operate across any battlefield with full command. When context changes, your system doesn’t collapse — it recalibrates in real time. This is what makes you ungovernable by environment and unreplaceable by machines.'
+                'You stop being static and become dynamic. You adapt faster than change happens. This is your firewall against chaos — when most freeze or break, you evolve.'
             ]
         },
         {
             topicTitle: 'Phase V: Reality Distortion & Perceptual Dominance',
-            understandFirst: 'Purpose: Bend perception. You no longer react to reality — you architect it. Perceptual dominance means controlling how others see, feel, and interpret your presence, actions, and decisions.',
+            understandFirst: 'Bend perception. You no longer react to reality — you architect it. Perceptual dominance means controlling how others see, feel, and interpret your presence, actions, and decisions.',
             lessonHeaders: [
                 'Perceptual Engineering',
+                'Social Cloaking and Invisibility',
                 'Charisma Engineering',
-                'Psychological Operations for Influence'
+                'Psychological Operations for Influence',
+                'Reality Narrative Crafting'
             ],
             estimatedUnitTimeMinutes: 300,
             studyTips: [
-                'To dominate perception is to control outcomes before action is taken. You become a reality distortion field — rewriting the narrative and walking unseen through chaos. This is the power of invisible influence.'
+                'This is the power to make people move — think, act, or trust in the way you architect. You become an invisible architect of perception, and a master of the human psyche.'
             ]
         },
         {
             topicTitle: 'Phase VI: Quantum Cognition & Nonlinear Thinking',
-            understandFirst: 'Purpose: Your brain becomes non-Euclidean — no longer limited by linear causality. You learn to leap between ideas, collapse abstract concepts into strategic actions, and wield paradox as a tool.',
+            understandFirst: 'Your brain becomes non-Euclidean — no longer limited by linear causality. You learn to leap between ideas, collapse abstract concepts into strategic actions, and wield paradox as a tool.',
             lessonHeaders: [
                 'Nonlinear Logic Systems',
                 'Time Distortion Cognition',
+                'Conceptual Collapsing',
+                'Multi-Brain Simulation',
                 'Abstract Execution'
             ],
             estimatedUnitTimeMinutes: 300,
             studyTips: [
-                'Become a quantum thinker to compress time, synthesize wisdom, and execute across dimensions. Your brain becomes a weapon of pattern recognition, foresight, and creative warfare. This is how you create what has never existed — and do it fast.'
+                'You are no longer competing in the visible field — you move in hidden dimensions. Everything becomes a layer: optics, power, incentives, control. You begin pulling strings others don’t even see.'
             ]
         },
         {
             topicTitle: 'Phase VII: Ascendant Neuroarchitecture & Auto-Transcendence',
-            understandFirst: 'Purpose: You are no longer training to become powerful. You are designing the architecture of the mind that builds reality itself. You become the source code.',
+            understandFirst: 'You are no longer training to become powerful. You are designing the architecture of the mind that builds reality itself. You become the source code.',
             lessonHeaders: [
                 'Cognitive Operating System Design',
                 'Sovereign Self Programming',
+                'Self-Destructive Pattern Elimination',
+                'Autopoietic Learning Systems',
                 'Ascendant Discipline'
             ],
             estimatedUnitTimeMinutes: 300,
             studyTips: [
-                'Become the architect of your own neural universe. No guru, no app, no system — just you. You are the coder, the source, the sovereign system. The rewiring is no longer a process. It is you. You are now the signal.'
+                'Now you shift from winning the game to becoming the blueprint for it. This is where individuals become empires — where your cognition births institutions. You aren’t just remembered. You’re installed into the operating system of the future.'
             ]
         }
     ],
@@ -132,39 +147,39 @@ A comprehensive self-engineering protocol that reshapes your brain, behavior, an
 ---
 
 ### Phase I: Core Rewiring & Scientific Foundations
-**Purpose:** Build your neurobiological backend and understand brain optimization.
-- **Key Themes:** Identity Restructuring, Neurological Mechanisms, Daily Protocols, Critical Subjects.
-- **Summary:** Debug your mind, install urgency, and master the foundational knowledge required for cognitive dominance.
+**Purpose:** Build your neurobiological backend and understand brain optimization. This is mental architecture — not skill, but the operating system on which skills will run.
+- **Key Themes:** Identity and Habit Restructuring, Neurological Mechanisms to Rewire, Daily Neural Rewiring Protocol, Critical Subjects to Master.
+- **Summary:** Debug your mind like code, removing inefficiencies, emotional noise, and false narratives. You walk out with internal sovereignty and total clarity.
 
 ### Phase II: Reinforcement & Neural Encoding
-**Purpose:** Lock in habits, rituals, and neurological anchoring of behaviors.
-- **Key Themes:** Deep Practice, Immersion Training, Behavioral Mastery.
-- **Summary:** Bleed theory into your behavior until it becomes instinct, not just information.
+**Purpose:** Lock in habits, rituals, and neurological anchoring of behaviors. This phase is about bleeding theory into your behavior until it becomes instinct, not information.
+- **Key Themes:** Deep Practice and Immersion Training, Behavioral Psychology Mastery, Startup Economics Mastery, Strategic Cognition Mastery, Neural Systems Mastery, AI Infrastructure Mastery, Persuasive Communication Mastery.
+- **Summary:** You begin thinking in layers. This phase rewires your mind to become predictive, architectural, and strategic. No more linear thinking — now you see webs of influence and pathways of leverage.
 
 ### Phase III: Performance Simulations & Feedback Loops
-**Purpose:** Stress test cognition and refine execution through scenario-based learning.
-- **Key Themes:** Investor Pitches, Bias Recognition, Chaos Drills.
-- **Summary:** Forge cognitive steel through high-stress, high-fidelity simulation to make peak performance repeatable.
+**Purpose:** Stress test cognition and refine execution through scenario-based learning. This phase forges your cognitive steel through high-stress, high-fidelity simulation.
+- **Key Themes:** Investor Pitch Gauntlet, Bias Recognition Combat, Cognition Under Chaos Drill, AI-Orchestrated Workflow Test, Persuasion Inversion Test.
+- **Summary:** You become a machine, but not in the mechanical sense — you are fluid, frictionless, and impossible to stop. Everything in your life aligns around output, and you’re no longer fighting resistance; you’ve built an engine.
 
 ### Phase IV: Adaptive Intelligence & Situational Mastery
-**Purpose:** Master ambiguity, fluidity, and environmental control.
-- **Key Themes:** Context Switching, Emotional Intelligence, Meta-Learning.
-- **Summary:** Become a living system that recalibrates in real time, making you unreplaceable by machines.
+**Purpose:** Master ambiguity, fluidity, and environmental control. This is the phase where you cease being merely a thinker or performer and become a living system.
+- **Key Themes:** Context Switching Mastery, Emotional Intelligence Under Constraint, Situational Command, Neural Agility Training, Meta-Learning Engineering.
+- **Summary:** You stop being static and become dynamic. You adapt faster than change happens. This is your firewall against chaos — when most freeze or break, you evolve.
 
 ### Phase V: Reality Distortion & Perceptual Dominance
-**Purpose:** Bend perception. You no longer react to reality — you architect it.
-- **Key Themes:** Perceptual Engineering, Charisma, Psychological Operations.
-- **Summary:** Control outcomes before action is taken by becoming a reality distortion field.
+**Purpose:** Bend perception. You no longer react to reality — you architect it. Perceptual dominance means controlling how others see, feel, and interpret your presence, actions, and decisions.
+- **Key Themes:** Perceptual Engineering, Social Cloaking and Invisibility, Charisma Engineering, Psychological Operations for Influence, Reality Narrative Crafting.
+- **Summary:** This is the power to make people move — think, act, or trust in the way you architect. You become an invisible architect of perception, and a master of the human psyche.
 
 ### Phase VI: Quantum Cognition & Nonlinear Thinking
-**Purpose:** Your brain becomes non-Euclidean, no longer limited by linear causality.
-- **Key Themes:** Nonlinear Logic, Time Distortion, Abstract Execution.
-- **Summary:** Become a weapon of pattern recognition, foresight, and creative warfare.
+**Purpose:** Your brain becomes non-Euclidean — no longer limited by linear causality. You learn to leap between ideas, collapse abstract concepts into strategic actions, and wield paradox as a tool.
+- **Key Themes:** Nonlinear Logic Systems, Time Distortion Cognition, Conceptual Collapsing, Multi-Brain Simulation, Abstract Execution.
+- **Summary:** You are no longer competing in the visible field — you move in hidden dimensions. Everything becomes a layer: optics, power, incentives, control. You begin pulling strings others don’t even see.
 
 ### Phase VII: Ascendant Neuroarchitecture & Auto-Transcendence
-**Purpose:** Design the architecture of the mind that builds reality itself.
-- **Key Themes:** Cognitive OS Design, Sovereign Self Programming, Ascendant Discipline.
-- **Summary:** Become the architect of your own neural universe. You are the signal.
+**Purpose:** You are no longer training to become powerful. You are designing the architecture of the mind that builds reality itself. You become the source code.
+- **Key Themes:** Cognitive Operating System Design, Sovereign Self Programming, Self-Destructive Pattern Elimination, Autopoietic Learning Systems, Ascendant Discipline.
+- **Summary:** Now you shift from winning the game to becoming the blueprint for it. This is where individuals become empires — where your cognition births institutions. You aren’t just remembered. You’re installed into the operating system of the future.
 `
 };
 
@@ -179,9 +194,19 @@ export const quotes: string[] = [
 ];
 
 type LessonContentDetails = {
-  summary: string;
-  keyConcepts: string[];
-  commonPitfalls: string[];
+  // Using a flexible structure to accommodate varied content
+  type: 'lesson';
+  title: string;
+  introduction: string;
+  sections: {
+      title: string;
+      content: string[];
+      chart?: {
+          headers: string[];
+          rows: (string[])[];
+      };
+  }[];
+  finalThoughts?: string;
 };
 
 type LessonContent = {
@@ -189,116 +214,144 @@ type LessonContent = {
 };
 
 const cognitiveDominanceContent: LessonContent = {
+  // Phase I
   'identity-and-habit-restructuring': {
-    summary: 'Your habits and identity are the result of repeated Cue → Craving → Action → Reward → Reinforcement loops. Your basal ganglia automates these behaviors, while your prefrontal cortex makes high-level decisions. Rewiring requires reconditioning reward mechanisms in the nucleus accumbens and emotional reinforcement from the amygdala.',
-    keyConcepts: ['Cue-Craving-Action-Reward Loop', 'Basal Ganglia Automation', 'Prefrontal Cortex Decision-Making', 'Emotional Consistency over Discipline', 'Amygdala and Urgency-Based Recall'],
-    commonPitfalls: ['Relying on discipline alone', 'Ignoring the emotional component of habits', 'Seeking cheap dopamine hits instead of earned rewards', 'Failing to link actions to a desired future identity.']
+      type: 'lesson',
+      title: 'Identity and Habit Restructuring — Neurological Basis',
+      introduction: 'Your habits and identity are the result of repeated Cue → Craving → Action → Reward → Reinforcement loops. Your basal ganglia automates these behaviors, while your prefrontal cortex makes high-level decisions. Rewiring requires reconditioning reward mechanisms in the nucleus accumbens and emotional reinforcement from the amygdala.',
+      sections: [
+          {
+              title: 'The Core Process of Habit Formation',
+              content: [
+                  '**Cue:** An environmental or mental trigger. This is the spark that initiates the entire loop. For example, the alarm clock ringing in the morning is a cue to get up. A notification on your phone is a cue to check it.',
+                  '**Craving:** The desire for a specific outcome. This is not about the action itself, but the change in state it delivers. You don’t crave smoking a cigarette; you crave the feeling of relief it provides. You don’t crave turning on the TV; you crave the distraction it offers.',
+                  '**Action:** The behavior itself. This can be a physical action like working out, or a mental one like worrying. The action delivers the reward.',
+                  '**Reward:** The satisfaction of the craving. This is where dopamine is released, teaching your brain that the preceding actions are worth remembering and repeating. The reward is the goal of the habit loop.',
+                  '**Reinforcement:** The identity-level internalization of the habit. When a habit is repeated, it starts to become part of who you are. A person who runs every day doesn\'t just have a habit of running; they identify as a "runner".'
+              ]
+          },
+          {
+              title: 'Critical Points for Rewiring',
+              content: [
+                  '**Habits form through emotional consistency, not discipline.** Discipline is a finite resource that depletes. Emotional consistency, however, creates a powerful feedback loop. If an action consistently produces a desired emotional state (e.g., pride, progress, control), the brain will naturally want to repeat it. The key is to attach strong, positive emotions to desired habits and negative emotions to undesired ones.',
+                  '**Identity shifts occur with emotional repetition and urgency.** To change who you are, you must repeatedly perform actions consistent with your desired identity and feel the corresponding emotions. Urgency, often triggered by the amygdala (the brain\'s fear center), accelerates this process by signaling that the change is critical for survival or success. The hippocampus then helps to cement these new identity-linked memories.'
+              ]
+          }
+      ]
   },
   'neurological-mechanisms-to-rewire': {
-    summary: 'To rewire your brain, you must understand its core components and how to manipulate them. This lesson covers the key neural structures involved in planning, habit formation, reward, and emotional memory, providing strategies to activate and reshape them. This is the blueprint of your internal hardware.',
-    keyConcepts: ['Prefrontal Cortex (Planning)', 'Basal Ganglia (Habit Automation)', 'Nucleus Accumbens (Dopamine/Reward)', 'Amygdala (Emotional Memory)', 'Hippocampus (Memory Consolidation)', 'Anterior Cingulate Cortex (Error Detection)'],
-    commonPitfalls: ['Neglecting long-term goal setting for the prefrontal cortex', 'Failing to establish consistent routines to engage the basal ganglia', 'Underestimating the power of emotional anchors for the amygdala', 'Ignoring reflection, which weakens the ACC\'s ability to correct errors.']
+      type: 'lesson',
+      title: 'Neurological Mechanisms to Rewire',
+      introduction: 'To effectively re-engineer your mind, you must understand the key neurological components that govern your thoughts, actions, and identity. This isn\'t about abstract concepts; it\'s about learning to manipulate the very hardware of your brain to produce predictable, high-performance outcomes. By understanding the roles of these structures, you can move from being a passenger in your own mind to being the architect.',
+      sections: [
+          {
+              title: 'Key Brain Structures and Their Manipulation Strategies',
+              content: [],
+              chart: {
+                headers: ['Structure', 'Role in Your Operating System', 'Manipulation Strategy'],
+                rows: [
+                    ['Prefrontal Cortex (PFC)', 'The CEO of your brain. Responsible for long-term planning, complex decision-making, and impulse control. A strong PFC allows you to override short-term desires in favor of long-term goals.', 'Activate it deliberately through journaling, setting clear long-term goals, and daily reflection. The more you engage in structured, forward-thinking activities, the stronger it becomes.'],
+                    ['Basal Ganglia', 'The factory floor of your brain. It automates behaviors and turns them into habits, freeing up the PFC for higher-level tasks. It operates on patterns.', 'Feed it consistent patterns. Repeat specific routines daily under the same conditions to automate desired behaviors like working out or deep work.'],
+                    ['Nucleus Accumbens', 'The reward center. It releases dopamine in anticipation of a reward, not just upon receiving it. It drives motivation and craving.', 'Tie your efforts to internal rewards. Celebrate small wins and progress. Crucially, avoid "cheap" dopamine from sources like social media or junk food, which desensitizes this circuit.'],
+                    ['Amygdala', 'The threat detector and emotional core. It tags memories with emotion, especially fear and urgency, making them highly memorable. It drives your fight-or-flight response.', 'Use controlled stressors like death reflection, cold exposure, or imagining negative consequences to create a sense of urgency. This "safe fear" tells your brain that a task is critical for survival.'],
+                    ['Hippocampus', 'The memory archivist. It\'s responsible for consolidating short-term memories into long-term storage, especially during sleep. It\'s critical for learning and forming a new identity.', 'Reinforce desired memories through journaling and spaced repetition. Consistently reviewing your goals and new identity helps the hippocampus tag them as important and worth keeping.'],
+                    ['Anterior Cingulate Cortex (ACC)', 'The error detection and correction system. It fires up when you make a mistake or when there\'s a conflict between your goals and your actions. It drives the feeling of "something is wrong" and motivates you to adjust course.', 'Engage it actively by reflecting on failures and tracking mistakes. Instead of avoiding errors, analyze them. This trains the ACC to be more sensitive and effective at keeping you on track.']
+                ]
+              }
+          }
+      ]
   },
   'daily-neural-rewiring-protocol': {
-    summary: 'This lesson provides a concrete daily protocol designed to systematically rewire your neural pathways. It combines physical and mental exercises to increase alertness, anchor dopaminergic projections, release BDNF for memory consolidation, and train delayed gratification. This is the daily tactical execution of your strategic rewiring.',
-    keyConcepts: ['Cold Water Exposure (Noradrenaline)', 'Wealth & Physical Ideal Visualization', 'Neuroplasticity Journaling', 'High-Intensity Training (BDNF Release)', 'Dopamine Detox', 'Protein-Heavy Deficit Windows', 'Passive Wealth Input', 'Death Reflection for Urgency'],
-    commonPitfalls: ['Inconsistency in application', 'Skipping visualization or journaling', 'Avoiding high-intensity physical triggers', 'Failing to create a true dopamine detox environment, allowing for subtle stimulation.']
+      type: 'lesson',
+      title: 'Daily Neural Rewiring Protocol',
+      introduction: 'Theory is useless without application. This daily protocol is a set of non-negotiable actions designed to systematically trigger the neurological mechanisms we\'ve discussed. It is a precise sequence of stressors and stimuli that forces your brain and body to adapt, rewire, and grow stronger. This is your daily tactical execution for building a new internal operating system.',
+      sections: [
+          {
+              title: 'Morning Routine (30–45 min)',
+              content: [
+                  '**1. Cold Water Splash:** Immediately upon waking, splash your face with the coldest water possible. This triggers a release of noradrenaline, a neurotransmitter that dramatically increases alertness, focus, and vigilance. It\'s a biological shock to the system that says "wake up and perform."',
+                  '**2. 5-Minute Visualization:** Visualize your ideal future self with intense detail. Focus on two areas: wealth (e.g., a specific bank balance, a successful company exit) and your physical ideal (e.g., specific body composition, athletic performance). This anchors your dopaminergic projections, teaching your brain what the long-term reward is and making the day\'s hard work feel meaningful.',
+                  '**3. Anchor Object Association:** During visualization, physically touch an anchor object—a ring, a bracelet, a specific scar or stretch mark. Over time, this creates a powerful physical-mental association (classical conditioning). You can later touch this object during the day to instantly trigger the focused, motivated state from your morning routine.',
+                  '**4. Neuroplasticity Journaling:** Write down two simple lines: "Today I will build: [specific, tangible task]" and "I am not [old self/behavior], I am becoming [target identity/behavior]". This primes your prefrontal cortex for the day\'s mission and actively reinforces the new identity you are building.',
+                  '**5. High-Intensity Training (15–30 min):** Perform a short, intense workout. A 100-burpee timer or a series of hill sprints are excellent examples. This releases Brain-Derived Neurotrophic Factor (BDNF), which is like fertilizer for your brain, promoting the growth of new neurons and synapses. It also releases cortisol in a controlled way, which enhances memory consolidation for the identity work you just did.'
+              ]
+          },
+          {
+              title: 'Mid-Day Protocol',
+              content: [
+                  '**1. Deep Work Sprint (90 min):** Dedicate a single, uninterrupted 90-minute block to your most important task (e.g., building your startup, coding, strategic planning). No context-switching means no email, no phone, no distractions. This trains your brain\'s ability to sustain deep focus.',
+                  '**2. Protein-Heavy Deficit Windows:** Structure your eating. Instead of grazing, consume your food in defined windows, with a focus on high protein. This approach trains delayed gratification, improves metabolic health (leptin/insulin sensitivity), and prevents the energy crashes associated with high-carb meals.',
+                  '**3. Dopamine Detox (30 min):** For 30 minutes, eliminate all external inputs: no music, no podcasts, no scrolling, no talking. Simply walk, stretch, or sit in silence. This forces your brain to generate its own motivation and resets your baseline dopamine levels, making normal, productive activities feel more rewarding.'
+              ]
+          },
+          {
+              title: 'Evening Protocol',
+              content: [
+                  '**1. Passive Wealth Input (20–30 min):** Expose your brain to content related to your long-term goals. Listen to an audiobook, podcast, or watch a documentary on founders, venture capital, or product growth. This keeps your goals top-of-mind and allows your brain to form new connections and ideas in the background.',
+                  '**2. Death Reflection:** Before sleep, ask yourself one question: "If I died in 3 months, what would I regret not executing?" This is not meant to be morbid; it is a powerful tool to reinforce urgency via the amygdala. It forces your limbic system to prioritize long-term, meaningful goals over short-term comfort.'
+              ]
+          }
+      ]
   },
-   'critical-subjects-to-master': {
-    summary: 'This lesson outlines the six critical domains of knowledge that are unreplaceable by AI. Mastery of these subjects provides a durable competitive advantage in a world of automation, focusing on human persuasion, strategic thinking, and system building. This is your intellectual arsenal.',
-    keyConcepts: ['Behavioral Psychology', 'Startup Economics', 'Strategic Cognition', 'Neural Systems', 'AI Infrastructure', 'Persuasive Communication'],
-    commonPitfalls: ['Focusing only on technical skills', 'Ignoring the psychology of human behavior', 'Failing to understand the economics of scalable systems', 'Learning about AI tools without understanding the underlying infrastructure.']
+  'critical-subjects-to-master': {
+      type: 'lesson',
+      title: 'Critical Subjects to Master — Unreplaceable by AI',
+      introduction: 'In a world where AI can perform technical tasks with superhuman efficiency, your value shifts from what you can *do* to how you can *think*. The following six domains represent a durable competitive advantage. They are centered on uniquely human skills: understanding people, building systems, and navigating ambiguity. Mastering these subjects makes you unreplaceable.',
+      sections: [
+          {
+            title: 'The Six Unreplaceable Domains',
+            content: [],
+            chart: {
+                headers: ['Domain', 'Core Focus', 'Why It\'s Unreplaceable by AI'],
+                rows: [
+                    ['Behavioral Psychology', 'Understanding the irrationality, biases, and emotional triggers that drive human decisions.', 'AI can analyze data, but it cannot truly understand or replicate the nuances of human desire, fear, and persuasion. This is the art of influence.'],
+                    ['Startup Economics', 'The principles of building scalable, profitable systems with limited resources (MVPs, CAC/LTV, pricing models).', 'AI can suggest business models, but it lacks the contextual insight and risk appetite to build something new from nothing. This is the science of wealth creation.'],
+                    ['Strategic Cognition', 'Mental frameworks for high-stakes decision-making under pressure (OODA Loops, game theory, asymmetrical thinking).', 'AI operates on data and probabilities. It struggles with ambiguity, deception, and the kind of intuitive leaps required in true strategic warfare. This is the art of winning.'],
+                    ['Neural Systems', 'Understanding the mechanics of your own brain (dopamine modulation, neuroplasticity, memory consolidation).', 'You cannot outsource the optimization of your own biology. Understanding your internal hardware is the ultimate form of control and self-mastery.'],
+                    ['AI Infrastructure', 'The backend of AI: APIs, LLM chains, prompt engineering, and workflow automation. You are the architect, not the user.', 'While others are merely using AI tools, you will understand how to build, chain, and automate them to create unique, powerful systems. You command the machine; it does not command you.'],
+                    ['Persuasive Communication', 'The ability to pitch, negotiate, and inspire action through storytelling and charisma, especially under pressure.', 'AI can generate text, but it cannot replicate the trust, authority, and emotional connection conveyed through genuine human communication. This is the art of leadership.']
+                ]
+            }
+          }
+      ]
   },
-   'deep-practice-and-immersion-training': {
-    summary: 'Theory is useless without application. This phase focuses on deep practice through weekly drills that translate knowledge into instinct. You will apply concepts from all core subjects in real-world scenarios to forge tactical empathy, strategic dissection, and faster feedback loops.',
-    keyConcepts: ['Weekly Practice Drills', 'Strategic Dissection', 'Faster Feedback Iteration', 'Reinforced Mental Sharpness', 'Real-world Application', 'Flashcard Reinforcement'],
-    commonPitfalls: ['Passive learning without active practice', 'Fear of applying concepts in live situations', 'Inconsistent drilling', 'Failing to review and learn from the feedback loop of each drill.']
+  // Phase II
+  'deep-practice-and-immersion-training': {
+    type: 'lesson',
+    title: 'Deep Practice and Immersion Training',
+    introduction: 'Knowledge is useless if it remains theoretical. This phase is about forging that knowledge into instinct through a rigorous, structured weekly practice schedule. Each drill is designed to take a concept from one of the core subjects and force its application in a real or simulated environment. This is how you bleed theory into behavior.',
+    sections: [
+      {
+        title: 'Weekly Practice Drills: The Gauntlet',
+        content: [],
+        chart: {
+          headers: ['Day', 'Practice Area', 'Drill Description', 'Desired Outcome'],
+          rows: [
+            ['Monday', 'Behavioral Psychology', 'Identify and apply at least two cognitive biases (e.g., anchoring in a price negotiation, using social proof in an argument). Write a one-paragraph post-analysis of the interaction.', 'Develops tactical empathy and the ability to predict and influence others\' behavior.'],
+            ['Tuesday', 'Startup Economics', 'Choose one public company or a local business. Break down its probable business model, MVP, estimated CAC, and LTV. Write it down as if you were an analyst.', 'Sharpens your ability to strategically dissect any business and identify its strengths and weaknesses.'],
+            ['Wednesday', 'Strategic Cognition', 'Consciously run three OODA loops throughout your day for any decision, from choosing a task to responding to an email. Verbally or mentally articulate each step: Observe, Orient, Decide, Act.', 'Trains your brain for faster, more effective decision-making cycles, moving from reaction to decisive action.'],
+            ['Thursday', 'Neural Systems', 'Execute the Daily Neural Rewiring Protocol with maximum intensity. Focus on the feeling of cold exposure, the burn of the workout, and the clarity of the deep focus block. Link these feelings to your long-term goals.', 'Reinforces the connection between physical state and mental performance, hardwiring discipline.'],
+            ['Friday', 'AI Infrastructure', 'Build one simple automation. This could be a Zapier workflow connecting two apps, a multi-step prompt chain in ChatGPT, or a simple Python script using an API. The goal is to build, not just use.', 'Builds confidence and practical skill in controlling AI tools, moving you from consumer to architect.'],
+            ['Saturday', 'Persuasive Communication', 'Choose a random object and give a 60-second impromptu investor pitch for it to a friend or into a mirror. Structure it as a story.', 'Develops your ability to think and speak clearly and persuasively under pressure.'],
+            ['Sunday', 'Integration & Planning', 'In a journal, teach the most important concept you learned this week as if to a beginner. Then, plan your practice drills for the upcoming week.', 'Reinforces learning through teaching (the Feynman Technique) and prepares you for the next cycle of growth.']
+          ]
+        }
+      },
+      {
+        title: 'Flashcard and Review System',
+        content: [
+          '**Flashcard Categories:** Create digital or physical flashcards for each of the core subjects, broken into four categories:',
+          '- **Core Definitions:** Simple, concise explanations of key terms (e.g., "What is LTV?").',
+          '- **Application Scenarios:** Hypothetical situations where a concept is applied (e.g., "How would you use the framing bias to sell a premium product?").',
+          '- **Framework Diagrams:** Visual representations of models like the OODA Loop or the Fogg Behavior Model.',
+          '- **Mnemonics:** Memory aids to quickly recall concepts (e.g., F.A.T. for Fogg = Motivation, Ability, Trigger).',
+          '**Review daily.** The goal is instant recall.'
+        ]
+      }
+    ],
+    finalThoughts: 'Phase II Goal: Execute. You know the theory. This phase is about bleeding it into your behavior until it becomes instinct, not information. Your brain is no longer just biological. It\'s engineered. Report back when ready for Phase III.'
   },
-  'behavioral-psychology-mastery': {
-    summary: 'Master the scientific study of observable behaviors and the underlying processes that drive them. This lesson weaponizes your understanding of how people think, covering cognitive biases, neuromarketing, and persuasion models to give you an edge in any human interaction.',
-    keyConcepts: ['Cognitive Biases (Anchoring, Loss Aversion)', 'Neuromarketing Principles', 'Cialdini’s Principles of Persuasion', 'Kahneman’s System 1 vs. System 2 Thinking', 'Fogg Behavior Model'],
-    commonPitfalls: ['Assuming rational behavior in others', 'Ignoring emotional triggers in decision-making', 'Failing to spot and counter cognitive biases in yourself and others', 'Using persuasion tactics without understanding the underlying principles.']
-  },
-   'startup-economics-mastery': {
-    summary: 'Understand how scalable businesses grow with limited resources. This lesson covers the engine behind systemic wealth, teaching you to create automated income machines by mastering concepts like CAC, LTV, and MVP.',
-    keyConcepts: ['Business Models (SaaS, Freemium, Marketplace)', 'Minimum Viable Product (MVP)', 'CAC/LTV Ratio', 'Pricing Psychology (Tiered, Decoy)', 'Growth Metrics (Retention, Churn, NPS)'],
-    commonPitfalls: ['Building a product without validating the market', 'Ignoring the CAC/LTV ratio', 'Poor pricing strategy', 'Focusing on vanity metrics instead of actionable growth metrics.']
-  },
-  'investor-pitch-gauntlet': {
-    summary: 'This simulation tests your ability to pitch a startup with minimal preparation and maximum pressure. You must articulate a full business case (Problem, Solution, Model, TAM, Ask) in 90 seconds and defend it against live objections. This forges clarity and composure.',
-    keyConcepts: ['Rapid Articulation', 'High-Pressure Communication', 'Objection Handling', 'Concise Business Modeling', 'Performance Under Scrutiny'],
-    commonPitfalls: ['Freezing under pressure', 'Failing to articulate the core business model clearly', 'Weak defense against objections', 'Running out of time before delivering the "Ask".']
-  },
-  'bias-recognition-combat': {
-    summary: 'A live simulation where you must detect and redirect cognitive biases in a conversation or negotiation. This drill trains you to regain the upper hand when faced with irrational behavior by applying psychological principles in real-time.',
-    keyConcepts: ['Live Bias Detection', 'Behavioral Redirects', 'Psychological Framing', 'Maintaining Composure', 'Active Listening for Underlying Biases'],
-    commonPitfalls: ['Failing to spot the active bias', 'Reacting emotionally instead of strategically', 'Ineffective reframing attempts', 'Becoming the one who is framed.']
-  },
-  'cognition-under-chaos-drill': {
-    summary: 'This drill forces you to make decisions in a high-pressure, multi-variable scenario using the OODA Loop (Observe-Orient-Decide-Act). The goal is to prioritize clarity, speed, and efficiency over perfection, testing your strategic cognition under fire.',
-    keyConcepts: ['OODA Loop Execution', 'Time-Restricted Decision Making', 'Efficiency Over Perfection', 'Post-Action Justification', 'Information Filtering'],
-    commonPitfalls: ['Analysis paralysis', 'Slow orientation phase', 'Inability to justify actions clearly', 'Fixating on irrelevant data points during observation.']
-  },
-   'context-switching-mastery': {
-    summary: 'Develop the ability to move fluidly between different domains (e.g., tech, business, psychology) and roles (e.g., founder, developer, closer) without losing effectiveness. This is about building true cognitive agility and becoming a generalist specialist.',
-    keyConcepts: ['Interdisciplinary Pivots', 'Rapid Re-immersion', 'Cross-Discipline Pattern Recognition', 'Mental Model Shifting', 'Attention Residue Management'],
-    commonPitfalls: ['Attention residue from previous tasks', 'Loss of depth when switching contexts', 'Slow adaptation to new roles', 'Failing to synthesize insights from different domains.']
-  },
-  'emotional-intelligence-under-constraint': {
-    summary: 'Maintain interpersonal clarity and leverage under tension. This lesson trains you to handle simulated hostility, deflection, and coldness, allowing you to integrate non-reactivity with active influence. This is emotional armor and a weapon.',
-    keyConcepts: ['Non-Reactivity', 'Energy Matching', 'Emotional Boundary Manipulation', 'Influence Under Pressure', 'Strategic Empathy'],
-    commonPitfalls: ['Emotional reactivity', 'Losing composure under criticism', 'Failing to influence when faced with resistance', 'Confusing empathy with agreement.']
-  },
-   'meta-learning-engineering': {
-    summary: 'Learn how to learn faster, deeper, and more efficiently. This lesson teaches you to deconstruct new skill domains in hours, using techniques like spaced repetition, interleaving, and cognitive chunking to build a repeatable framework for acquiring any new field.',
-    keyConcepts: ['Skill Deconstruction', 'Spaced Repetition', 'Interleaving', 'Cognitive Chunking', 'Repeatable Learning Frameworks (e.g., Feynman Technique)'],
-    commonPitfalls: ['Inefficient learning strategies (e.g., rereading)', 'Lack of a systematic approach to acquiring new skills', 'Forgetting information quickly due to poor encoding', 'Mistaking familiarity for mastery.']
-  },
-  'perceptual-engineering': {
-    summary: 'Control the lens through which others see you and the situation. This lesson covers priming, framing, and narrative embedding, as well as power positioning through clothing, cadence, and vocabulary to hack how you are perceived in the first five seconds.',
-    keyConcepts: ['Priming & Framing', 'Narrative Embedding', 'Power Positioning (Verbal & Non-Verbal)', 'Introduction Hacking', 'Status Calibration'],
-    commonPitfalls: ['Making a poor first impression', 'Allowing others to control the narrative', 'Underestimating the power of non-verbal cues', 'Inconsistent personal branding.']
-  },
-  'charisma-engineering': {
-    summary: 'Cultivate a presence that magnetizes or deflects attention at will. This involves vocal tonality drills, studying charismatic archetypes like Steve Jobs and JFK, and practicing paradox stacking (e.g., confident + curious) to develop a dynamic and compelling persona.',
-    keyConcepts: ['Vocal Tonality & Cadence', 'Charisma Archetypes', 'Paradox Stacking', 'Presence Modulation', 'Storytelling for Emotional Connection'],
-    commonPitfalls: ['Monotone delivery', 'Static or one-dimensional persona', 'Inability to command a room', 'Trying to be charismatic instead of embodying it.']
-  },
-   'psychological-operations-for-influence': {
-    summary: 'Influence group decisions without direct commands. This lesson teaches the art of PsyOps, including seeding consensus, using misdirection, planting doubt, and running an "internal theatre" to play roles in your head for external impact. This is invisible leadership.',
-    keyConcepts: ['Consensus Seeding', 'Misdirection & Planted Doubt', 'Predictive Scripting', 'Internal Theatre', 'Information Control'],
-    commonPitfalls: ['Using overt commands instead of subtle influence', 'Failing to read group dynamics', 'Lack of strategic patience', 'Telegraphing your intentions.']
-  },
-   'nonlinear-logic-systems': {
-    summary: 'Solve problems multidimensionally and non-sequentially. This lesson trains you to leap between ideas, use paradox chains to unlock creativity, and practice inverted planning (building from the end to the start) to escape linear thinking.',
-    keyConcepts: ['Idea Threading', 'Divergence Mapping', 'Paradox Chains', 'Inverted Planning', 'Conceptual Collapsing'],
-    commonPitfalls: ['Getting stuck in linear, step-by-step thinking', 'Inability to connect disparate ideas', 'Creative blocks from rigid thinking', 'Ignoring intuition in favor of pure logic.']
-  },
-  'time-distortion-cognition': {
-    summary: 'Manipulate your perception of time for enhanced productivity and analysis. This involves drills to induce flow states (time warping), mapping long-term strategy in reverse, and using future-state simulation to influence present actions.',
-    keyConcepts: ['Time Warping (Flow States)', 'Reverse Strategic Mapping', 'Future-State Simulation', 'Deadline-Driven Urgency Creation'],
-    commonPitfalls: ['Poor time management and procrastination', 'Inability to enter deep focus (flow) states', 'Lack of a long-term strategic vision to guide present actions', 'Being reactive rather than proactive with time.']
-  },
-  'abstract-execution': {
-    summary: 'Convert abstract principles into tangible tools, products, or systems. This is the art of taking a quote, philosophy, or theory and building a functional system from it, turning values into startup strategies and ideas into pitches.',
-    keyConcepts: ['Principle to Product Conversion', 'Value-Based System Design', 'Diagrammatic Thinking', 'Idea to Pitch Pipeline', 'Metaphor Engineering'],
-    commonPitfalls: ['Ideas without execution', 'Inability to translate abstract thoughts into concrete actions', 'Lack of a system to capture and develop ideas', 'Perfectionism that prevents starting.']
-  },
-  'cognitive-operating-system-design': {
-    summary: 'Architect your own mind’s structure, inputs, and protocols. This lesson teaches you to build internal dashboards, feedback loops, and thought pipelines, essentially coding the default thoughts and decision trees that run your life.',
-    keyConcepts: ['Internal Dashboards', 'Thought Pipelines', 'Default Thought Design', 'Cognitive Rituals', 'Belief System Architecture'],
-    commonPitfalls: ['Running on default, unexamined mental programs', 'Lack of a structured internal world', 'Inconsistent mental performance due to lack of a system', 'Letting external inputs dictate internal state.']
-  },
-  'sovereign-self-programming': {
-    summary: 'Write the rules you follow, the values you embed, and the emotions you allow. This involves auditing all inherited beliefs, replacing default reactions with authored ones, and training emotion synthesis to manufacture confidence, calm, or focus on command.',
-    keyConcepts: ['Belief Auditing & Deconstruction', 'Authored Reactions vs. Default Reactions', 'Emotion Synthesis', 'Value Embedding and Hierarchy', 'Identity Recursion Rewrites'],
-    commonPitfalls: ['Living by others’ rules and values', 'Emotional reactivity', 'Lack of a core, self-defined identity', 'Being unaware of your own subconscious programming.']
-  },
-  'ascendant-discipline': {
-    summary: 'No longer force discipline — embody it. This final lesson is about collapsing the need for motivation by building rhythm instead of grind and integrating awe, play, and purpose into your neural foundation, making high-performance your natural state.',
-    keyConcepts: ['Embodied Discipline', 'Rhythm over Grind', 'Motivation Collapse', 'Purpose Integration', 'Autopoietic Learning Systems'],
-    commonPitfalls: ['Relying on motivation to act', 'Experiencing burnout from constant grinding', 'Lack of a deeper purpose driving your actions', 'Viewing discipline as a punishment rather than a freedom.']
-  },
+  // Add more lessons here following the detailed structure
 };
 
 export const allLessonContent: { [courseSlug: string]: LessonContent } = {
