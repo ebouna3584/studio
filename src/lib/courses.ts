@@ -1,5 +1,4 @@
 
-
 export type CourseSection = {
   topicTitle: string;
   understandFirst: string;
@@ -217,23 +216,23 @@ const cognitiveDominanceContent: LessonContent = {
   'identity-and-habit-restructuring': {
       type: 'lesson',
       title: 'Identity and Habit Restructuring — Neurological Basis',
-      introduction: 'Your habits and identity are the result of repeated Cue → Craving → Action → Reward → Reinforcement loops. Your basal ganglia automates these behaviors, while your prefrontal cortex makes high-level decisions. Rewiring requires reconditioning reward mechanisms in the nucleus accumbens and emotional reinforcement from the amygdala.',
+      introduction: 'Your habits and identity are the result of repeated <mark>Cue → Craving → Action → Reward → Reinforcement</mark> loops. Your basal ganglia automates these behaviors, while your prefrontal cortex makes high-level decisions. Rewiring requires reconditioning reward mechanisms in the nucleus accumbens and emotional reinforcement from the amygdala.',
       sections: [
           {
               title: 'The Core Process of Habit Formation',
               content: [
-                  '**Cue:** An environmental or mental trigger. This is the spark that initiates the entire loop. For example, the alarm clock ringing in the morning is a cue to get up. A notification on your phone is a cue to check it.',
-                  '**Craving:** The desire for a specific outcome. This is not about the action itself, but the change in state it delivers. You don’t crave smoking a cigarette; you crave the feeling of relief it provides. You don’t crave turning on the TV; you crave the distraction it offers.',
-                  '**Action:** The behavior itself. This can be a physical action like working out, or a mental one like worrying. The action delivers the reward.',
-                  '**Reward:** The satisfaction of the craving. This is where dopamine is released, teaching your brain that the preceding actions are worth remembering and repeating. The reward is the goal of the habit loop.',
-                  '**Reinforcement:** The identity-level internalization of the habit. When a habit is repeated, it starts to become part of who you are. A person who runs every day doesn\'t just have a habit of running; they identify as a "runner".'
+                  '* **Cue:** An environmental or mental trigger. This is the spark that initiates the entire loop. For example, the alarm clock ringing in the morning is a cue to get up. A notification on your phone is a cue to check it.',
+                  '* **Craving:** The desire for a specific outcome. This is not about the action itself, but the change in state it delivers. You don’t crave smoking a cigarette; you crave the feeling of relief it provides. You don’t crave turning on the TV; you crave the distraction it offers.',
+                  '* **Action:** The behavior itself. This can be a physical action like working out, or a mental one like worrying. The action delivers the reward.',
+                  '* **Reward:** The satisfaction of the craving. This is where dopamine is released, teaching your brain that the preceding actions are worth remembering and repeating. The reward is the goal of the habit loop.',
+                  '* **Reinforcement:** The identity-level internalization of the habit. When a habit is repeated, it starts to become part of who you are. A person who runs every day doesn\'t just have a habit of running; they identify as a "runner".'
               ]
           },
           {
               title: 'Critical Points for Rewiring',
               content: [
-                  '**Habits form through emotional consistency, not discipline.** Discipline is a finite resource that depletes. Emotional consistency, however, creates a powerful feedback loop. If an action consistently produces a desired emotional state (e.g., pride, progress, control), the brain will naturally want to repeat it. The key is to attach strong, positive emotions to desired habits and negative emotions to undesired ones.',
-                  '**Identity shifts occur with emotional repetition and urgency.** To change who you are, you must repeatedly perform actions consistent with your desired identity and feel the corresponding emotions. Urgency, often triggered by the amygdala (the brain\'s fear center), accelerates this process by signaling that the change is critical for survival or success. The hippocampus then helps to cement these new identity-linked memories.'
+                  '* <mark>Habits form through emotional consistency, not discipline.</mark> Discipline is a finite resource that depletes. Emotional consistency, however, creates a powerful feedback loop. If an action consistently produces a desired emotional state (e.g., pride, progress, control), the brain will naturally want to repeat it. The key is to attach strong, positive emotions to desired habits and negative emotions to undesired ones.',
+                  '* <mark>Identity shifts occur with emotional repetition and urgency.</mark> To change who you are, you must repeatedly perform actions consistent with your desired identity and feel the corresponding emotions. Urgency, often triggered by the amygdala (the brain\'s fear center), accelerates this process by signaling that the change is critical for survival or success. The hippocampus then helps to cement these new identity-linked memories.'
               ]
           }
       ],
@@ -270,26 +269,26 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Morning Routine (30–45 min)',
               content: [
-                  '**1. Cold Water Splash:** Immediately upon waking, splash your face with the coldest water possible. This triggers a release of noradrenaline, a neurotransmitter that dramatically increases alertness, focus, and vigilance. It\'s a biological shock to the system that says "wake up and perform."',
-                  '**2. 5-Minute Visualization:** Visualize your ideal future self with intense detail. Focus on two areas: wealth (e.g., a specific bank balance, a successful company exit) and your physical ideal (e.g., specific body composition, athletic performance). This anchors your dopaminergic projections, teaching your brain what the long-term reward is and making the day\'s hard work feel meaningful.',
-                  '**3. Anchor Object Association:** During visualization, physically touch an anchor object—a ring, a bracelet, a specific scar or stretch mark. Over time, this creates a powerful physical-mental association (classical conditioning). You can later touch this object during the day to instantly trigger the focused, motivated state from your morning routine.',
-                  '**4. Neuroplasticity Journaling:** Write down two simple lines: "Today I will build: [specific, tangible task]" and "I am not [old self/behavior], I am becoming [target identity/behavior]". This primes your prefrontal cortex for the day\'s mission and actively reinforces the new identity you are building.',
-                  '**5. High-Intensity Training (15–30 min):** Perform a short, intense workout. A 100-burpee timer or a series of hill sprints are excellent examples. This releases Brain-Derived Neurotrophic Factor (BDNF), which is like fertilizer for your brain, promoting the growth of new neurons and synapses. It also releases cortisol in a controlled way, which enhances memory consolidation for the identity work you just did.'
+                  '* **1. Cold Water Splash:** Immediately upon waking, splash your face with the coldest water possible. This triggers a release of noradrenaline, a neurotransmitter that dramatically increases alertness, focus, and vigilance. It\'s a biological shock to the system that says "wake up and perform."',
+                  '* **2. 5-Minute Visualization:** Visualize your ideal future self with intense detail. Focus on two areas: wealth (e.g., a specific bank balance, a successful company exit) and your physical ideal (e.g., specific body composition, athletic performance). This anchors your dopaminergic projections, teaching your brain what the long-term reward is and making the day\'s hard work feel meaningful.',
+                  '* **3. Anchor Object Association:** During visualization, physically touch an anchor object—a ring, a bracelet, a specific scar or stretch mark. Over time, this creates a powerful physical-mental association (classical conditioning). You can later touch this object during the day to instantly trigger the focused, motivated state from your morning routine.',
+                  '* **4. Neuroplasticity Journaling:** Write down two simple lines: "Today I will build: [specific, tangible task]" and "I am not [old self/behavior], I am becoming [target identity/behavior]". This primes your prefrontal cortex for the day\'s mission and actively reinforces the new identity you are building.',
+                  '* **5. High-Intensity Training (15–30 min):** Perform a short, intense workout. A 100-burpee timer or a series of hill sprints are excellent examples. This releases Brain-Derived Neurotrophic Factor (BDNF), which is like fertilizer for your brain, promoting the growth of new neurons and synapses. It also releases cortisol in a controlled way, which enhances memory consolidation for the identity work you just did.'
               ]
           },
           {
               title: 'Mid-Day Protocol',
               content: [
-                  '**1. Deep Work Sprint (90 min):** Dedicate a single, uninterrupted 90-minute block to your most important task (e.g., building your startup, coding, strategic planning). No context-switching means no email, no phone, no distractions. This trains your brain\'s ability to sustain deep focus.',
-                  '**2. Protein-Heavy Deficit Windows:** Structure your eating. Instead of grazing, consume your food in defined windows, with a focus on high protein. This approach trains delayed gratification, improves metabolic health (leptin/insulin sensitivity), and prevents the energy crashes associated with high-carb meals.',
-                  '**3. Dopamine Detox (30 min):** For 30 minutes, eliminate all external inputs: no music, no podcasts, no scrolling, no talking. Simply walk, stretch, or sit in silence. This forces your brain to generate its own motivation and resets your baseline dopamine levels, making normal, productive activities feel more rewarding.'
+                  '* **1. Deep Work Sprint (90 min):** Dedicate a single, uninterrupted 90-minute block to your most important task (e.g., building your startup, coding, strategic planning). No context-switching means no email, no phone, no distractions. This trains your brain\'s ability to sustain deep focus.',
+                  '* **2. Protein-Heavy Deficit Windows:** Structure your eating. Instead of grazing, consume your food in defined windows, with a focus on high protein. This approach trains delayed gratification, improves metabolic health (leptin/insulin sensitivity), and prevents the energy crashes associated with high-carb meals.',
+                  '* **3. Dopamine Detox (30 min):** For 30 minutes, eliminate all external inputs: no music, no podcasts, no scrolling, no talking. Simply walk, stretch, or sit in silence. This forces your brain to generate its own motivation and resets your baseline dopamine levels, making normal, productive activities feel more rewarding.'
               ]
           },
           {
               title: 'Evening Protocol',
               content: [
-                  '**1. Passive Wealth Input (20–30 min):** Expose your brain to content related to your long-term goals. Listen to an audiobook, podcast, or watch a documentary on founders, venture capital, or product growth. This keeps your goals top-of-mind and allows your brain to form new connections and ideas in the background.',
-                  '**2. Death Reflection:** Before sleep, ask yourself one question: "If I died in 3 months, what would I regret not executing?" This is not meant to be morbid; it is a powerful tool to reinforce urgency via the amygdala. It forces your limbic system to prioritize long-term, meaningful goals over short-term comfort.'
+                  '* **1. Passive Wealth Input (20–30 min):** Expose your brain to content related to your long-term goals. Listen to an audiobook, podcast, or watch a documentary on founders, venture capital, or product growth. This keeps your goals top-of-mind and allows your brain to form new connections and ideas in the background.',
+                  '* **2. Death Reflection:** Before sleep, ask yourself one question: "If I died in 3 months, what would I regret not executing?" This is not meant to be morbid; it is a powerful tool to reinforce urgency via the amygdala. It forces your limbic system to prioritize long-term, meaningful goals over short-term comfort.'
               ]
           }
       ],
@@ -344,10 +343,10 @@ const cognitiveDominanceContent: LessonContent = {
         title: 'Flashcard and Review System',
         content: [
           '**Flashcard Categories:** Create digital or physical flashcards for each of the core subjects, broken into four categories:',
-          '- **Core Definitions:** Simple, concise explanations of key terms (e.g., "What is LTV?").',
-          '- **Application Scenarios:** Hypothetical situations where a concept is applied (e.g., "How would you use the framing bias to sell a premium product?").',
-          '- **Framework Diagrams:** Visual representations of models like the OODA Loop or the Fogg Behavior Model.',
-          '- **Mnemonics:** Memory aids to quickly recall concepts (e.g., F.A.T. for Fogg = Motivation, Ability, Trigger).',
+          '* **Core Definitions:** Simple, concise explanations of key terms (e.g., "What is LTV?").',
+          '* **Application Scenarios:** Hypothetical situations where a concept is applied (e.g., "How would you use the framing bias to sell a premium product?").',
+          '* **Framework Diagrams:** Visual representations of models like the OODA Loop or the Fogg Behavior Model.',
+          '* **Mnemonics:** Memory aids to quickly recall concepts (e.g., F.A.T. for Fogg = Motivation, Ability, Trigger).',
           '**Review daily.** The goal is instant recall.'
         ]
       }
@@ -362,11 +361,11 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Key Areas of Mastery',
               content: [
-                  '**Cognitive Biases:** These are systematic patterns of deviation from norm or rationality in judgment. You must know them to both avoid them in yourself and recognize them in others. Key biases include Anchoring (over-relying on the first piece of information), Availability Heuristic (overestimating the importance of information that is easily recalled), Loss Aversion (the pain of losing is psychologically twice as powerful as the pleasure of gaining), and Confirmation Bias (the tendency to search for, interpret, favor, and recall information that confirms or supports one\'s prior beliefs).',
-                  '**Neuromarketing:** This field uses medical technologies like fMRI to study the brain\'s responses to marketing stimuli. It reveals what consumers *really* respond to, beyond what they say. Key concepts include emotional triggers (how specific words or images activate the amygdala) and mirror neurons (neurons that fire both when an individual acts and when they observe the same action performed by another), which are crucial for empathy and social learning.',
-                  '**Persuasion Models:** These are frameworks for influencing behavior. Cialdini’s Six Principles of Influence (Reciprocity, Commitment/Consistency, Social Proof, Authority, Liking, Scarcity) are fundamental. The Fogg Behavior Model (Behavior = Motivation x Ability x Trigger) is a simple but powerful tool for designing habits and calls-to-action.',
-                  '**Behavioral Economics:** This field, pioneered by Kahneman & Tversky, studies the effects of psychological, cognitive, emotional, cultural, and social factors on the economic decisions of individuals and institutions. Its cornerstone, Prospect Theory, describes how people choose between probabilistic alternatives that involve risk, where the probabilities of outcomes are known.',
-                  '**Decision-Making Systems:** Kahneman\'s model of System 1 (fast, intuitive, emotional) and System 2 (slower, more deliberative, logical) thinking is critical. Most decisions are made by System 1. To influence or make better decisions, you must understand how to appeal to or override this system.'
+                  '* **Cognitive Biases:** These are systematic patterns of deviation from norm or rationality in judgment. You must know them to both avoid them in yourself and recognize them in others. Key biases include Anchoring (over-relying on the first piece of information), Availability Heuristic (overestimating the importance of information that is easily recalled), Loss Aversion (the pain of losing is psychologically twice as powerful as the pleasure of gaining), and Confirmation Bias (the tendency to search for, interpret, favor, and recall information that confirms or supports one\'s prior beliefs).',
+                  '* **Neuromarketing:** This field uses medical technologies like fMRI to study the brain\'s responses to marketing stimuli. It reveals what consumers *really* respond to, beyond what they say. Key concepts include emotional triggers (how specific words or images activate the amygdala) and mirror neurons (neurons that fire both when an individual acts and when they observe the same action performed by another), which are crucial for empathy and social learning.',
+                  '* **Persuasion Models:** These are frameworks for influencing behavior. Cialdini’s Six Principles of Influence (Reciprocity, Commitment/Consistency, Social Proof, Authority, Liking, Scarcity) are fundamental. The Fogg Behavior Model (Behavior = Motivation x Ability x Trigger) is a simple but powerful tool for designing habits and calls-to-action.',
+                  '* **Behavioral Economics:** This field, pioneered by Kahneman & Tversky, studies the effects of psychological, cognitive, emotional, cultural, and social factors on the economic decisions of individuals and institutions. Its cornerstone, Prospect Theory, describes how people choose between probabilistic alternatives that involve risk, where the probabilities of outcomes are known.',
+                  '* **Decision-Making Systems:** Kahneman\'s model of System 1 (fast, intuitive, emotional) and System 2 (slower, more deliberative, logical) thinking is critical. Most decisions are made by System 1. To influence or make better decisions, you must understand how to appeal to or override this system.'
               ]
           },
           {
@@ -393,11 +392,11 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Key Areas of Mastery',
               content: [
-                  '**Business Models:** This is the framework for how a company creates, delivers, and captures value. Common models include SaaS (Software as a Service, e.g., monthly subscription), Freemium (basic version is free, premium features cost money), Subscription (recurring revenue), and Marketplace (connecting buyers and sellers and taking a cut).',
-                  '**MVP (Minimum Viable Product):** Popularized by Eric Ries in "The Lean Startup," an MVP is a version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort. Its goal is to test fundamental business hypotheses.',
-                  '**CAC & LTV:** Customer Acquisition Cost (CAC) is the total cost of sales and marketing efforts needed to acquire a customer. Lifetime Value (LTV) is the total revenue a business can reasonably expect from a single customer account. For a business to be viable, LTV must be significantly higher than CAC, typically at least 3x.',
-                  '**Pricing Psychology:** How you price a product affects how it\'s perceived. Tiered pricing offers different levels of value at different price points. The decoy effect is a cognitive bias where consumers will tend to have a specific change in preference between two options when also presented with a third option that is asymmetrically dominated.',
-                  '**Growth Metrics:** These are the numbers that tell you if your business is healthy. Key metrics include Retention (the percentage of customers who continue to use your product over time), Churn (the rate at which customers stop doing business with you), and NPS (Net Promoter Score, a measure of customer loyalty).'
+                  '* **Business Models:** This is the framework for how a company creates, delivers, and captures value. Common models include SaaS (Software as a Service, e.g., monthly subscription), Freemium (basic version is free, premium features cost money), Subscription (recurring revenue), and Marketplace (connecting buyers and sellers and taking a cut).',
+                  '* **MVP (Minimum Viable Product):** Popularized by Eric Ries in "The Lean Startup," an MVP is a version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort. Its goal is to test fundamental business hypotheses.',
+                  '* **CAC & LTV:** Customer Acquisition Cost (CAC) is the total cost of sales and marketing efforts needed to acquire a customer. Lifetime Value (LTV) is the total revenue a business can reasonably expect from a single customer account. For a business to be viable, LTV must be significantly higher than CAC, typically at least 3x.',
+                  '* **Pricing Psychology:** How you price a product affects how it\'s perceived. Tiered pricing offers different levels of value at different price points. The decoy effect is a cognitive bias where consumers will tend to have a specific change in preference between two options when also presented with a third option that is asymmetrically dominated.',
+                  '* **Growth Metrics:** These are the numbers that tell you if your business is healthy. Key metrics include Retention (the percentage of customers who continue to use your product over time), Churn (the rate at which customers stop doing business with you), and NPS (Net Promoter Score, a measure of customer loyalty).'
               ]
           },
           {
@@ -424,10 +423,10 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Key Frameworks of Mastery',
               content: [
-                  '**OODA Loop:** Developed by military strategist John Boyd, the loop is a four-stage cycle of decision-making: Observe, Orient, Decide, and Act. The goal is to cycle through this loop faster and more accurately than an opponent. The "Orient" phase is the most critical, as it involves analyzing and synthesizing data based on your genetic heritage, cultural traditions, past experiences, and new information.',
-                  '**Asymmetrical Thinking:** This is about using your unique strengths against an opponent\'s weaknesses, often in unconventional ways. A startup with speed and agility uses asymmetry against a large, slow corporation. It\'s about changing the rules of the game to fit your advantages.',
-                  '**Game Theory:** This is the study of mathematical models of strategic interaction among rational decision-makers. Concepts like the Prisoner\'s Dilemma (where two individuals acting in their own self-interests do not produce the optimal outcome) and Nash Equilibrium (a state where no player can benefit by changing their strategy while the other players keep theirs unchanged) are vital for understanding competition and cooperation.',
-                  '**Mental Models:** These are representations of how something works. First Principles Thinking, famously used by Elon Musk, involves breaking down complicated problems into basic elements and then reassembling them from the ground up. Inversion, a favorite of Charlie Munger, means approaching a situation by thinking about what you want to avoid rather than what you want to achieve.'
+                  '* **OODA Loop:** Developed by military strategist John Boyd, the loop is a four-stage cycle of decision-making: Observe, Orient, Decide, and Act. The goal is to cycle through this loop faster and more accurately than an opponent. The "Orient" phase is the most critical, as it involves analyzing and synthesizing data based on your genetic heritage, cultural traditions, past experiences, and new information.',
+                  '* **Asymmetrical Thinking:** This is about using your unique strengths against an opponent\'s weaknesses, often in unconventional ways. A startup with speed and agility uses asymmetry against a large, slow corporation. It\'s about changing the rules of the game to fit your advantages.',
+                  '* **Game Theory:** This is the study of mathematical models of strategic interaction among rational decision-makers. Concepts like the Prisoner\'s Dilemma (where two individuals acting in their own self-interests do not produce the optimal outcome) and Nash Equilibrium (a state where no player can benefit by changing their strategy while the other players keep theirs unchanged) are vital for understanding competition and cooperation.',
+                  '* **Mental Models:** These are representations of how something works. First Principles Thinking, famously used by Elon Musk, involves breaking down complicated problems into basic elements and then reassembling them from the ground up. Inversion, a favorite of Charlie Munger, means approaching a situation by thinking about what you want to avoid rather than what you want to achieve.'
               ]
           },
           {
@@ -454,11 +453,11 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Key Systems of Mastery',
               content: [
-                  '**Dopamine Regulation:** Dopamine is often misunderstood as the "pleasure molecule." It\'s more accurately the "motivation molecule." It is released in *anticipation* of a reward, driving you to act. Modern life provides cheap dopamine hits (social media, sugar, porn) which can blunt your baseline levels, making it harder to get motivated for difficult tasks. You must learn to derive dopamine from effort and progress itself.',
-                  '**BDNF (Brain-Derived Neurotrophic Factor):** This is a protein that acts like fertilizer for your brain. It promotes the survival, maturation, and growth of new neurons and synapses. Intense exercise, intermittent fasting, and focused learning are all powerful ways to increase BDNF, literally making your brain more adaptable and capable of learning.',
-                  '**Memory Consolidation:** This is the process of converting short-term memories into stable long-term memories. It primarily happens during sleep, particularly REM and deep sleep. The hippocampus is critical for this process. This is why sleep is a non-negotiable performance tool.',
-                  '**Neuroplasticity:** This is the brain\'s ability to reorganize itself by forming new neural connections throughout life. "Neurons that fire together, wire together." Every time you repeat a thought or action, you strengthen the neural pathway associated with it. This is the biological basis of habit and identity change.',
-                  '**Stress Response:** The autonomic nervous system has two main branches: the sympathetic ("fight or flight") and parasympathetic ("rest and digest"). Chronic stress keeps the sympathetic system over-activated, releasing cortisol which can be destructive long-term. Learning to intentionally activate the parasympathetic system through breathwork or meditation is key to recovery and resilience.'
+                  '* **Dopamine Regulation:** Dopamine is often misunderstood as the "pleasure molecule." It\'s more accurately the "motivation molecule." It is released in *anticipation* of a reward, driving you to act. Modern life provides cheap dopamine hits (social media, sugar, porn) which can blunt your baseline levels, making it harder to get motivated for difficult tasks. You must learn to derive dopamine from effort and progress itself.',
+                  '* **BDNF (Brain-Derived Neurotrophic Factor):** This is a protein that acts like fertilizer for your brain. It promotes the survival, maturation, and growth of new neurons and synapses. Intense exercise, intermittent fasting, and focused learning are all powerful ways to increase BDNF, literally making your brain more adaptable and capable of learning.',
+                  '* **Memory Consolidation:** This is the process of converting short-term memories into stable long-term memories. It primarily happens during sleep, particularly REM and deep sleep. The hippocampus is critical for this process. This is why sleep is a non-negotiable performance tool.',
+                  '* **Neuroplasticity:** This is the brain\'s ability to reorganize itself by forming new neural connections throughout life. "Neurons that fire together, wire together." Every time you repeat a thought or action, you strengthen the neural pathway associated with it. This is the biological basis of habit and identity change.',
+                  '* **Stress Response:** The autonomic nervous system has two main branches: the sympathetic ("fight or flight") and parasympathetic ("rest and digest"). Chronic stress keeps the sympathetic system over-activated, releasing cortisol which can be destructive long-term. Learning to intentionally activate the parasympathetic system through breathwork or meditation is key to recovery and resilience.'
               ]
           },
           {
@@ -485,11 +484,11 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Key Concepts of Mastery',
               content: [
-                  '**APIs (Application Programming Interfaces):** An API is a set of rules that allows different software applications to communicate with each other. For AI, this is how you send a request to a model (like OpenAI\'s GPT-4) and get a response back. Understanding APIs is fundamental to building any custom AI-powered tool.',
-                  '**LLM Chains:** A single call to a Large Language Model (LLM) is often not enough. Chaining is the process of combining multiple LLM calls with other tools or steps. For example, a chain might take user input, use an LLM to formulate a search query, run the search, feed the results back to the LLM for summarization, and then present the summary. Tools like LangChain are designed for this.',
-                  '**Prompt Engineering:** This is the art and science of designing inputs (prompts) to get desired outputs from an AI model. A well-engineered prompt is specific, gives context, provides examples (few-shot prompting), and clearly defines the desired format of the output. It is the primary interface for controlling AI behavior.',
-                  '**Automation Tools:** These platforms allow you to connect different apps and services to create automated workflows. Zapier is a simple, no-code tool for this. LangChain is a more powerful, code-based framework for building complex AI applications. You can also write your own scripts in languages like Python to interact with APIs.',
-                  '**Data Pipelines:** This refers to the entire flow of data in your AI system. Where does the input data come from? How is it processed or cleaned before being sent to the AI? What happens to the output? Designing a clean, efficient pipeline is crucial for building reliable AI systems.'
+                  '* **APIs (Application Programming Interfaces):** An API is a set of rules that allows different software applications to communicate with each other. For AI, this is how you send a request to a model (like OpenAI\'s GPT-4) and get a response back. Understanding APIs is fundamental to building any custom AI-powered tool.',
+                  '* **LLM Chains:** A single call to a Large Language Model (LLM) is often not enough. Chaining is the process of combining multiple LLM calls with other tools or steps. For example, a chain might take user input, use an LLM to formulate a search query, run the search, feed the results back to the LLM for summarization, and then present the summary. Tools like LangChain are designed for this.',
+                  '* **Prompt Engineering:** This is the art and science of designing inputs (prompts) to get desired outputs from an AI model. A well-engineered prompt is specific, gives context, provides examples (few-shot prompting), and clearly defines the desired format of the output. It is the primary interface for controlling AI behavior.',
+                  '* **Automation Tools:** These platforms allow you to connect different apps and services to create automated workflows. Zapier is a simple, no-code tool for this. LangChain is a more powerful, code-based framework for building complex AI applications. You can also write your own scripts in languages like Python to interact with APIs.',
+                  '* **Data Pipelines:** This refers to the entire flow of data in your AI system. Where does the input data come from? How is it processed or cleaned before being sent to the AI? What happens to the output? Designing a clean, efficient pipeline is crucial for building reliable AI systems.'
               ]
           },
           {
@@ -516,11 +515,11 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Key Areas of Mastery',
               content: [
-                  '**Investor Pitches:** A pitch is a compressed narrative designed to secure capital. It must quickly establish a problem, present a unique solution, define the Total Addressable Market (TAM), show traction (early results), and end with a clear Call to Action (CTA - the "ask").',
-                  '**Storytelling:** Humans are wired for stories. The Hero’s Journey is a classic narrative arc (call to adventure, trials, return with a reward) that can be adapted for any pitch. Stories create emotional connection and make complex ideas memorable. A key skill is building and releasing tension.',
-                  '**Framing:** This is the art of controlling the context to influence perception. Anchoring a high price makes a lower price seem reasonable. Emphasizing potential loss (Loss Aversion) is more motivating than highlighting potential gain. Creating scarcity ("limited time offer") increases perceived value.',
-                  '**Delivery:** How you say something is as important as what you say. Body language (posture, gestures), vocal pace (pausing for effect), and inflection (tonal variety) all signal confidence and authority.',
-                  '**Improv & Pressure Speaking:** The ability to think and speak clearly without preparation is a superpower. Practicing improv games or taking on spontaneous speaking challenges forges mental agility and calmness under fire.'
+                  '* **Investor Pitches:** A pitch is a compressed narrative designed to secure capital. It must quickly establish a problem, present a unique solution, define the Total Addressable Market (TAM), show traction (early results), and end with a clear Call to Action (CTA - the "ask").',
+                  '* **Storytelling:** Humans are wired for stories. The Hero’s Journey is a classic narrative arc (call to adventure, trials, return with a reward) that can be adapted for any pitch. Stories create emotional connection and make complex ideas memorable. A key skill is building and releasing tension.',
+                  '* **Framing:** This is the art of controlling the context to influence perception. Anchoring a high price makes a lower price seem reasonable. Emphasizing potential loss (Loss Aversion) is more motivating than highlighting potential gain. Creating scarcity ("limited time offer") increases perceived value.',
+                  '* **Delivery:** How you say something is as important as what you say. Body language (posture, gestures), vocal pace (pausing for effect), and inflection (tonal variety) all signal confidence and authority.',
+                  '* **Improv & Pressure Speaking:** The ability to think and speak clearly without preparation is a superpower. Practicing improv games or taking on spontaneous speaking challenges forges mental agility and calmness under fire.'
               ]
           },
           {
@@ -550,24 +549,24 @@ const cognitiveDominanceContent: LessonContent = {
             title: 'Simulation Protocol',
             content: [
                 '**Objective:** Pitch a randomly assigned startup concept and secure a fictional "investment" commitment.',
-                '**Step 1: Randomization (1 min):** You will be given a one-sentence startup idea (e.g., "A SaaS platform for beekeepers," "A marketplace for rare plant cuttings").',
-                '**Step 2: Preparation (3 mins):** In three minutes, you must structure a 90-second pitch. You must outline the following on a whiteboard or piece of paper:',
-                '  - **Problem:** What is the core pain point?',
-                '  - **Solution:** How does your product solve it?',
-                '  - **Business Model:** How does it make money?',
-                '  - **TAM (Total Addressable Market):** How big is the opportunity?',
-                '  - **Ask:** What do you want (e.g., "$250k for 10% equity")?',
-                '**Step 3: Presentation (90 secs):** Deliver your pitch. You must be clear, confident, and compelling. Time is strict.',
-                '**Step 4: Rebuttals (2 mins):** You will face two direct objections from a partner or a pre-loaded "objection AI." Examples: "This market is too niche," "Your CAC will be too high," "I don\'t see the moat here." You must counter these objections persuasively.'
+                '* **Step 1: Randomization (1 min):** You will be given a one-sentence startup idea (e.g., "A SaaS platform for beekeepers," "A marketplace for rare plant cuttings").',
+                '* **Step 2: Preparation (3 mins):** In three minutes, you must structure a 90-second pitch. You must outline the following on a whiteboard or piece of paper:',
+                '  * **Problem:** What is the core pain point?',
+                '  * **Solution:** How does your product solve it?',
+                '  * **Business Model:** How does it make money?',
+                '  * **TAM (Total Addressable Market):** How big is the opportunity?',
+                '  * **Ask:** What do you want (e.g., "$250k for 10% equity")?',
+                '* **Step 3: Presentation (90 secs):** Deliver your pitch. You must be clear, confident, and compelling. Time is strict.',
+                '* **Step 4: Rebuttals (2 mins):** You will face two direct objections from a partner or a pre-loaded "objection AI." Examples: "This market is too niche," "Your CAC will be too high," "I don\'t see the moat here." You must counter these objections persuasively.'
             ]
         },
         {
             title: 'Performance Metrics & Debrief',
             content: [
-                '**Speed:** How quickly did you structure the pitch? Was your delivery fluid?',
-                '**Accuracy:** Did you logically connect the problem, solution, and model? Was your TAM believable?',
-                '**Persuasion Index:** Did you successfully counter the rebuttals? Did you build conviction?',
-                '**Post-Simulation Debrief:** Immediately after, write down: 1) The weakest point in your pitch. 2) The strongest point. 3) How you could have framed the rebuttal better.'
+                '* **Speed:** How quickly did you structure the pitch? Was your delivery fluid?',
+                '* **Accuracy:** Did you logically connect the problem, solution, and model? Was your TAM believable?',
+                '* **Persuasion Index:** Did you successfully counter the rebuttals? Did you build conviction?',
+                '* **Post-Simulation Debrief:** Immediately after, write down: 1) The weakest point in your pitch. 2) The strongest point. 3) How you could have framed the rebuttal better.'
             ]
         }
     ],
@@ -584,23 +583,23 @@ const cognitiveDominanceContent: LessonContent = {
                 '**Objective:** In a simulated negotiation or sales pitch, identify and counter at least three cognitive biases being exhibited by your counterpart.',
                 '**Setup:** The scenario is a negotiation (e.g., "Negotiating the price of a used car," "Pitching a partnership to a skeptical executive"). Your partner will be instructed to exhibit specific biases.',
                 '**Bias Examples to Detect:**',
-                '  - **Anchoring:** They get stuck on the first price mentioned.',
-                '  - **Loss Aversion:** They are more afraid of what they might lose than excited about what they might gain.',
-                '  - **Confirmation Bias:** They only listen to information that confirms their existing belief (e.g., "Your competitor is cheaper").',
-                '  - **Bandwagon Effect:** "Everyone else is going with another vendor."',
+                '  * **Anchoring:** They get stuck on the first price mentioned.',
+                '  * **Loss Aversion:** They are more afraid of what they might lose than excited about what they might gain.',
+                '  * **Confirmation Bias:** They only listen to information that confirms their existing belief (e.g., "Your competitor is cheaper").',
+                '  * **Bandwagon Effect:** "Everyone else is going with another vendor."',
                 '**Redirection Techniques:**',
-                '  - **To counter Anchoring:** Shift the focus. "Let\'s set price aside for a moment and talk about the value this will bring your team."',
-                '  - **To counter Loss Aversion:** Reframe the decision around the pain of *not* acting. "What is the cost of doing nothing for another six months?"',
-                '  - **To counter Confirmation Bias:** Ask questions that force them to examine their own logic. "What evidence would you need to see to believe our solution provides a higher ROI?"'
+                '  * **To counter Anchoring:** Shift the focus. "Let\'s set price aside for a moment and talk about the value this will bring your team."',
+                '  * **To counter Loss Aversion:** Reframe the decision around the pain of *not* acting. "What is the cost of doing nothing for another six months?"',
+                '  * **To counter Confirmation Bias:** Ask questions that force them to examine their own logic. "What evidence would you need to see to believe our solution provides a higher ROI?"'
             ]
         },
         {
             title: 'Performance Metrics & Debrief',
             content: [
-                '**Detection Accuracy:** How many of the target biases did you correctly identify?',
-                '**Redirection Effectiveness:** Did your counter-technique successfully shift the conversation?',
-                '**Pressure Control:** Did you remain calm and strategic when faced with irrational arguments?',
-                '**Post-Simulation Debrief:** List the biases you spotted and the exact language you used to counter them. Rate the effectiveness of your counter on a scale of 1-10.'
+                '* **Detection Accuracy:** How many of the target biases did you correctly identify?',
+                '* **Redirection Effectiveness:** Did your counter-technique successfully shift the conversation?',
+                '* **Pressure Control:** Did you remain calm and strategic when faced with irrational arguments?',
+                '* **Post-Simulation Debrief:** List the biases you spotted and the exact language you used to counter them. Rate the effectiveness of your counter on a scale of 1-10.'
             ]
         }
     ],
@@ -617,19 +616,19 @@ const cognitiveDominanceContent: LessonContent = {
                 '**Objective:** Given a complex, multi-variable crisis scenario, make a decisive choice and justify it using the OODA Loop framework.',
                 '**Scenario Prompt (Example):** "You are the CEO of a SaaS company. Your main database has just crashed. Your CTO says it could take 4-6 hours to restore from backup. Your biggest client has a major deadline in 2 hours and is threatening to leave. Your Head of Comms is asking for a public statement. You have 60 seconds to decide your immediate next action. Go."',
                 '**Execution Steps:**',
-                '  - **Observe (10 secs):** What are the raw facts? DB is down. Client is at risk. Public image is at risk. Time is critical.',
-                '  - **Orient (20 secs):** This is the key step. Synthesize the facts with your experience. The biggest threat is not the DB, but losing the key client. Public comms can wait. Technical recovery is already in motion. The leverage point is client management.',
-                '  - **Decide (10 secs):** "My decision is to personally call the CEO of the client company immediately. I will ignore public comms for now."',
-                '  - **Act (20 secs):** Articulate the *exact* first step. "I am pulling up the client CEO\'s contact info and drafting a 3-point script for the call: 1. Acknowledge the failure directly. 2. Explain my personal involvement in the fix. 3. Offer a concrete solution to help them meet their deadline (e.g., manual data entry support from my team)."'
+                '  * **Observe (10 secs):** What are the raw facts? DB is down. Client is at risk. Public image is at risk. Time is critical.',
+                '  * **Orient (20 secs):** This is the key step. Synthesize the facts with your experience. The biggest threat is not the DB, but losing the key client. Public comms can wait. Technical recovery is already in motion. The leverage point is client management.',
+                '  * **Decide (10 secs):** "My decision is to personally call the CEO of the client company immediately. I will ignore public comms for now."',
+                '  * **Act (20 secs):** Articulate the *exact* first step. "I am pulling up the client CEO\'s contact info and drafting a 3-point script for the call: 1. Acknowledge the failure directly. 2. Explain my personal involvement in the fix. 3. Offer a concrete solution to help them meet their deadline (e.g., manual data entry support from my team)."'
             ]
         },
         {
             title: 'Performance Metrics & Debrief',
             content: [
-                '**Speed:** Did you complete the loop within the time limit?',
-                '**Clarity:** Was your decision and justification clear and concise?',
-                '**Orientation Quality:** Did your "Orient" phase correctly identify the primary threat and leverage point?',
-                '**Post-Simulation Debrief:** Justify why your chosen action was superior to the alternatives (e.g., "Making a public statement first would have created panic without solving the core client issue.")."',
+                '* **Speed:** Did you complete the loop within the time limit?',
+                '* **Clarity:** Was your decision and justification clear and concise?',
+                '* **Orientation Quality:** Did your "Orient" phase correctly identify the primary threat and leverage point?',
+                '* **Post-Simulation Debrief:** Justify why your chosen action was superior to the alternatives (e.g., "Making a public statement first would have created panic without solving the core client issue.")."',
             ]
         }
     ],
@@ -647,20 +646,20 @@ const cognitiveDominanceContent: LessonContent = {
                 '**Scenario Prompt (Example):** "Create a system where a user fills out a Google Form to request a custom sales deck. The system must then automatically take the user\'s input (company name, industry), send it to an AI (like GPT-4) with a pre-designed prompt to generate a 3-slide presentation outline, and finally, email that outline to the user."',
                 '**Required Tools:** Google Forms, Google Sheets, an automation tool (like Zapier or Make), and an AI model API (like OpenAI).',
                 '**Execution Steps:**',
-                '  1. **Create the Google Form** with fields for Name, Email, Company Name, and Industry.',
-                '  2. **Link the Form to a Google Sheet.**',
-                '  3. **Set up the Zapier/Make Workflow:** Create a "Zap" that triggers on a new row in the Google Sheet.',
-                '  4. **Connect to OpenAI:** Add an action to send the data to the OpenAI API. You will need to engineer a prompt like: "Create a 3-slide sales presentation outline for a company called {Company Name} in the {Industry} space. Slide 1 should be a title slide. Slide 2 should address a key pain point. Slide 3 should propose our solution."',
-                '  5. **Connect to Gmail:** Add a final action to take the AI\'s output and email it to the email address from the form.'
+                '  * **1. Create the Google Form** with fields for Name, Email, Company Name, and Industry.',
+                '  * **2. Link the Form to a Google Sheet.**',
+                '  * **3. Set up the Zapier/Make Workflow:** Create a "Zap" that triggers on a new row in the Google Sheet.',
+                '  * **4. Connect to OpenAI:** Add an action to send the data to the OpenAI API. You will need to engineer a prompt like: "Create a 3-slide sales presentation outline for a company called {Company Name} in the {Industry} space. Slide 1 should be a title slide. Slide 2 should address a key pain point. Slide 3 should propose our solution."',
+                '  * **5. Connect to Gmail:** Add a final action to take the AI\'s output and email it to the email address from the form.'
             ]
         },
         {
             title: 'Performance Metrics & Debrief',
             content: [
-                '**Technical Execution:** Did the workflow run successfully from end to end?',
-                '**Prompt Engineering:** Was the output from the AI structured and relevant?',
-                '**Efficiency:** Did you complete the task within the 1-hour limit?',
-                '**Post-Simulation Debrief:** Explain each layer of your stack. What was the trigger? What were the actions? Where are the potential points of failure in your system?'
+                '* **Technical Execution:** Did the workflow run successfully from end to end?',
+                '* **Prompt Engineering:** Was the output from the AI structured and relevant?',
+                '* **Efficiency:** Did you complete the task within the 1-hour limit?',
+                '* **Post-Simulation Debrief:** Explain each layer of your stack. What was the trigger? What were the actions? Where are the potential points of failure in your system?'
             ]
         }
     ],
@@ -678,19 +677,19 @@ const cognitiveDominanceContent: LessonContent = {
                 '**Scenario:** You have just finished a pitch. Your counterpart (a partner or AI) delivers a firm objection.',
                 '**Objection Prompt (Example):** "Thank you for the presentation, but this is a pass for us. The market is too crowded, and I frankly don’t believe your solution is differentiated enough to scale."',
                 '**Execution Framework (Do NOT be defensive):**',
-                '  1. **Agree and Reframe (The "Feel, Felt, Found" model):** "I understand completely why you feel that way. Many of the strongest investors initially felt the same thing when they first saw this space. But what they found was..." This validates their concern while gently pivoting.',
-                '  2. **Isolate the Objection:** "It sounds like the main concern isn\'t the team or the tech, but specifically the crowded market and differentiation. Is that fair to say?" This narrows the problem to a single, solvable issue.',
-                '  3. **Invert the Objection into a Strength:** "You\'re right, the market is crowded, and that\'s actually our single biggest advantage. The noise in this space has created massive fatigue with complex, feature-heavy solutions. Our core differentiation isn\'t a new feature; it\'s radical simplicity and speed. We aren\'t another weapon in the arms race; we are the one that actually works."',
-                '  4. **Close on a Micro-Commitment:** "I don\'t expect to change your mind in two minutes, but would you be open to a 15-minute call next week where I can show you the data on our user adoption, which is growing precisely *because* of our simplicity?"'
+                '  * **1. Agree and Reframe (The "Feel, Felt, Found" model):** "I understand completely why you feel that way. Many of the strongest investors initially felt the same thing when they first saw this space. But what they found was..." This validates their concern while gently pivoting.',
+                '  * **2. Isolate the Objection:** "It sounds like the main concern isn\'t the team or the tech, but specifically the crowded market and differentiation. Is that fair to say?" This narrows the problem to a single, solvable issue.',
+                '  * **3. Invert the Objection into a Strength:** "You\'re right, the market is crowded, and that\'s actually our single biggest advantage. The noise in this space has created massive fatigue with complex, feature-heavy solutions. Our core differentiation isn\'t a new feature; it\'s radical simplicity and speed. We aren\'t another weapon in the arms race; we are the one that actually works."',
+                '  * **4. Close on a Micro-Commitment:** "I don\'t expect to change your mind in two minutes, but would you be open to a 15-minute call next week where I can show you the data on our user adoption, which is growing precisely *because* of our simplicity?"'
             ]
         },
         {
             title: 'Performance Metrics & Debrief',
             content: [
-                '**Pressure Control:** Did you remain calm and avoid getting defensive?',
-                '**Reframing Quality:** How effectively did you turn the objection into an advantage?',
-                '**Closing Ability:** Did you successfully land a next step (the micro-commitment)?',
-                '**Post-Simulation Debrief:** Write down the original objection and your exact response. What psychological principle did you use (e.g., social proof, reframing, scarcity)?'
+                '* **Pressure Control:** Did you remain calm and avoid getting defensive?',
+                '* **Reframing Quality:** How effectively did you turn the objection into an advantage?',
+                '* **Closing Ability:** Did you successfully land a next step (the micro-commitment)?',
+                '* **Post-Simulation Debrief:** Write down the original objection and your exact response. What psychological principle did you use (e.g., social proof, reframing, scarcity)?'
             ]
         }
     ],
@@ -706,16 +705,16 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Principles',
         content: [
-          '**Interdisciplinary Pivots:** The goal is to think like a CTO one moment and a CMO the next. This requires you to have distinct mental models for each domain and the ability to load them on command.',
-          '**Rapid Re-immersion:** When you switch contexts, you often lose time "loading" the new information. This drill trains you to reduce that latency. Techniques include using "context primers"—a single page of notes or a specific song—to instantly pull you into a specific mental mode.',
-          '**Cross-Domain Pattern Recognition:** The highest level of mastery is seeing how a principle from one field (e.g., thermodynamics) applies to another (e.g., organizational burnout). This is where true innovation happens.'
+          '* **Interdisciplinary Pivots:** The goal is to think like a CTO one moment and a CMO the next. This requires you to have distinct mental models for each domain and the ability to load them on command.',
+          '* **Rapid Re-immersion:** When you switch contexts, you often lose time "loading" the new information. This drill trains you to reduce that latency. Techniques include using "context primers"—a single page of notes or a specific song—to instantly pull you into a specific mental mode.',
+          '* **Cross-Domain Pattern Recognition:** The highest level of mastery is seeing how a principle from one field (e.g., thermodynamics) applies to another (e.g., organizational burnout). This is where true innovation happens.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**The Crossover Protocol (Weekly):** Choose two unrelated domains you are studying (e.g., AI Infrastructure and Behavioral Psychology). Your task is to write one page explaining a concept from the first domain using a metaphor from the second. For example, "Explain an API call as if it were a psychological trigger based on the Fogg Behavior Model."',
-          '**Timed Role-Switching (Simulation):** In a simulated meeting, you must play three roles: the engineer focused on technical feasibility, the marketer focused on the customer story, and the investor focused on ROI. You must fluidly switch between these perspectives when answering questions.'
+          '* **The Crossover Protocol (Weekly):** Choose two unrelated domains you are studying (e.g., AI Infrastructure and Behavioral Psychology). Your task is to write one page explaining a concept from the first domain using a metaphor from the second. For example, "Explain an API call as if it were a psychological trigger based on the Fogg Behavior Model."',
+          '* **Timed Role-Switching (Simulation):** In a simulated meeting, you must play three roles: the engineer focused on technical feasibility, the marketer focused on the customer story, and the investor focused on ROI. You must fluidly switch between these perspectives when answering questions.'
         ]
       }
     ],
@@ -729,16 +728,16 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Principles',
         content: [
-          '**Non-Reactivity:** The first rule is to not absorb the emotional state of others. When faced with anger or panic, you must remain a calm, neutral observer. This is a trainable skill, often involving breathwork and mental reframing.',
-          '**Emotional Mirroring:** To build rapport, you can subtly mirror the tone and body language of the person you are speaking with. To gain control, you can intentionally *break* that mirror, forcing them to adapt to your calmer state.',
-          '**Active Influence:** Once you are non-reactive, you can begin to influence. This involves using specific language to de-escalate tension ("It sounds like this is incredibly frustrating") or to re-center a conversation on logic rather than emotion.'
+          '* **Non-Reactivity:** The first rule is to not absorb the emotional state of others. When faced with anger or panic, you must remain a calm, neutral observer. This is a trainable skill, often involving breathwork and mental reframing.',
+          '* **Emotional Mirroring:** To build rapport, you can subtly mirror the tone and body language of the person you are speaking with. To gain control, you can intentionally *break* that mirror, forcing them to adapt to your calmer state.',
+          '* **Active Influence:** Once you are non-reactive, you can begin to influence. This involves using specific language to de-escalate tension ("It sounds like this is incredibly frustrating") or to re-center a conversation on logic rather than emotion.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**Hostility Simulation (Bi-weekly):** Practice a negotiation with a partner instructed to be overly aggressive, dismissive, or emotional. Your goal is not to "win" the argument, but to de-escalate the situation and bring the conversation back to a logical, productive baseline. Record yourself and watch for defensive reactions.',
-          '**The Emotional Stacking Drill:** During a high-intensity workout, when you are physically stressed, practice a 60-second persuasive pitch into a mirror. This trains you to maintain cognitive clarity even when your sympathetic nervous system is highly activated.'
+          '* **Hostility Simulation (Bi-weekly):** Practice a negotiation with a partner instructed to be overly aggressive, dismissive, or emotional. Your goal is not to "win" the argument, but to de-escalate the situation and bring the conversation back to a logical, productive baseline. Record yourself and watch for defensive reactions.',
+          '* **The Emotional Stacking Drill:** During a high-intensity workout, when you are physically stressed, practice a 60-second persuasive pitch into a mirror. This trains you to maintain cognitive clarity even when your sympathetic nervous system is highly activated.'
         ]
       }
     ],
@@ -752,16 +751,16 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Principles',
         content: [
-          '**Reading the Room:** This involves rapidly assessing the social hierarchy, the mood, and the key influencers in any group setting. Pay attention to non-verbal cues: who looks at whom when someone speaks? Where are the centers of energy?',
-          '**Split-Role Dynamics:** As a leader, you are often required to be multiple things at once: the visionary, the taskmaster, the diplomat. The ability to dynamically shift between these roles based on the situation\'s needs is crucial.',
-          '**360-Degree Feedback:** True situational command isn\'t about how you *feel*; it\'s about how others *perceive* your leadership. Actively solicit and analyze feedback from superiors, peers, and subordinates to understand your impact from all angles.'
+          '* **Reading the Room:** This involves rapidly assessing the social hierarchy, the mood, and the key influencers in any group setting. Pay attention to non-verbal cues: who looks at whom when someone speaks? Where are the centers of energy?',
+          '* **Split-Role Dynamics:** As a leader, you are often required to be multiple things at once: the visionary, the taskmaster, the diplomat. The ability to dynamically shift between these roles based on the situation\'s needs is crucial.',
+          '* **360-Degree Feedback:** True situational command isn\'t about how you *feel*; it\'s about how others *perceive* your leadership. Actively solicit and analyze feedback from superiors, peers, and subordinates to understand your impact from all angles.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**The Executive Room Simulation:** In a group roleplay, you must act as CEO, CTO, and COO simultaneously during a crisis meeting. One moment you are setting the vision (CEO), the next you are diving into technical details (CTO), and the next you are managing team resources (COO).',
-          '**Situational Analysis Journal:** After any important meeting, spend five minutes journaling your analysis of the room\'s dynamics. Who held the power? What was the unspoken agenda? What was the key leverage point you could have used?'
+          '* **The Executive Room Simulation:** In a group roleplay, you must act as CEO, CTO, and COO simultaneously during a crisis meeting. One moment you are setting the vision (CEO), the next you are diving into technical details (CTO), and the next you are managing team resources (COO).',
+          '* **Situational Analysis Journal:** After any important meeting, spend five minutes journaling your analysis of the room\'s dynamics. Who held the power? What was the unspoken agenda? What was the key leverage point you could have used?'
         ]
       }
     ],
@@ -775,17 +774,17 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Principles',
         content: [
-          '**Working Memory:** This is the "RAM" of your brain. It\'s the ability to hold and manipulate multiple pieces of information in your mind at once. Training working memory has been shown to improve fluid intelligence.',
-          '**Attentional Control:** This is the ability to direct and sustain your focus on a chosen object or task, and to resist distraction. It involves both focused attention (deep work) and the ability to flexibly shift focus.',
-          '**Processing Speed:** This is the speed at which you can take in information, process it, and respond. Faster processing speed allows for quicker OODA loops and better real-time decision-making.'
+          '* **Working Memory:** This is the "RAM" of your brain. It\'s the ability to hold and manipulate multiple pieces of information in your mind at once. Training working memory has been shown to improve fluid intelligence.',
+          '* **Attentional Control:** This is the ability to direct and sustain your focus on a chosen object or task, and to resist distraction. It involves both focused attention (deep work) and the ability to flexibly shift focus.',
+          '* **Processing Speed:** This is the speed at which you can take in information, process it, and respond. Faster processing speed allows for quicker OODA loops and better real-time decision-making.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**Dual N-Back (Daily):** This is a scientifically validated brain-training exercise. The user is presented with a sequence of visual and auditory stimuli and must indicate when the current stimulus matches the one from *n* steps earlier. It is difficult but highly effective for improving working memory.',
-          '**Improvisational Speaking (Weekly):** You are given a random word and must speak about it coherently for 60 seconds. This forces your brain to rapidly access and connect information, boosting processing speed and cognitive flexibility.',
-          '**Timed Reading-to-Synthesis (Daily):** Read one page of a complex text (e.g., a scientific paper, a philosophical treatise). You then have 30 seconds to write down the three most important bullet points. This trains both comprehension speed and the ability to extract key information.'
+          '* **Dual N-Back (Daily):** This is a scientifically validated brain-training exercise. The user is presented with a sequence of visual and auditory stimuli and must indicate when the current stimulus matches the one from *n* steps earlier. It is difficult but highly effective for improving working memory.',
+          '* **Improvisational Speaking (Weekly):** You are given a random word and must speak about it coherently for 60 seconds. This forces your brain to rapidly access and connect information, boosting processing speed and cognitive flexibility.',
+          '* **Timed Reading-to-Synthesis (Daily):** Read one page of a complex text (e.g., a scientific paper, a philosophical treatise). You then have 30 seconds to write down the three most important bullet points. This trains both comprehension speed and the ability to extract key information.'
         ]
       }
     ],
@@ -799,16 +798,16 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Principles',
         content: [
-          '**Deconstruction:** Break down the skill you want to learn into its smallest component parts. For example, learning to code might be deconstructed into understanding variables, loops, functions, and APIs.',
-          '**Prioritization (The 80/20 Rule):** Identify the 20% of the sub-skills that will give you 80% of the results. In learning a language, this might be the 100 most common words.',
-          '**Spaced Repetition & Interleaving:** Spaced repetition involves reviewing information at increasing intervals over time, which is far more effective for long-term memory than cramming. Interleaving is the practice of mixing different topics or skills during a study session, which improves the brain\'s ability to differentiate between concepts.'
+          '* **Deconstruction:** Break down the skill you want to learn into its smallest component parts. For example, learning to code might be deconstructed into understanding variables, loops, functions, and APIs.',
+          '* **Prioritization (The 80/20 Rule):** Identify the 20% of the sub-skills that will give you 80% of the results. In learning a language, this might be the 100 most common words.',
+          '* **Spaced Repetition & Interleaving:** Spaced repetition involves reviewing information at increasing intervals over time, which is far more effective for long-term memory than cramming. Interleaving is the practice of mixing different topics or skills during a study session, which improves the brain\'s ability to differentiate between concepts.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**The Learning Stack Build (Weekly):** Choose one new, small skill you want to acquire (e.g., "How to make a good espresso," "How to run a basic SQL query"). Your task is to spend two hours deconstructing it, identifying the critical 20%, and creating a one-page "cheat sheet" that would allow someone else to learn it quickly. This trains the meta-learning process itself.',
-          '**The Feynman Technique:** When you are learning a new concept, try to explain it in simple terms, as if you were teaching it to a child. This will quickly reveal any gaps in your own understanding.'
+          '* **The Learning Stack Build (Weekly):** Choose one new, small skill you want to acquire (e.g., "How to make a good espresso," "How to run a basic SQL query"). Your task is to spend two hours deconstructing it, identifying the critical 20%, and creating a one-page "cheat sheet" that would allow someone else to learn it quickly. This trains the meta-learning process itself.',
+          '* **The Feynman Technique:** When you are learning a new concept, try to explain it in simple terms, as if you were teaching it to a child. This will quickly reveal any gaps in your own understanding.'
         ]
       }
     ],
@@ -824,10 +823,10 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Priming:** This is the act of exposing someone to a stimulus (a word, an image, an idea) that influences their response to a subsequent stimulus, without conscious guidance or intention. Example: Using words like "strong" and "stable" before presenting a business plan can prime the listener to view the plan more favorably.',
-          '**Framing:** This is about controlling the context or angle of a story to influence judgment. The same situation can be framed as a "crisis" or an "opportunity." Mastering framing means you always control the narrative.',
-          '**Power Positioning:** This is the non-verbal communication of status and confidence. It includes your posture (taking up space), your vocal cadence (speaking slowly and deliberately), your clothing, and your use of space in a room. It is about signaling authority before you even speak.',
-          '**Introduction Hacking:** The first five seconds of any interaction are critical. You must have a pre-designed strategy for how you are introduced, or how you introduce yourself, to immediately frame yourself as the authority or the person of interest.'
+          '* **Priming:** This is the act of exposing someone to a stimulus (a word, an image, an idea) that influences their response to a subsequent stimulus, without conscious guidance or intention. Example: Using words like "strong" and "stable" before presenting a business plan can prime the listener to view the plan more favorably.',
+          '* **Framing:** This is about controlling the context or angle of a story to influence judgment. The same situation can be framed as a "crisis" or an "opportunity." Mastering framing means you always control the narrative.',
+          '* **Power Positioning:** This is the non-verbal communication of status and confidence. It includes your posture (taking up space), your vocal cadence (speaking slowly and deliberately), your clothing, and your use of space in a room. It is about signaling authority before you even speak.',
+          '* **Introduction Hacking:** The first five seconds of any interaction are critical. You must have a pre-designed strategy for how you are introduced, or how you introduce yourself, to immediately frame yourself as the authority or the person of interest.'
         ]
       }
     ],
@@ -841,15 +840,15 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Non-Notability Modes:** This is the practice of adopting a neutral posture, a neutral facial expression, and a neutral vocal tone to become "socially invisible." It allows you to observe a room or situation without drawing attention to yourself.',
-          '**Strategic Underestimation:** Deliberately downplaying your skills, knowledge, or ambition can be a powerful tactic. It causes opponents to lower their guard and reveal information they otherwise wouldn\'t.',
-          '**Frequency Down-Tuning:** This involves matching the energy level of a room but at a slightly lower intensity. It makes you appear non-threatening and allows you to fly under the radar while gathering intelligence.'
+          '* **Non-Notability Modes:** This is the practice of adopting a neutral posture, a neutral facial expression, and a neutral vocal tone to become "socially invisible." It allows you to observe a room or situation without drawing attention to yourself.',
+          '* **Strategic Underestimation:** Deliberately downplaying your skills, knowledge, or ambition can be a powerful tactic. It causes opponents to lower their guard and reveal information they otherwise wouldn\'t.',
+          '* **Frequency Down-Tuning:** This involves matching the energy level of a room but at a slightly lower intensity. It makes you appear non-threatening and allows you to fly under the radar while gathering intelligence.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**The Cloak/Uncloak Drill (Daily):** Practice consciously modulating your presence. In one room (e.g., a coffee shop), try to be the center of attention through posture and energy. In the next, practice the non-notability mode and see if you can blend into the background completely.'
+          '* **The Cloak/Uncloak Drill (Daily):** Practice consciously modulating your presence. In one room (e.g., a coffee shop), try to be the center of attention through posture and energy. In the next, practice the non-notability mode and see if you can blend into the background completely.'
         ]
       }
     ],
@@ -863,17 +862,17 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Components',
         content: [
-          '**Presence:** When you are speaking with someone, giving them your absolute, undivided attention makes them feel like they are the only person in the world. This is intensely charismatic.',
-          '**Power:** This is conveyed through confident body language, a calm demeanor, and the ability to be unreactive under pressure.',
-          '**Warmth:** This is conveyed through genuine smiles, active listening, and showing empathy. It is the component that builds trust.',
-          '**The Charisma Equation:** Charisma = Presence + Power + Warmth. Many people have one or two, but the combination of all three is rare and powerful.'
+          '* **Presence:** When you are speaking with someone, giving them your absolute, undivided attention makes them feel like they are the only person in the world. This is intensely charismatic.',
+          '* **Power:** This is conveyed through confident body language, a calm demeanor, and the ability to be unreactive under pressure.',
+          '* **Warmth:** This is conveyed through genuine smiles, active listening, and showing empathy. It is the component that builds trust.',
+          '* **The Charisma Equation:** Charisma = Presence + Power + Warmth. Many people have one or two, but the combination of all three is rare and powerful.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**Vocal Tonality Drills:** Record yourself speaking. Practice modulating your pitch, pace, and volume. Learn to use pauses for dramatic effect. A downward inflection at the end of a sentence signals authority.',
-          '**Paradox Stacking:** Practice combining seemingly contradictory traits. For example, can you be powerfully confident while also being genuinely curious? Can you be playfully witty while also being taken seriously? This creates a dynamic, intriguing persona.'
+          '* **Vocal Tonality Drills:** Record yourself speaking. Practice modulating your pitch, pace, and volume. Learn to use pauses for dramatic effect. A downward inflection at the end of a sentence signals authority.',
+          '* **Paradox Stacking:** Practice combining seemingly contradictory traits. For example, can you be powerfully confident while also being genuinely curious? Can you be playfully witty while also being taken seriously? This creates a dynamic, intriguing persona.'
         ]
       }
     ],
@@ -887,10 +886,10 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Consensus Seeding:** Before a group meeting, speak with key individuals one-on-one to get their buy-in on an idea. When the idea is presented to the group, you already have a core of support, creating social proof and momentum.',
-          '**Misdirection:** If a group is focused on a trivial issue, you can introduce a larger, more complex "problem" to make the original issue seem insignificant by comparison. This is a way of redirecting energy and focus.',
-          '**Predictive Scripting:** This involves stating what you expect the objections to be before they are even raised. "Now, some of you are probably thinking this is too risky..." By voicing the objection yourself, you take the power away from it and show that you have already considered it.',
-          '**The Internal Theatre:** Before an important negotiation, play out the roles of everyone involved in your own mind. What are their motivations? What are their fears? This allows you to anticipate their moves and prepare your responses.'
+          '* **Consensus Seeding:** Before a group meeting, speak with key individuals one-on-one to get their buy-in on an idea. When the idea is presented to the group, you already have a core of support, creating social proof and momentum.',
+          '* **Misdirection:** If a group is focused on a trivial issue, you can introduce a larger, more complex "problem" to make the original issue seem insignificant by comparison. This is a way of redirecting energy and focus.',
+          '* **Predictive Scripting:** This involves stating what you expect the objections to be before they are even raised. "Now, some of you are probably thinking this is too risky..." By voicing the objection yourself, you take the power away from it and show that you have already considered it.',
+          '* **The Internal Theatre:** Before an important negotiation, play out the roles of everyone involved in your own mind. What are their motivations? What are their fears? This allows you to anticipate their moves and prepare your responses.'
         ]
       }
     ],
@@ -904,10 +903,10 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Storytelling Compression:** The ability to tell a high-impact story in a very short amount of time (e.g., a 30-second elevator pitch). This requires you to strip a narrative down to its most essential, emotionally resonant parts.',
-          '**Origin Stories:** Every company, product, or movement needs a compelling origin story. It should have a hero (the founder), a conflict (the problem they faced), and a resolution (the creation of the solution). A good origin story creates an emotional bond with the audience.',
-          '**Crisis Rebranding:** When a negative event occurs, the first narrative to take hold is often the one that sticks. You must be able to immediately reframe the crisis as a moment of learning, a testament to your resilience, or an opportunity for growth.',
-          '**Dominant Explanation Seeding:** In any ambiguous situation, people search for a clear explanation. Your goal is to be the first to provide a simple, powerful, and memorable narrative that explains "what is happening." If your explanation is the best one, it will be adopted and repeated by others.'
+          '* **Storytelling Compression:** The ability to tell a high-impact story in a very short amount of time (e.g., a 30-second elevator pitch). This requires you to strip a narrative down to its most essential, emotionally resonant parts.',
+          '* **Origin Stories:** Every company, product, or movement needs a compelling origin story. It should have a hero (the founder), a conflict (the problem they faced), and a resolution (the creation of the solution). A good origin story creates an emotional bond with the audience.',
+          '* **Crisis Rebranding:** When a negative event occurs, the first narrative to take hold is often the one that sticks. You must be able to immediately reframe the crisis as a moment of learning, a testament to your resilience, or an opportunity for growth.',
+          '* **Dominant Explanation Seeding:** In any ambiguous situation, people search for a clear explanation. Your goal is to be the first to provide a simple, powerful, and memorable narrative that explains "what is happening." If your explanation is the best one, it will be adopted and repeated by others.'
         ]
       }
     ],
@@ -923,10 +922,10 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Idea Threading:** This involves taking a single core idea and mapping out its connections to dozens of different fields. For example, how does the concept of "leverage" apply in physics, finance, relationships, and software engineering?',
-          '**Divergence Mapping:** Start with a problem. Instead of brainstorming one path forward, map out ten completely different and contradictory paths. This forces your brain to break free from its default solutions.',
-          '**Paradox Chains:** A paradox is a seemingly absurd or self-contradictory statement that, when investigated, may prove to be well-founded or true. To solve a complex problem, try to find the central paradox at its heart (e.g., "To become more disciplined, we must embrace play"). Solving the paradox often unlocks the entire problem.',
-          '**Inverted Planning:** Standard planning starts at the beginning. Inverted planning starts with the desired end state in perfect detail, then works backward step-by-step. This often reveals a more direct and unconventional path to the goal.'
+          '* **Idea Threading:** This involves taking a single core idea and mapping out its connections to dozens of different fields. For example, how does the concept of "leverage" apply in physics, finance, relationships, and software engineering?',
+          '* **Divergence Mapping:** Start with a problem. Instead of brainstorming one path forward, map out ten completely different and contradictory paths. This forces your brain to break free from its default solutions.',
+          '* **Paradox Chains:** A paradox is a seemingly absurd or self-contradictory statement that, when investigated, may prove to be well-founded or true. To solve a complex problem, try to find the central paradox at its heart (e.g., "To become more disciplined, we must embrace play"). Solving the paradox often unlocks the entire problem.',
+          '* **Inverted Planning:** Standard planning starts at the beginning. Inverted planning starts with the desired end state in perfect detail, then works backward step-by-step. This often reveals a more direct and unconventional path to the goal.'
         ]
       }
     ],
@@ -940,9 +939,9 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Flow State Induction:** A flow state (being "in the zone") is a mental state in which a person performing some activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity. In flow, our perception of time diminishes, allowing for incredible feats of productivity. Clear goals, immediate feedback, and a balance between skill and challenge are keys to inducing flow.',
-          '**Reverse Time Mapping:** Instead of planning forward from today, imagine it is ten years in the future and you have achieved your ultimate goal. Now, write the history of how you got there, year by year, in reverse. This "future history" often provides a clearer strategic map.',
-          '**Future-State Simulation:** Before making a major decision, spend 30 minutes vividly imagining the world one year after you\'ve made that choice. What are the second- and third-order consequences? How does it feel? This mental time travel allows you to "experience" the future and adjust your present actions accordingly.'
+          '* **Flow State Induction:** A flow state (being "in the zone") is a mental state in which a person performing some activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity. In flow, our perception of time diminishes, allowing for incredible feats of productivity. Clear goals, immediate feedback, and a balance between skill and challenge are keys to inducing flow.',
+          '* **Reverse Time Mapping:** Instead of planning forward from today, imagine it is ten years in the future and you have achieved your ultimate goal. Now, write the history of how you got there, year by year, in reverse. This "future history" often provides a clearer strategic map.',
+          '* **Future-State Simulation:** Before making a major decision, spend 30 minutes vividly imagining the world one year after you\'ve made that choice. What are the second- and third-order consequences? How does it feel? This mental time travel allows you to "experience" the future and adjust your present actions accordingly.'
         ]
       }
     ],
@@ -956,9 +955,9 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Forced-Association Drills:** Take two random words from a dictionary and spend five minutes brainstorming a new business idea that combines them. Most ideas will be useless, but the process trains the mental muscle of synthesis.',
-          '**Metaphor Engineering:** A metaphor is not just a figure of speech; it is a tool for understanding. Actively search for new metaphors to explain your business or your problems. For instance, is your company a "well-oiled machine" or a "chaotic garden"? The metaphor you choose changes how you think about it.',
-          '**Idea Synthesis Under Pressure:** In a group setting, practice taking two conflicting viewpoints and synthesizing them into a third, superior option, rather than choosing one over the other. This is the essence of dialectical thinking (thesis + antithesis = synthesis).'
+          '* **Forced-Association Drills:** Take two random words from a dictionary and spend five minutes brainstorming a new business idea that combines them. Most ideas will be useless, but the process trains the mental muscle of synthesis.',
+          '* **Metaphor Engineering:** A metaphor is not just a figure of speech; it is a tool for understanding. Actively search for new metaphors to explain your business or your problems. For instance, is your company a "well-oiled machine" or a "chaotic garden"? The metaphor you choose changes how you think about it.',
+          '* **Idea Synthesis Under Pressure:** In a group setting, practice taking two conflicting viewpoints and synthesizing them into a third, superior option, rather than choosing one over the other. This is the essence of dialectical thinking (thesis + antithesis = synthesis).'
         ]
       }
     ],
@@ -972,9 +971,9 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**The Internal Boardroom:** When faced with a decision, assign different roles to chairs in a room (or just in your mind): the CFO (focused on risk), the CMO (focused on the customer), the CTO (focused on feasibility), and a "skeptic." Then, mentally "sit" in each chair and argue the case from that perspective.',
-          '**Role-Playing Debates:** Take a core belief you hold and spend 30 minutes passionately arguing for the *opposite* position. This forces you to understand the logic and emotional drivers of those who disagree with you, making your own position stronger and more nuanced.',
-          '**Perspective Shifting:** When analyzing a situation, ask yourself: How would my biggest competitor see this? How would a customer see this? How would an investor see this? How would my employee see this? Write down the answers.'
+          '* **The Internal Boardroom:** When faced with a decision, assign different roles to chairs in a room (or just in your mind): the CFO (focused on risk), the CMO (focused on the customer), the CTO (focused on feasibility), and a "skeptic." Then, mentally "sit" in each chair and argue the case from that perspective.',
+          '* **Role-Playing Debates:** Take a core belief you hold and spend 30 minutes passionately arguing for the *opposite* position. This forces you to understand the logic and emotional drivers of those who disagree with you, making your own position stronger and more nuanced.',
+          '* **Perspective Shifting:** When analyzing a situation, ask yourself: How would my biggest competitor see this? How would a customer see this? How would an investor see this? How would my employee see this? Write down the answers.'
         ]
       }
     ],
@@ -988,11 +987,11 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'The Process',
         content: [
-          '**1. Isolate the Core Principle:** Start with an abstract idea. Example: the Stoic principle of "Amor Fati" (love of fate).',
-          '**2. Convert to a Question:** How could I turn "love of fate" into a tool? How can I help people embrace their challenges?',
-          '**3. Brainstorm Tangible Forms:** This could be a journaling app where users reframe their daily challenges as opportunities. It could be a physical product, like a coin that says "obstacle" on one side and "opportunity" on the other. It could be a consulting framework for corporate resilience.',
-          '**4. From Journal to Diagram:** Sketch out the user flow or system diagram. How does the user interact with your tool?',
-          '**5. From Diagram to Pitch:** Create a one-page summary of the idea, its target audience, and its business model. You have now turned a philosophical concept into a viable product concept.'
+          '* **1. Isolate the Core Principle:** Start with an abstract idea. Example: the Stoic principle of "Amor Fati" (love of fate).',
+          '* **2. Convert to a Question:** How could I turn "love of fate" into a tool? How can I help people embrace their challenges?',
+          '* **3. Brainstorm Tangible Forms:** This could be a journaling app where users reframe their daily challenges as opportunities. It could be a physical product, like a coin that says "obstacle" on one side and "opportunity" on the other. It could be a consulting framework for corporate resilience.',
+          '* **4. From Journal to Diagram:** Sketch out the user flow or system diagram. How does the user interact with your tool?',
+          '* **5. From Diagram to Pitch:** Create a one-page summary of the idea, its target audience, and its business model. You have now turned a philosophical concept into a viable product concept.'
         ]
       }
     ],
@@ -1008,15 +1007,15 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Components of a Cognitive OS',
         content: [
-          '**Thought Pipelines:** Design a process for how you handle incoming information. For example: Input -> Initial Filter (is this relevant to my goals?) -> Analysis (what are the key components?) -> Synthesis (how does this connect to what I know?) -> Action/Storage.',
-          '**Default Thought Programs:** Code default responses for common situations. For "startup mode," your default thought might be "speed and iteration." For "crisis mode," it might be "calm and clarity." When you feel a certain emotion (e.g., anger), you can have a pre-coded "script" that runs automatically (e.g., "Acknowledge emotion -> take three deep breaths -> identify the root cause -> decide logical next step").',
-          '**Internal Dashboards:** Use a journal or mental checklist to regularly review your key "life metrics": physical energy, mental focus, progress on key goals, relationship quality. This is like a CEO reviewing a company dashboard.'
+          '* **Thought Pipelines:** Design a process for how you handle incoming information. For example: Input -> Initial Filter (is this relevant to my goals?) -> Analysis (what are the key components?) -> Synthesis (how does this connect to what I know?) -> Action/Storage.',
+          '* **Default Thought Programs:** Code default responses for common situations. For "startup mode," your default thought might be "speed and iteration." For "crisis mode," it might be "calm and clarity." When you feel a certain emotion (e.g., anger), you can have a pre-coded "script" that runs automatically (e.g., "Acknowledge emotion -> take three deep breaths -> identify the root cause -> decide logical next step").',
+          '* **Internal Dashboards:** Use a journal or mental checklist to regularly review your key "life metrics": physical energy, mental focus, progress on key goals, relationship quality. This is like a CEO reviewing a company dashboard.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**Cognitive OS Mapping (One-time build, then weekly review):** On a large whiteboard, map out your entire desired OS. What are your core values? What are your default decision-trees for major life areas (health, wealth, relationships)? What are your information-processing pipelines? This becomes your personal constitution.'
+          '* **Cognitive OS Mapping (One-time build, then weekly review):** On a large whiteboard, map out your entire desired OS. What are your core values? What are your default decision-trees for major life areas (health, wealth, relationships)? What are your information-processing pipelines? This becomes your personal constitution.'
         ]
       }
     ],
@@ -1030,15 +1029,15 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Core Techniques',
         content: [
-          '**Belief Auditing:** Make a list of your core beliefs about money, success, relationships, and yourself. For each one, ask: "Where did this belief come from? Does it serve my ultimate goals? Is it absolutely true?" Discard any that do not survive this scrutiny.',
-          '**Reaction Replacement:** Identify a common situation where you have a negative default reaction (e.g., getting angry in traffic). Design a new, authored reaction (e.g., "This is an opportunity to practice patience and listen to an audiobook"). Then, consciously practice the new reaction every time the trigger occurs.',
-          '**Emotion Synthesis:** Elite performers do not wait to feel confident or focused. They *decide* to feel that way. This is a trainable skill. It involves using physiological triggers (e.g., specific posture, breathing patterns) and mental visualization to manufacture a desired emotional state on command.'
+          '* **Belief Auditing:** Make a list of your core beliefs about money, success, relationships, and yourself. For each one, ask: "Where did this belief come from? Does it serve my ultimate goals? Is it absolutely true?" Discard any that do not survive this scrutiny.',
+          '* **Reaction Replacement:** Identify a common situation where you have a negative default reaction (e.g., getting angry in traffic). Design a new, authored reaction (e.g., "This is an opportunity to practice patience and listen to an audiobook"). Then, consciously practice the new reaction every time the trigger occurs.',
+          '* **Emotion Synthesis:** Elite performers do not wait to feel confident or focused. They *decide* to feel that way. This is a trainable skill. It involves using physiological triggers (e.g., specific posture, breathing patterns) and mental visualization to manufacture a desired emotional state on command.'
         ]
       },
       {
         title: 'Training Drills',
         content: [
-          '**The Self-Code Ritual (Weekly):** Choose one new belief or emotional program you want to install. Write it down. Spend five minutes each morning for a week visualizing yourself acting and feeling according to this new code. Anchor it to a physical action.'
+          '* **The Self-Code Ritual (Weekly):** Choose one new belief or emotional program you want to install. Write it down. Spend five minutes each morning for a week visualizing yourself acting and feeling according to this new code. Anchor it to a physical action.'
         ]
       }
     ],
@@ -1052,10 +1051,10 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'The Pattern Kill Protocol',
         content: [
-          '**1. Track and Identify:** For one week, keep a log of every time you engage in the target behavior (e.g., procrastination). Note the trigger, the feeling, and the immediate "reward" (e.g., relief from discomfort).',
-          '**2. Interrupt the Loop:** The next time you feel the urge, you must physically interrupt the pattern. Stand up, do ten pushups, splash your face with cold water. The goal is to break the automaticity of the loop.',
-          '**3. Override with a New Behavior:** Immediately after interrupting, perform a pre-planned, positive action. If you were about to procrastinate, work on your most important task for just five minutes.',
-          '**4. Identity Recursion Rewrite:** Ask yourself: "Who would I be if this pattern of procrastination simply did not exist in my brain?" Journal on this new identity. Reinforce the idea that the old pattern is not "you"—it was just a faulty script that you are now deleting.'
+          '* **1. Track and Identify:** For one week, keep a log of every time you engage in the target behavior (e.g., procrastination). Note the trigger, the feeling, and the immediate "reward" (e.g., relief from discomfort).',
+          '* **2. Interrupt the Loop:** The next time you feel the urge, you must physically interrupt the pattern. Stand up, do ten pushups, splash your face with cold water. The goal is to break the automaticity of the loop.',
+          '* **3. Override with a New Behavior:** Immediately after interrupting, perform a pre-planned, positive action. If you were about to procrastinate, work on your most important task for just five minutes.',
+          '* **4. Identity Recursion Rewrite:** Ask yourself: "Who would I be if this pattern of procrastination simply did not exist in my brain?" Journal on this new identity. Reinforce the idea that the old pattern is not "you"—it was just a faulty script that you are now deleting.'
         ]
       }
     ],
@@ -1069,10 +1068,10 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Building the System',
         content: [
-          '**Automated Reflection:** Schedule a recurring 15-minute appointment in your calendar at the end of each day for a "Daily Debrief." Use a simple template: What did I accomplish? What did I learn? What is the plan for tomorrow?',
-          '**The "Idea-In" Box:** Create a single, frictionless place to capture any idea that comes to you (e.g., a specific notes app, a physical notebook). Do not judge the ideas; just capture them.',
-          '**The "Idea-Out" Process:** Once a week, schedule one hour to review your Idea-In Box. Your goal is to connect disparate ideas, flesh out the promising ones, and discard the rest. This is your personal R&D session.',
-          '**Systems for Curiosity:** Actively build toolkits that feed you novel information. This could be a custom RSS feed, a subscription to academic journals, or a weekly lunch with someone from a completely different field. You are engineering serendipity.'
+          '* **Automated Reflection:** Schedule a recurring 15-minute appointment in your calendar at the end of each day for a "Daily Debrief." Use a simple template: What did I accomplish? What did I learn? What is the plan for tomorrow?',
+          '* **The "Idea-In" Box:** Create a single, frictionless place to capture any idea that comes to you (e.g., a specific notes app, a physical notebook). Do not judge the ideas; just capture them.',
+          '* **The "Idea-Out" Process:** Once a week, schedule one hour to review your Idea-In Box. Your goal is to connect disparate ideas, flesh out the promising ones, and discard the rest. This is your personal R&D session.',
+          '* **Systems for Curiosity:** Actively build toolkits that feed you novel information. This could be a custom RSS feed, a subscription to academic journals, or a weekly lunch with someone from a completely different field. You are engineering serendipity.'
         ]
       }
     ],
@@ -1086,10 +1085,10 @@ const cognitiveDominanceContent: LessonContent = {
       {
         title: 'Achieving the State',
         content: [
-          '**Collapse Motivation:** Stop searching for "motivation." It is a fleeting emotion. Instead, build systems and rituals that make action automatic, regardless of how you feel. The Daily Neural Rewiring Protocol is the foundation for this.',
-          '**Build Rhythm, Not Grind:** The "grind" mentality leads to burnout. A rhythm-based approach focuses on sustainable cycles of intense work and deliberate recovery. It is about being a professional athlete of the mind, not a factory worker.',
-          '**Integrate Purpose:** Every difficult task must be explicitly linked to your highest purpose. Before a hard workout, remind yourself: "This is what it takes to build a body capable of running an empire." This reframes the "pain" as a "privilege."',
-          '**Embrace Awe and Play:** The most transcendent performers often have a deep sense of play and wonder in their work. After periods of intense focus, allow your mind to wander, to be curious, to explore without a goal. This replenishes the cognitive resources needed for discipline.'
+          '* **Collapse Motivation:** Stop searching for "motivation." It is a fleeting emotion. Instead, build systems and rituals that make action automatic, regardless of how you feel. The Daily Neural Rewiring Protocol is the foundation for this.',
+          '* **Build Rhythm, Not Grind:** The "grind" mentality leads to burnout. A rhythm-based approach focuses on sustainable cycles of intense work and deliberate recovery. It is about being a professional athlete of the mind, not a factory worker.',
+          '* **Integrate Purpose:** Every difficult task must be explicitly linked to your highest purpose. Before a hard workout, remind yourself: "This is what it takes to build a body capable of running an empire." This reframes the "pain" as a "privilege."',
+          '* **Embrace Awe and Play:** The most transcendent performers often have a deep sense of play and wonder in their work. After periods of intense focus, allow your mind to wander, to be curious, to explore without a goal. This replenishes the cognitive resources needed for discipline.'
         ]
       }
     ],
@@ -1100,5 +1099,3 @@ const cognitiveDominanceContent: LessonContent = {
 export const allLessonContent: { [courseSlug: string]: LessonContent } = {
   'cognitive-dominance': cognitiveDominanceContent,
 };
-
-    
