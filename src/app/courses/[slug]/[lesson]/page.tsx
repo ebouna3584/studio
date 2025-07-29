@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import type { Metadata } from 'next';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const toSlug = (text: string) => {
     return text.toLowerCase()
@@ -91,25 +92,43 @@ export default function Page({ params }: { params: { slug: string; lesson: strin
         </h1>
       </div>
 
-      <div className="prose prose-lg dark:prose-invert max-w-none">
+      <div className="prose prose-lg dark:prose-invert max-w-none space-y-8">
         {lessonContent ? (
           <>
-            <h2 className="text-2xl font-bold font-headline">Lesson Analysis</h2>
-            <p>{lessonContent.summary}</p>
+            <Card className="bg-secondary border-primary/20">
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl">Lesson Summary</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-lg">{lessonContent.summary}</p>
+              </CardContent>
+            </Card>
             
-            <h3 className="text-xl font-bold font-headline mt-8">Key Concepts</h3>
-            <ul>
-              {lessonContent.keyConcepts.map((concept, index) => (
-                <li key={index}>{concept}</li>
-              ))}
-            </ul>
+            <Card>
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl">Key Concepts</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc pl-5 space-y-2">
+                  {lessonContent.keyConcepts.map((concept, index) => (
+                    <li key={index} className="text-lg">{concept}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
 
-            <h3 className="text-xl font-bold font-headline mt-8">Common Pitfalls</h3>
-            <ul>
-              {lessonContent.commonPitfalls.map((pitfall, index) => (
-                <li key={index}>{pitfall}</li>
-              ))}
-            </ul>
+            <Card className="border-destructive/20">
+              <CardHeader>
+                <CardTitle className="font-headline text-2xl text-destructive">Common Pitfalls</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="list-disc pl-5 space-y-2">
+                  {lessonContent.commonPitfalls.map((pitfall, index) => (
+                    <li key={index} className="text-lg">{pitfall}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
           </>
         ) : (
           <>
