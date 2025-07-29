@@ -90,6 +90,9 @@
     padding-inline: 0.125rem;
     color: inherit;
   }
+  .prose p:not(:last-child) {
+    margin-bottom: 1.25em;
+  }
 }
 
 @keyframes highlight {
