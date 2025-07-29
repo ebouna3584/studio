@@ -2,10 +2,10 @@
 'use client';
 
 import { course, allLessonContent } from '@/lib/courses';
-import { notFound, useRouter } from 'next/navigation';
+import { notFound, useRouter, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -26,8 +26,9 @@ const toSlug = (text: string) => {
 // This is a client component, so we can't use generateMetadata directly.
 // We'll manage the title dynamically using useEffect.
 
-export default function Page({ params }: { params: { slug: string; lesson: string } }) {
+export default function Page() {
   const router = useRouter();
+  const params = useParams() as { slug: string; lesson: string };
   
   if (course.slug !== params.slug) {
     notFound();
@@ -123,9 +124,13 @@ export default function Page({ params }: { params: { slug: string; lesson: strin
                 <CardTitle className="font-headline text-2xl">{section.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {section.content.map((paragraph, pIndex) => (
+                {typeof section.content === 'string' ? (
+                  <p dangerouslySetInnerHTML={{ __html: section.content }}></p>
+                ) : (
+                  section.content.map((paragraph, pIndex) => (
                     <p key={pIndex} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
-                ))}
+                  ))
+                )}
                 {section.chart && (
                     <div className="overflow-x-auto">
                         <Table>
