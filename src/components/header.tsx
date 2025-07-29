@@ -4,7 +4,6 @@ import { Compass } from 'lucide-react';
 const Header = () => {
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/courses', label: 'Courses' },
     { href: '/dashboard', label: 'Dashboard' },
     { href: '/account', label: 'Account' },
   ];
