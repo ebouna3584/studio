@@ -5,6 +5,7 @@ import Header from '@/components/header';
 import Script from 'next/script';
 import { Inter, DM_Serif_Display } from 'next/font/google';
 import Footer from '@/components/footer';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const dmSerifDisplay = DM_Serif_Display({
@@ -24,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${dmSerifDisplay.variable}`}>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Script
           src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
@@ -34,11 +35,15 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className="font-body bg-background text-foreground antialiased min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <Toaster />
+      <body
+        className={`font-body bg-background text-foreground antialiased min-h-screen flex flex-col ${inter.variable} ${dmSerifDisplay.variable}`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
