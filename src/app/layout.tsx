@@ -37,6 +37,7 @@ export default function RootLayout({
       </head>
       <body
         className={`font-body bg-background text-foreground antialiased min-h-screen flex flex-col ${inter.variable} ${dmSerifDisplay.variable}`}
+        suppressHydrationWarning
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
