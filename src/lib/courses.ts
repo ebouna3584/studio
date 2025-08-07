@@ -184,7 +184,7 @@ type LessonContentDetails = {
           rows: (string[])[];
       };
   }[];
-  finalThoughts?: string;
+  finalThoughts?: string | null;
 };
 
 type LessonContent = {
@@ -211,7 +211,7 @@ const cognitiveDominanceContent: LessonContent = {
           {
               title: 'Critical Points for Rewiring',
               content: [
-                  '* Habits form through emotional consistency, not discipline. Discipline is a finite resource that depletes. Emotional consistency, however, creates a powerful feedback loop. If an action consistently produces a desired emotional state (e.g., pride, progress, control), the brain will naturally want to repeat it. The key is to attach strong, positive emotions to desired habits and negative emotions to undesired ones.',
+                  '* Habits form through emotional consistency, not discipline. Discipline is a finite resource that depleles. Emotional consistency, however, creates a powerful feedback loop. If an action consistently produces a desired emotional state (e.g., pride, progress, control), the brain will naturally want to repeat it. The key is to attach strong, positive emotions to desired habits and negative emotions to undesired ones.',
                   '* Identity shifts occur with emotional repetition and urgency. To change who you are, you must repeatedly perform actions consistent with your desired identity and feel the corresponding emotions. Urgency, often triggered by the amygdala (the brain\'s fear center), accelerates this process by signaling that the change is critical for survival or success. The hippocampus then helps to cement these new identity-linked memories.'
               ]
           }
@@ -297,6 +297,230 @@ const cognitiveDominanceContent: LessonContent = {
       ],
       finalThoughts: 'Do not just learn these subjects. Integrate them. See the world through these six lenses simultaneously. This multi-layered thinking is your fortress against automation.'
   },
+    'deep-practice-and-immersion-training': {
+      type: 'lesson',
+      title: 'Deep Practice and Immersion Training',
+      introduction: 'Placeholder for Deep Practice and Immersion Training.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'behavioral-psychology-mastery': {
+      type: 'lesson',
+      title: 'Behavioral Psychology Mastery',
+      introduction: 'Placeholder for Behavioral Psychology Mastery.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'startup-economics-mastery': {
+      type: 'lesson',
+      title: 'Startup Economics Mastery',
+      introduction: 'Placeholder for Startup Economics Mastery.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'strategic-cognition-mastery': {
+      type: 'lesson',
+      title: 'Strategic Cognition Mastery',
+      introduction: 'Placeholder for Strategic Cognition Mastery.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'neural-systems-mastery': {
+      type: 'lesson',
+      title: 'Neural Systems Mastery',
+      introduction: 'Placeholder for Neural Systems Mastery.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'ai-infrastructure-mastery': {
+      type: 'lesson',
+      title: 'AI Infrastructure Mastery',
+      introduction: 'Placeholder for AI Infrastructure Mastery.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'persuasive-communication-mastery': {
+      type: 'lesson',
+      title: 'Persuasive Communication Mastery',
+      introduction: 'Placeholder for Persuasive Communication Mastery.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'investor-pitch-gauntlet': {
+      type: 'lesson',
+      title: 'Investor Pitch Gauntlet',
+      introduction: 'Placeholder for Investor Pitch Gauntlet.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'bias-recognition-combat': {
+      type: 'lesson',
+      title: 'Bias Recognition Combat',
+      introduction: 'Placeholder for Bias Recognition Combat.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'cognition-under-chaos-drill': {
+      type: 'lesson',
+      title: 'Cognition Under Chaos Drill',
+      introduction: 'Placeholder for Cognition Under Chaos Drill.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'ai-orchestrated-workflow-test': {
+      type: 'lesson',
+      title: 'AI-Orchestrated Workflow Test',
+      introduction: 'Placeholder for AI-Orchestrated Workflow Test.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'persuasion-inversion-test': {
+      type: 'lesson',
+      title: 'Persuasion Inversion Test',
+      introduction: 'Placeholder for Persuasion Inversion Test.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'context-switching-mastery': {
+      type: 'lesson',
+      title: 'Context Switching Mastery',
+      introduction: 'Placeholder for Context Switching Mastery.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'emotional-intelligence-under-constraint': {
+      type: 'lesson',
+      title: 'Emotional Intelligence Under Constraint',
+      introduction: 'Placeholder for Emotional Intelligence Under Constraint.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'situational-command': {
+      type: 'lesson',
+      title: 'Situational Command',
+      introduction: 'Placeholder for Situational Command.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'neural-agility-training': {
+      type: 'lesson',
+      title: 'Neural Agility Training',
+      introduction: 'Placeholder for Neural Agility Training.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'meta-learning-engineering': {
+      type: 'lesson',
+      title: 'Meta-Learning Engineering',
+      introduction: 'Placeholder for Meta-Learning Engineering.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'perceptual-engineering': {
+      type: 'lesson',
+      title: 'Perceptual Engineering',
+      introduction: 'Placeholder for Perceptual Engineering.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'social-cloaking-and-invisibility': {
+      type: 'lesson',
+      title: 'Social Cloaking and Invisibility',
+      introduction: 'Placeholder for Social Cloaking and Invisibility.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'charisma-engineering': {
+      type: 'lesson',
+      title: 'Charisma Engineering',
+      introduction: 'Placeholder for Charisma Engineering.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'psychological-operations-for-influence': {
+      type: 'lesson',
+      title: 'Psychological Operations for Influence',
+      introduction: 'Placeholder for Psychological Operations for Influence.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'reality-narrative-crafting': {
+      type: 'lesson',
+      title: 'Reality Narrative Crafting',
+      introduction: 'Placeholder for Reality Narrative Crafting.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'nonlinear-logic-systems': {
+      type: 'lesson',
+      title: 'Nonlinear Logic Systems',
+      introduction: 'Placeholder for Nonlinear Logic Systems.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'time-distortion-cognition': {
+      type: 'lesson',
+      title: 'Time Distortion Cognition',
+      introduction: 'Placeholder for Time Distortion Cognition.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'conceptual-collapsing': {
+      type: 'lesson',
+      title: 'Conceptual Collapsing',
+      introduction: 'Placeholder for Conceptual Collapsing.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'multi-brain-simulation': {
+      type: 'lesson',
+      title: 'Multi-Brain Simulation',
+      introduction: 'Placeholder for Multi-Brain Simulation.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'abstract-execution': {
+      type: 'lesson',
+      title: 'Abstract Execution',
+      introduction: 'Placeholder for Abstract Execution.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'cognitive-operating-system-design': {
+      type: 'lesson',
+      title: 'Cognitive Operating System Design',
+      introduction: 'Placeholder for Cognitive Operating System Design.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'sovereign-self-programming': {
+      type: 'lesson',
+      title: 'Sovereign Self Programming',
+      introduction: 'Placeholder for Sovereign Self Programming.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'self-destructive-pattern-elimination': {
+      type: 'lesson',
+      title: 'Self-Destructive Pattern Elimination',
+      introduction: 'Placeholder for Self-Destructive Pattern Elimination.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'autopoietic-learning-systems': {
+      type: 'lesson',
+      title: 'Autopoietic Learning Systems',
+      introduction: 'Placeholder for Autopoietic Learning Systems.',
+      sections: [],
+      finalThoughts: null,
+    },
+    'ascendant-discipline': {
+      type: 'lesson',
+      title: 'Ascendant Discipline',
+      introduction: 'Placeholder for Ascendant Discipline.',
+      sections: [],
+      finalThoughts: null,
+    }
 };
 
 export const allLessonContent: { [courseSlug: string]: LessonContent } = {

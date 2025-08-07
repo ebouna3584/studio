@@ -1,5 +1,5 @@
-import CoursesPage from "../courses/page";
+import HomePage from "../page";
 
 export default function ExplorePage() {
-  return <CoursesPage />;
+  return <HomePage />;
 }
