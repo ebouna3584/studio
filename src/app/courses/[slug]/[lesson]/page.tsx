@@ -135,7 +135,7 @@ export default function Page() {
               </CardHeader>
               <CardContent className="space-y-4">
                  <div dangerouslySetInnerHTML={renderMarkdown(section.content)} />
-                {section.chart && (
+                {section.chart && section.chart.headers && section.chart.rows && (
                     <div className="overflow-x-auto">
                         <Table>
                             <TableHeader>
@@ -161,11 +161,11 @@ export default function Page() {
             </Card>
         ))}
         
-        {lessonData.finalThoughts && (
+        {lessonData.finalThoughts && typeof lessonData.finalThoughts === 'string' && lessonData.finalThoughts.trim() !== '' && (
              <Card className="border-destructive/20">
               <CardHeader>
                 <CardTitle className="font-headline text-2xl text-destructive">Final Thoughts</CardTitle>
-              </CardHeader>
+              </Header>
               <CardContent>
                 <div className="text-lg font-bold" dangerouslySetInnerHTML={renderMarkdown(lessonData.finalThoughts)} />
               </CardContent>
